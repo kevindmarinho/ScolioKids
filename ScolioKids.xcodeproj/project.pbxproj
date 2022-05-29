@@ -13,9 +13,7 @@
 		28CBFBC12843B13100926D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CBFBBF2843B13100926D6F /* Main.storyboard */; };
 		28CBFBC32843B13100926D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CBFBC22843B13100926D6F /* Assets.xcassets */; };
 		28CBFBC62843B13100926D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CBFBC42843B13100926D6F /* LaunchScreen.storyboard */; };
-		28CBFBD12843B13100926D6F /* ScolioKidsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CBFBD02843B13100926D6F /* ScolioKidsTests.swift */; };
-		28CBFBDB2843B13100926D6F /* ScolioKidsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CBFBDA2843B13100926D6F /* ScolioKidsUITests.swift */; };
-		28CBFBDD2843B13100926D6F /* ScolioKidsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CBFBDC2843B13100926D6F /* ScolioKidsUITestsLaunchTests.swift */; };
+		28CBFBE92843B6CA00926D6F /* README in Sources */ = {isa = PBXBuildFile; fileRef = 28CBFBD02843B13100926D6F /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +43,8 @@
 		28CBFBC52843B13100926D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28CBFBC72843B13100926D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28CBFBCC2843B13100926D6F /* ScolioKidsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScolioKidsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		28CBFBD02843B13100926D6F /* ScolioKidsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScolioKidsTests.swift; sourceTree = "<group>"; };
+		28CBFBD02843B13100926D6F /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		28CBFBD62843B13100926D6F /* ScolioKidsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScolioKidsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		28CBFBDA2843B13100926D6F /* ScolioKidsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScolioKidsUITests.swift; sourceTree = "<group>"; };
-		28CBFBDC2843B13100926D6F /* ScolioKidsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScolioKidsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				28CBFBB82843B13100926D6F /* ScolioKids */,
-				28CBFBCF2843B13100926D6F /* ScolioKidsTests */,
-				28CBFBD92843B13100926D6F /* ScolioKidsUITests */,
 				28CBFBB72843B13100926D6F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,25 +100,9 @@
 				28CBFBC22843B13100926D6F /* Assets.xcassets */,
 				28CBFBC42843B13100926D6F /* LaunchScreen.storyboard */,
 				28CBFBC72843B13100926D6F /* Info.plist */,
+				28CBFBD02843B13100926D6F /* README */,
 			);
 			path = ScolioKids;
-			sourceTree = "<group>";
-		};
-		28CBFBCF2843B13100926D6F /* ScolioKidsTests */ = {
-			isa = PBXGroup;
-			children = (
-				28CBFBD02843B13100926D6F /* ScolioKidsTests.swift */,
-			);
-			path = ScolioKidsTests;
-			sourceTree = "<group>";
-		};
-		28CBFBD92843B13100926D6F /* ScolioKidsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				28CBFBDA2843B13100926D6F /* ScolioKidsUITests.swift */,
-				28CBFBDC2843B13100926D6F /* ScolioKidsUITestsLaunchTests.swift */,
-			);
-			path = ScolioKidsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +239,7 @@
 				28CBFBBE2843B13100926D6F /* ViewController.swift in Sources */,
 				28CBFBBA2843B13100926D6F /* AppDelegate.swift in Sources */,
 				28CBFBBC2843B13100926D6F /* SceneDelegate.swift in Sources */,
+				28CBFBE92843B6CA00926D6F /* README in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28CBFBD12843B13100926D6F /* ScolioKidsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28CBFBDD2843B13100926D6F /* ScolioKidsUITestsLaunchTests.swift in Sources */,
-				28CBFBDB2843B13100926D6F /* ScolioKidsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
