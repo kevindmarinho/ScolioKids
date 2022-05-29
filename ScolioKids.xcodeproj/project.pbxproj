@@ -98,10 +98,6 @@
 			children = (
 				28CBFBB92843B13100926D6F /* AppDelegate.swift */,
 				28CBFBBB2843B13100926D6F /* SceneDelegate.swift */,
-				28CBFBBD2843B13100926D6F /* ViewController.swift */,
-				28CBFBBF2843B13100926D6F /* Main.storyboard */,
-				28CBFBC22843B13100926D6F /* Assets.xcassets */,
-				28CBFBC42843B13100926D6F /* LaunchScreen.storyboard */,
 				28CBFBC72843B13100926D6F /* Info.plist */,
 				28CBFBD02843B13100926D6F /* README */,
 			);
@@ -125,6 +121,10 @@
 		9FD54D392843D44D002C50A6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				28CBFBBD2843B13100926D6F /* ViewController.swift */,
+				28CBFBBF2843B13100926D6F /* Main.storyboard */,
+				28CBFBC42843B13100926D6F /* LaunchScreen.storyboard */,
+				28CBFBC22843B13100926D6F /* Assets.xcassets */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
