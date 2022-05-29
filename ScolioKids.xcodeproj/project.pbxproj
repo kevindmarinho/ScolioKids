@@ -75,6 +75,9 @@
 		28CBFBAD2843B13100926D6F = {
 			isa = PBXGroup;
 			children = (
+				9FD54D392843D44D002C50A6 /* Controller */,
+				9FD54D382843D447002C50A6 /* View */,
+				9FD54D372843D439002C50A6 /* Model */,
 				28CBFBB82843B13100926D6F /* ScolioKids */,
 				28CBFBB72843B13100926D6F /* Products */,
 			);
@@ -103,6 +106,27 @@
 				28CBFBD02843B13100926D6F /* README */,
 			);
 			path = ScolioKids;
+			sourceTree = "<group>";
+		};
+		9FD54D372843D439002C50A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FD54D382843D447002C50A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FD54D392843D44D002C50A6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
