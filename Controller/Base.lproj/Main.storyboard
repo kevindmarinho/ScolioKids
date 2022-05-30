@@ -1,24 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bB8-bU-eUJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="pwQ-NT-dxv">
+            <objects>
+                <tabBarController id="bB8-bU-eUJ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="40a-Mw-Qp6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="RgL-8f-n14"/>
+                        <segue destination="57m-Am-ud3" kind="relationship" relationship="viewControllers" id="uVY-kK-UJF"/>
+                        <segue destination="D1n-nB-lA8" kind="relationship" relationship="viewControllers" id="mqs-ID-vwV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HXB-la-dHr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-407" y="-263"/>
+        </scene>
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScolioKids" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercícios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkc-hU-gyl">
+                                <rect key="frame" x="20" y="88" width="167" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCT-U4-s7d">
+                                <rect key="frame" x="20" y="150" width="374" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="r36-1Z-wH3"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="onClickfirstButtonHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IDH-Qc-BRG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informações" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhE-me-2Bm">
+                                <rect key="frame" x="20" y="284" width="254" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="Z7l-JC-EA5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvf-bu-W2b">
+                                <rect key="frame" x="20" y="346" width="374" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="slC-xS-XYM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="onClickSecondButtonHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kD0-C8-BjD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thg-Cb-wrV">
+                                <rect key="frame" x="20" y="470.5" width="374" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="XS5-zt-Aze"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="onClickThirdButtonHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0DB-M3-OAi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ma-1V-ICD">
+                                <rect key="frame" x="20" y="595" width="374" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="v6G-E4-mxF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="onClickFourthButtonHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MG3-Xj-Ph2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="backgroundOne"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="thg-Cb-wrV" secondAttribute="trailing" constant="20" id="5Ad-ay-wOb"/>
+                            <constraint firstItem="WCT-U4-s7d" firstAttribute="top" secondItem="pkc-hU-gyl" secondAttribute="bottom" constant="20" id="GIq-Si-ieG"/>
+                            <constraint firstItem="vhE-me-2Bm" firstAttribute="top" secondItem="WCT-U4-s7d" secondAttribute="bottom" constant="20" id="Lcc-JD-Sbc"/>
+                            <constraint firstItem="6Ma-1V-ICD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ndg-bW-jh1"/>
+                            <constraint firstItem="vhE-me-2Bm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Vym-ZA-NSP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Ma-1V-ICD" secondAttribute="trailing" constant="20" id="bzd-eE-xey"/>
+                            <constraint firstItem="thg-Cb-wrV" firstAttribute="top" secondItem="hvf-bu-W2b" secondAttribute="bottom" constant="10.6" id="dEv-ag-9RQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WCT-U4-s7d" secondAttribute="trailing" constant="20" id="f3s-jC-PKy"/>
+                            <constraint firstItem="thg-Cb-wrV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gYB-7l-Hcl"/>
+                            <constraint firstItem="hvf-bu-W2b" firstAttribute="top" secondItem="vhE-me-2Bm" secondAttribute="bottom" constant="20" id="oxA-qJ-S9M"/>
+                            <constraint firstItem="WCT-U4-s7d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rUb-tp-tbI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hvf-bu-W2b" secondAttribute="trailing" constant="20" id="tQS-hi-SqU"/>
+                            <constraint firstItem="hvf-bu-W2b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tvH-kb-rz1"/>
+                            <constraint firstItem="6Ma-1V-ICD" firstAttribute="top" secondItem="thg-Cb-wrV" secondAttribute="bottom" constant="10.6" id="vkB-uK-OWt"/>
+                            <constraint firstItem="pkc-hU-gyl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zTK-be-dbL"/>
+                            <constraint firstItem="pkc-hU-gyl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="zjm-QA-jNN"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="aUZ-uO-ZrC"/>
+                    <connections>
+                        <outlet property="firstButtonHome" destination="WCT-U4-s7d" id="gzh-Ly-dEr"/>
+                        <outlet property="fourthButtonHome" destination="6Ma-1V-ICD" id="Vsa-fx-R18"/>
+                        <outlet property="secondButtonHome" destination="hvf-bu-W2b" id="z0r-ng-Deu"/>
+                        <outlet property="thirdButtonHome" destination="thg-Cb-wrV" id="p5N-6a-gPr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1503" y="502"/>
+        </scene>
+        <!--Favoritos-->
+        <scene sceneID="crU-XI-HIF">
+            <objects>
+                <viewController id="57m-Am-ud3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ivf-rE-E0x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GZB-B5-r9P"/>
+                        <color key="backgroundColor" name="backgroundOne"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favoritos" image="heart" catalog="system" id="D98-UX-pxm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Oe-w0-CRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-407" y="507"/>
+        </scene>
+        <!--Cronômetro-->
+        <scene sceneID="VAR-ER-Hmq">
+            <objects>
+                <viewController id="D1n-nB-lA8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zvw-Jw-FUB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bcu-Bj-SO6"/>
+                        <color key="backgroundColor" name="backgroundOne"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cronômetro" image="stopwatch" catalog="system" id="njW-3x-dzc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="946-gf-BS7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678" y="507"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="stopwatch" catalog="system" width="121" height="128"/>
+        <namedColor name="backgroundOne">
+            <color red="1" green="0.96862745098039216" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
