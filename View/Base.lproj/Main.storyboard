@@ -207,7 +207,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Title" id="UWR-n9-n7U">
+                    <navigationItem key="navigationItem" id="UWR-n9-n7U">
                         <barButtonItem key="rightBarButtonItem" title="Selecionar" id="REA-yK-79Z"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -287,9 +287,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96F-TG-sMW">
-                                <rect key="frame" x="60" y="285" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00 : 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0c-6v-muh">
+                                <rect key="frame" x="46" y="124" width="322" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96F-TG-sMW">
+                                <rect key="frame" x="39" y="279" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="6I1-o7-bLo"/>
+                                    <constraint firstAttribute="width" constant="90" id="x8t-2b-3KS"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Zerar" cornerStyle="capsule">
                                     <color key="baseBackgroundColor" name="AccentColor"/>
@@ -298,9 +307,12 @@
                                     <action selector="resetTapped:" destination="D1n-nB-lA8" eventType="touchUpInside" id="nM9-TK-RKY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0n-al-fEw">
-                                <rect key="frame" x="270" y="285" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0n-al-fEw">
+                                <rect key="frame" x="285" y="279" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="BAx-C0-0aG"/>
+                                    <constraint firstAttribute="height" constant="90" id="F4q-uM-zDL"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Iniciar" cornerStyle="capsule">
                                     <color key="baseBackgroundColor" name="AccentColor"/>
@@ -309,16 +321,18 @@
                                     <action selector="startTapped:" destination="D1n-nB-lA8" eventType="touchUpInside" id="qAz-XP-ZXh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00 : 00 : 00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0c-6v-muh">
-                                <rect key="frame" x="163" y="186" width="89" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bcu-Bj-SO6"/>
                         <color key="backgroundColor" name="backgroundOne"/>
+                        <constraints>
+                            <constraint firstItem="h0c-6v-muh" firstAttribute="top" secondItem="bcu-Bj-SO6" secondAttribute="top" constant="80" id="9TX-MM-II8"/>
+                            <constraint firstItem="h0c-6v-muh" firstAttribute="leading" secondItem="bcu-Bj-SO6" secondAttribute="leading" constant="46" id="BFA-Lv-uPJ"/>
+                            <constraint firstItem="h0n-al-fEw" firstAttribute="top" secondItem="h0c-6v-muh" secondAttribute="bottom" constant="90" id="aT3-Tf-OTj"/>
+                            <constraint firstItem="bcu-Bj-SO6" firstAttribute="trailing" secondItem="h0c-6v-muh" secondAttribute="trailing" constant="46" id="crw-Rz-fSp"/>
+                            <constraint firstItem="96F-TG-sMW" firstAttribute="leading" secondItem="bcu-Bj-SO6" secondAttribute="leading" constant="39" id="tPs-OF-8gj"/>
+                            <constraint firstItem="96F-TG-sMW" firstAttribute="top" secondItem="h0c-6v-muh" secondAttribute="bottom" constant="90" id="vNi-gp-aFV"/>
+                            <constraint firstItem="bcu-Bj-SO6" firstAttribute="trailing" secondItem="h0n-al-fEw" secondAttribute="trailing" constant="39" id="wE0-cO-Bt6"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Cronômetro" image="stopwatch" catalog="system" id="njW-3x-dzc"/>
                     <connections>
