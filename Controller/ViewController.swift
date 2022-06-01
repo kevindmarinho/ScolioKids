@@ -19,15 +19,31 @@ class ViewController: UIViewController {
         
                firstButtonHome.layer.cornerRadius = 20
                firstButtonHome.layer.masksToBounds = true
+               firstButtonHome.contentHorizontalAlignment = .left
                
                secondButtonHome.layer.cornerRadius = 20
                secondButtonHome.layer.masksToBounds = true
+               secondButtonHome.contentHorizontalAlignment = .left
                
                thirdButtonHome.layer.cornerRadius = 20
                thirdButtonHome.layer.masksToBounds = true
+               thirdButtonHome.contentHorizontalAlignment = .left
                
                fourthButtonHome.layer.cornerRadius = 20
                fourthButtonHome.layer.masksToBounds = true
+               fourthButtonHome.contentHorizontalAlignment = .left
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
     @IBAction func onClickfirstButtonHome(_ sender: Any) {

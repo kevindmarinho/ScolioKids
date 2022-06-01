@@ -59,7 +59,9 @@
                                                     <constraint firstAttribute="height" constant="114" id="gMU-X2-Ht5"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Exercício">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="onClickfirstButtonHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IDH-Qc-BRG"/>
                                                     <segue destination="1vw-bk-mUS" kind="show" id="bHw-85-8Ih"/>
@@ -78,7 +80,9 @@
                                                     <constraint firstAttribute="height" constant="114" id="FdZ-nQ-2Ai"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="O que é escoliose ?">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="onClickSecondButtonHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kD0-C8-BjD"/>
                                                 </connections>
@@ -89,7 +93,9 @@
                                                     <constraint firstAttribute="height" constant="114" id="MMj-nY-8Jt"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Dicas para crianças">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="onClickThirdButtonHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0DB-M3-OAi"/>
                                                 </connections>
@@ -101,7 +107,9 @@
                                                     <constraint firstAttribute="height" constant="114" id="mxa-vD-Fza"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Hábitos para um coluna saúdavel">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="onClickFourthButtonHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MG3-Xj-Ph2"/>
                                                 </connections>
@@ -162,7 +170,7 @@
         <!--View Controller-->
         <scene sceneID="fSi-lp-jd2">
             <objects>
-                <viewController id="1vw-bk-mUS" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="1vw-bk-mUS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v37-JY-irA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qd6-Eb-fcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-572" y="1238"/>
+            <point key="canvasLocation" x="-594" y="1278"/>
         </scene>
         <!--Favoritos-->
         <scene sceneID="crU-XI-HIF">
