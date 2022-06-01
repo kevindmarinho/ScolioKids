@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+               title = "Voltar"
         
                firstButtonHome.layer.cornerRadius = 20
                firstButtonHome.layer.masksToBounds = true
