@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var thirdButtonHome: UIButton!
     @IBOutlet weak var fourthButtonHome: UIButton!
     
-    
+   /// teste pra ver se ta funcionando
     override func viewDidLoad() {
         super.viewDidLoad()
         
