@@ -16,6 +16,7 @@
 		28CBFBE92843B6CA00926D6F /* README in Sources */ = {isa = PBXBuildFile; fileRef = 28CBFBD02843B13100926D6F /* README */; };
 		866AA4132847DA5900ED37A1 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866AA4122847DA5900ED37A1 /* StopwatchViewController.swift */; };
 		9F077F862846B48200BBF49F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F077F852846B48200BBF49F /* SecondViewController.swift */; };
+		9FBBAEC72849294F00E187A3 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBBAEC62849294F00E187A3 /* CustomCell.swift */; };
 		9FE4EEF02847F0780048B827 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4EEEF2847F0780048B827 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		28CBFBD62843B13100926D6F /* ScolioKidsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScolioKidsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		866AA4122847DA5900ED37A1 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
 		9F077F852846B48200BBF49F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9FBBAEC62849294F00E187A3 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		9FE4EEEF2847F0780048B827 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 				28CBFBBD2843B13100926D6F /* ViewController.swift */,
 				866AA4122847DA5900ED37A1 /* StopwatchViewController.swift */,
 				9FE4EEEF2847F0780048B827 /* DetailViewController.swift */,
+				9FBBAEC62849294F00E187A3 /* CustomCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				28CBFBBC2843B13100926D6F /* SceneDelegate.swift in Sources */,
 				9F077F862846B48200BBF49F /* SecondViewController.swift in Sources */,
 				28CBFBE92843B6CA00926D6F /* README in Sources */,
+				9FBBAEC72849294F00E187A3 /* CustomCell.swift in Sources */,
 				9FE4EEF02847F0780048B827 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

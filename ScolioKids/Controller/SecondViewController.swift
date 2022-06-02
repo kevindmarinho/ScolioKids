@@ -8,14 +8,134 @@
 import Foundation
 import UIKit
 
-class SecondViewController: UIViewController{
+class SecondViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var SelectionButton: UIBarButtonItem!
-    
     @IBOutlet weak var ExercicioView: UITableView!
+    
+    //Search
+
+    var searchExercicies = [String]()
+    var searching = false
+    
+    // TableCell
+
+    let exercises = [
+        "Lombar",
+        "Cervical"
+    ]
+ 
+    var isCellSelected: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        ExercicioView.delegate = self
+        ExercicioView.dataSource = self
+    }
+    
+    @IBAction func seleciona(_ sender: Any) {
+        ExercicioView.allowsSelection = true
+        ExercicioView.reloadData()
+        
+        if !isCellSelected {
+           modifyBarButtonTitle()
+        }
+        
+        else{
+            let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+               
+            let addToFavourites = UIAlertAction(title: "Add to favourites",style: .default,handler: { (action) ->Void in
+            //Adicionar a transição de tela aqui
+            let alert = UIAlertController(title: "Exercises favorited",
+                                          message: "The selected exercises were favorited!",
+                                          preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Ok",
+                                          style: .default,
+                                          handler: nil))
+            
+            self.isCellSelected = false
+            self.SelectionButton.title = "Selecionar"
+            self.present(alert, animated: true)
+    })
+               
+        let sendToStopwatch = UIAlertAction(title: "Send to Stopwatch", style: .default)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+               
+        actionSheet.addAction(addToFavourites)
+        actionSheet.addAction(sendToStopwatch)
+        actionSheet.addAction(cancelAction)
+               
+        self.present(actionSheet, animated: true, completion: nil)
+        }
     }
 }
+
+extension SecondViewController: UISearchBarDelegate{
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchExercicies = exercises.filter({$0.lowercased().prefix(searchText.count) == searchText.lowercased()})
+        searching = true
+        ExercicioView.reloadData()
+    }
+
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searching = false
+        searchBar.text = ""
+        ExercicioView.reloadData()
+    }
+}
+
+extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if searching {
+            return searchExercicies.count
+        } else {
+            return exercises.count
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cells = ExercicioView.dequeueReusableCell(withIdentifier: "customcell") as! CustomCell
+        
+        let lista = exercises[indexPath.row]
+        
+        cells.nameLabel?.text = lista
+        cells.assetsImg.image = UIImage(named: lista)
+        
+        if searching {
+            cells.nameLabel.text = searchExercicies[indexPath.row]
+            cells.assetsImg.image = UIImage(named: searchExercicies[indexPath.row])!
+        } else {
+            cells.nameLabel.text = exercises[indexPath.row]
+        }
+        return cells
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if !isCellSelected {
+            isCellSelected = false
+            ExercicioView.reloadData()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    func modifyBarButtonTitle() {
+            isCellSelected = true
+            SelectionButton.title = "OK"
+        }
+}
+
+
+    
+
+
 
