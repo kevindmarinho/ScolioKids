@@ -246,7 +246,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Title" id="UWR-n9-n7U">
+                    <navigationItem key="navigationItem" id="UWR-n9-n7U">
                         <barButtonItem key="rightBarButtonItem" title="Selecionar" id="REA-yK-79Z">
                             <connections>
                                 <action selector="seleciona:" destination="1vw-bk-mUS" id="CVY-O4-CNO"/>
