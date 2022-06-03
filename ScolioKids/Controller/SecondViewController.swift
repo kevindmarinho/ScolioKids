@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 class SecondViewController: UIViewController {
-    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var SelectionButton: UIBarButtonItem!
     @IBOutlet weak var ExercicioView: UITableView!
@@ -30,8 +29,11 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Exercício"
         ExercicioView.delegate = self
         ExercicioView.dataSource = self
+        
+        navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     @IBAction func seleciona(_ sender: Any) {
