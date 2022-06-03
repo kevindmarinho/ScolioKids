@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-               title = "Voltar"
+               title = "Home"
         
                firstButtonHome.layer.cornerRadius = 20
                firstButtonHome.layer.masksToBounds = true
@@ -35,17 +35,17 @@ class ViewController: UIViewController {
                fourthButtonHome.contentHorizontalAlignment = .left
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//
+//        navigationController?.setNavigationBarHidden(true, animated: false)
+//    }
 
-        navigationController?.setNavigationBarHidden(true, animated: false)
-    }
-
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-
-        navigationController?.setNavigationBarHidden(false, animated: true)
-    }
+//    override func viewDidDisappear(_ animated: Bool) {
+//        super.viewDidDisappear(animated)
+//
+//        navigationController?.setNavigationBarHidden(false, animated: true)
+//    }
 
     @IBAction func onClickfirstButtonHome(_ sender: Any) {
                     UIView.animate(withDuration: 0.3,
