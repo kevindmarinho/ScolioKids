@@ -120,8 +120,16 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let passa = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
         if !isCellSelected {
+            
             isCellSelected = false
+            
+            if let customCell = tableView.cellForRow(at: indexPath) as? CustomCell,
+               let trainningName = customCell.nameLabel.text{
+                passa?.nameTrainning = "\(trainningName)"
+            }
+            self.navigationController?.pushViewController(passa!, animated: true)
             ExercicioView.reloadData()
         }
     }
