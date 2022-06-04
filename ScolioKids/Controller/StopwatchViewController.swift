@@ -12,6 +12,7 @@ class StopwatchViewController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var backgroundStopWatch: UIView!
     
     var timer:Timer = Timer()
     var count: Int = 0
@@ -19,8 +20,12 @@ class StopwatchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //backgroundStopWatch.backgroundColor = UIColor.blue
+//        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+//        backgroundImage.image = UIImage(named: "FrameCronometro.png")
+//        self.backgroundStopWatch.insertSubview(backgroundImage, at: 0)
         
-
+        
         startButton.setTitle("Iniciar", for: .normal)
         self.startButton.backgroundColor = UIColor.systemGreen
         ///Rounding start button

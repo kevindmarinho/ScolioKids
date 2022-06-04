@@ -80,6 +80,7 @@ extension SecondViewController: UISearchBarDelegate{
         searching = true
         ExercicioView.reloadData()
     }
+    
 
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searching = false
@@ -108,11 +109,11 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
         let lista = exercises[indexPath.row]
         
         cells.nameLabel?.text = lista
-        cells.assetsImg.image = UIImage(named: lista)
+//        cells.assetsImg.image = UIImage(named: lista)
         
         if searching {
             cells.nameLabel.text = searchExercicies[indexPath.row]
-            cells.assetsImg.image = UIImage(named: searchExercicies[indexPath.row])!
+//          cells.assetsImg.image = UIImage(named: searchExercicies[indexPath.row])!
         } else {
             cells.nameLabel.text = exercises[indexPath.row]
         }
@@ -135,7 +136,7 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 70
     }
     func modifyBarButtonTitle() {
             isCellSelected = true
