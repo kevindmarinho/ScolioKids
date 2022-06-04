@@ -166,7 +166,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" name="backgroundOne"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="hvf-bu-W2b" firstAttribute="top" secondItem="vhE-me-2Bm" secondAttribute="bottom" constant="20" id="2hr-hv-3jU"/>
                                             <constraint firstItem="thg-Cb-wrV" firstAttribute="top" secondItem="hvf-bu-W2b" secondAttribute="bottom" constant="10.6" id="6JX-oa-2kx"/>
@@ -198,7 +198,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="backgroundOne"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8ud-0R-eBs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0OX-ty-5im"/>
                             <constraint firstItem="8ud-0R-eBs" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="GHK-or-nEW"/>
@@ -228,12 +228,13 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bvX-h5-luO">
                                 <rect key="frame" x="0.0" y="103" width="414" height="793"/>
-                                <color key="backgroundColor" name="backgroundOne"/>
-                                <color key="sectionIndexBackgroundColor" name="backgroundOne"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" id="Seg-SU-evL">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" backgroundImage="backgroundPersonal" id="Seg-SU-evL">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="barTintColor" name="backgroundOne"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <connections>
                                         <outlet property="delegate" destination="1vw-bk-mUS" id="3J5-AS-8GS"/>
@@ -247,7 +248,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FrameExercicios" translatesAutoresizingMaskIntoConstraints="NO" id="TCX-9J-uY2">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="botao" translatesAutoresizingMaskIntoConstraints="NO" id="TCX-9J-uY2">
                                                     <rect key="frame" x="5" y="4" width="404" height="62"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBM-yi-fvr">
@@ -258,6 +259,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="TCX-9J-uY2" secondAttribute="trailing" constant="5" id="AZC-jk-Sc1"/>
                                                 <constraint firstAttribute="bottom" secondItem="TCX-9J-uY2" secondAttribute="bottom" constant="4" id="OYt-ZK-fa3"/>
@@ -265,7 +267,7 @@
                                                 <constraint firstItem="TCX-9J-uY2" firstAttribute="leading" secondItem="utu-wA-3oP" secondAttribute="leading" constant="5" id="iPH-jC-8HC"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="backgroundOne"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="ExerciciosEspView" destination="utu-wA-3oP" id="cBH-0c-FNu"/>
                                             <outlet property="nameLabel" destination="wBM-yi-fvr" id="mby-Tq-P89"/>
@@ -275,7 +277,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="e4z-Ul-LyN"/>
-                        <color key="backgroundColor" name="backgroundOne"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="bvX-h5-luO" secondAttribute="bottom" id="Sn6-sc-3zF"/>
                             <constraint firstItem="bvX-h5-luO" firstAttribute="top" secondItem="e4z-Ul-LyN" secondAttribute="top" constant="15" id="c6n-yn-I9B"/>
@@ -399,7 +401,7 @@
                         <viewLayoutGuide key="safeArea" id="GZB-B5-r9P"/>
                         <color key="backgroundColor" name="backgroundOne"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Favoritos" image="heart" catalog="system" id="D98-UX-pxm"/>
+                    <tabBarItem key="tabBarItem" title="Favoritos" image="heart" catalog="system" selectedImage="heart.fill" id="D98-UX-pxm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Oe-w0-CRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -452,7 +454,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bcu-Bj-SO6"/>
-                        <color key="backgroundColor" name="backgroundOne"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="h0c-6v-muh" firstAttribute="top" secondItem="bcu-Bj-SO6" secondAttribute="top" constant="80" id="9TX-MM-II8"/>
                             <constraint firstItem="h0c-6v-muh" firstAttribute="leading" secondItem="bcu-Bj-SO6" secondAttribute="leading" constant="46" id="BFA-Lv-uPJ"/>
@@ -466,7 +468,7 @@
                             <constraint firstItem="bcu-Bj-SO6" firstAttribute="trailing" secondItem="h0n-al-fEw" secondAttribute="trailing" constant="39" id="wE0-cO-Bt6"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cronômetro" image="stopwatch" catalog="system" id="njW-3x-dzc"/>
+                    <tabBarItem key="tabBarItem" title="Cronômetro" image="stopwatch" catalog="system" selectedImage="stopwatch.fill" id="njW-3x-dzc"/>
                     <connections>
                         <outlet property="resetButton" destination="96F-TG-sMW" id="7T8-hO-9Yb"/>
                         <outlet property="startButton" destination="h0n-al-fEw" id="4ca-5L-ueB"/>
@@ -481,7 +483,7 @@
         <scene sceneID="2hP-5T-v6t">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DaE-Hh-tR4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="aUZ-uO-ZrC"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" selectedImage="homekit" id="aUZ-uO-ZrC"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="GED-Jt-8hc">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -498,11 +500,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="FrameExercicios" width="350" height="58.666667938232422"/>
         <image name="TexturaCronometro" width="390" height="415"/>
+        <image name="backgroundPersonal" width="391" height="844"/>
+        <image name="botao" width="350" height="59"/>
         <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="stopwatch" catalog="system" width="121" height="128"/>
+        <image name="stopwatch.fill" catalog="system" width="121" height="128"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

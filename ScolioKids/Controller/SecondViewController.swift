@@ -13,6 +13,14 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var SelectionButton: UIBarButtonItem!
     @IBOutlet weak var ExercicioView: UITableView!
     
+    var imageView: UIImageView = {
+            let imageView = UIImageView(frame: .zero)
+            imageView.image = UIImage(named: "backgroundPersonal")
+            imageView.contentMode = .scaleToFill
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+            return imageView
+        }()
+    
     //Search
 
     var searchExercicies = [String]()
@@ -29,7 +37,17 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         title = "Exercício"
+        
+        view.insertSubview(imageView, at: 0)
+                NSLayoutConstraint.activate([
+                    imageView.topAnchor.constraint(equalTo: view.topAnchor),
+                    imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                    imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                    imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+                ])
+        
         ExercicioView.delegate = self
         ExercicioView.dataSource = self
         
