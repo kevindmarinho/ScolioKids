@@ -128,9 +128,7 @@
                                                     <constraint firstAttribute="height" constant="114" id="FdZ-nQ-2Ai"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="O que é escoliose ?">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
-                                                </buttonConfiguration>
+                                                <buttonConfiguration key="configuration" style="filled"/>
                                                 <connections>
                                                     <action selector="onClickSecondButtonHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kD0-C8-BjD"/>
                                                     <segue destination="GGb-Y0-ku2" kind="show" id="4fh-YR-mGS"/>
@@ -142,14 +140,22 @@
                                                     <constraint firstAttribute="height" constant="114" id="MMj-nY-8Jt"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Dicas para crianças">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
-                                                </buttonConfiguration>
+                                                <buttonConfiguration key="configuration" style="filled"/>
                                                 <connections>
                                                     <action selector="onClickThirdButtonHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0DB-M3-OAi"/>
                                                     <segue destination="uc2-vX-Dv6" kind="show" id="1Xl-Lx-PiP"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dicas para tratar crianças" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kT9-s0-Zpr">
+                                                <rect key="frame" x="36" y="452" width="238" height="63"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="238" id="70l-uu-ONv"/>
+                                                    <constraint firstAttribute="height" constant="63" id="yGt-QR-g0L"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ma-1V-ICD">
                                                 <rect key="frame" x="20" y="551" width="374" height="114"/>
                                                 <constraints>
@@ -157,14 +163,32 @@
                                                     <constraint firstAttribute="height" constant="114" id="mxa-vD-Fza"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Hábitos para um coluna saúdavel">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
-                                                </buttonConfiguration>
+                                                <buttonConfiguration key="configuration" style="filled"/>
                                                 <connections>
                                                     <action selector="onClickFourthButtonHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MG3-Xj-Ph2"/>
                                                     <segue destination="ppi-gr-oSJ" kind="show" id="cwV-Yc-05G"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como ter uma coluna saudável ?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdL-gq-A6e">
+                                                <rect key="frame" x="36" y="577" width="238" height="63"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="238" id="1BE-5D-dC1"/>
+                                                    <constraint firstAttribute="height" constant="63" id="wbt-qU-a8c"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O que é escoliose ?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHr-Mt-LmJ">
+                                                <rect key="frame" x="36" y="328" width="238" height="63"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="63" id="FPz-32-chs"/>
+                                                    <constraint firstAttribute="width" constant="238" id="ftP-J9-RDh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -173,18 +197,28 @@
                                             <constraint firstItem="pkc-hU-gyl" firstAttribute="top" secondItem="Wub-6M-5cz" secondAttribute="top" constant="44" id="8As-Ls-deJ"/>
                                             <constraint firstAttribute="height" constant="720" id="GuD-MV-syR"/>
                                             <constraint firstItem="vhE-me-2Bm" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="Jv9-PD-J0x"/>
+                                            <constraint firstItem="kT9-s0-Zpr" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="36" id="Ly4-eP-ZLC"/>
                                             <constraint firstItem="hvf-bu-W2b" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="Q5b-Tc-2cY"/>
+                                            <constraint firstAttribute="trailing" secondItem="kT9-s0-Zpr" secondAttribute="trailing" constant="140" id="R45-vZ-5Iv"/>
                                             <constraint firstItem="WCT-U4-s7d" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="RcX-Ru-og4"/>
                                             <constraint firstItem="pkc-hU-gyl" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="UDm-WL-J7N"/>
                                             <constraint firstItem="vhE-me-2Bm" firstAttribute="top" secondItem="WCT-U4-s7d" secondAttribute="bottom" constant="20" id="UgG-pd-e3P"/>
                                             <constraint firstAttribute="trailing" secondItem="6Ma-1V-ICD" secondAttribute="trailing" constant="20" id="VRs-tq-V4f"/>
                                             <constraint firstItem="WCT-U4-s7d" firstAttribute="top" secondItem="pkc-hU-gyl" secondAttribute="bottom" constant="20" id="Von-1Q-fRJ"/>
                                             <constraint firstAttribute="trailing" secondItem="thg-Cb-wrV" secondAttribute="trailing" constant="20" id="WqD-yt-ZBt"/>
+                                            <constraint firstItem="thg-Cb-wrV" firstAttribute="top" secondItem="wHr-Mt-LmJ" secondAttribute="bottom" constant="35.5" id="WqF-Jg-uIo"/>
+                                            <constraint firstAttribute="bottom" secondItem="GdL-gq-A6e" secondAttribute="bottom" constant="80" id="ZBj-ym-d11"/>
                                             <constraint firstItem="thg-Cb-wrV" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="ZbR-wV-X5T"/>
+                                            <constraint firstItem="wHr-Mt-LmJ" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="36" id="eh2-vi-Xyi"/>
+                                            <constraint firstItem="6Ma-1V-ICD" firstAttribute="top" secondItem="kT9-s0-Zpr" secondAttribute="bottom" constant="36" id="eyv-tN-ulv"/>
                                             <constraint firstItem="6Ma-1V-ICD" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="iur-PZ-w4r"/>
+                                            <constraint firstAttribute="trailing" secondItem="wHr-Mt-LmJ" secondAttribute="trailing" constant="140" id="nhz-jR-Fd6"/>
+                                            <constraint firstItem="GdL-gq-A6e" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="36" id="pQj-II-TIO"/>
+                                            <constraint firstAttribute="trailing" secondItem="GdL-gq-A6e" secondAttribute="trailing" constant="140" id="rNh-dF-rqU"/>
                                             <constraint firstAttribute="trailing" secondItem="WCT-U4-s7d" secondAttribute="trailing" constant="20" id="tMd-S8-vce"/>
                                             <constraint firstAttribute="trailing" secondItem="hvf-bu-W2b" secondAttribute="trailing" constant="20" id="wDp-5t-abC"/>
                                             <constraint firstItem="6Ma-1V-ICD" firstAttribute="top" secondItem="thg-Cb-wrV" secondAttribute="bottom" constant="10.6" id="wrh-ce-aME"/>
+                                            <constraint firstItem="GdL-gq-A6e" firstAttribute="top" secondItem="thg-Cb-wrV" secondAttribute="bottom" constant="36.5" id="x6O-Pt-gun"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -216,7 +250,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1504" y="1323"/>
+            <point key="canvasLocation" x="-1504.3478260869567" y="1322.5446428571429"/>
         </scene>
         <!--SecondViewController-->
         <scene sceneID="fSi-lp-jd2">
@@ -313,10 +347,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aMa-Wy-TW6">
-                                <rect key="frame" x="0.0" y="98" width="414" height="798"/>
-                                <color key="backgroundColor" name="backgroundOne"/>
-                                <color key="sectionIndexBackgroundColor" name="backgroundOne"/>
-                                <color key="sectionIndexTrackingBackgroundColor" name="backgroundOne"/>
+                                <rect key="frame" x="0.0" y="59" width="414" height="837"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="newcell" rowHeight="310" id="Qhg-G7-a2J" customClass="CustomNewCell" customModule="ScolioKids" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="310"/>
@@ -344,7 +378,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" name="backgroundOne"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="D9b-9x-PIl" secondAttribute="trailing" constant="32" id="A4g-oB-exr"/>
                                                         <constraint firstItem="D9b-9x-PIl" firstAttribute="top" secondItem="050-og-gbR" secondAttribute="bottom" constant="8" id="gwO-PB-Twe"/>
@@ -356,7 +390,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" name="backgroundOne"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="lov-l4-ktO" firstAttribute="leading" secondItem="KLx-7K-eKl" secondAttribute="leading" id="0Ie-aP-YSc"/>
                                                 <constraint firstItem="lov-l4-ktO" firstAttribute="top" secondItem="KLx-7K-eKl" secondAttribute="top" id="7n4-JN-gF3"/>
@@ -364,7 +398,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="lov-l4-ktO" secondAttribute="bottom" id="ePR-qp-tCX"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="backgroundOne"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="imageCell" destination="050-og-gbR" id="iiR-1d-e84"/>
                                             <outlet property="textCell" destination="D9b-9x-PIl" id="Udu-u3-PAC"/>
@@ -375,12 +409,12 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="L6D-lS-i55"/>
-                        <color key="backgroundColor" name="backgroundOne"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="aMa-Wy-TW6" secondAttribute="bottom" id="9Xa-03-DWS"/>
                             <constraint firstItem="aMa-Wy-TW6" firstAttribute="trailing" secondItem="L6D-lS-i55" secondAttribute="trailing" id="oXE-sE-cty"/>
                             <constraint firstItem="aMa-Wy-TW6" firstAttribute="leading" secondItem="L6D-lS-i55" secondAttribute="leading" id="uDi-s8-BT8"/>
-                            <constraint firstItem="aMa-Wy-TW6" firstAttribute="top" secondItem="L6D-lS-i55" secondAttribute="top" constant="54" id="vyT-Gc-jaw"/>
+                            <constraint firstItem="aMa-Wy-TW6" firstAttribute="top" secondItem="L6D-lS-i55" secondAttribute="top" constant="15" id="un3-oW-abL"/>
                         </constraints>
                     </view>
                     <connections>
@@ -483,7 +517,7 @@
         <scene sceneID="2hP-5T-v6t">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DaE-Hh-tR4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" selectedImage="homekit" id="aUZ-uO-ZrC"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" selectedImage="home 2" id="aUZ-uO-ZrC"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="GED-Jt-8hc">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -502,9 +536,10 @@
     <resources>
         <image name="TexturaCronometro" width="390" height="415"/>
         <image name="backgroundPersonal" width="391" height="844"/>
-        <image name="botao" width="350" height="59"/>
+        <image name="botao" width="116.66666412353516" height="19.666666030883789"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="home 2" width="29" height="25"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="stopwatch" catalog="system" width="121" height="128"/>
         <image name="stopwatch.fill" catalog="system" width="121" height="128"/>
