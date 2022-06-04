@@ -26,6 +26,9 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Instruções"
+        
         InstructionView.delegate = self
         InstructionView.dataSource = self
     }
@@ -44,5 +47,8 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource{
             newcell.textCell.text = arrayEx[indexPath.row].textoCelula
         }
         return newcell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 210
     }
 }
