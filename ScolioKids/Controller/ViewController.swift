@@ -13,10 +13,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var thirdButtonHome: UIButton!
     @IBOutlet weak var fourthButtonHome: UIButton!
     
+    var imageView: UIImageView = {
+        let imageView = UIImageView(frame: .zero)
+        imageView.image = UIImage(named: "backgroundPersonal")
+        imageView.contentMode = .scaleToFill
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+       return imageView
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
                title = "Home"
+        
+        view.insertSubview(imageView, at: 0)
+        NSLayoutConstraint.activate([
+            imageView.topAnchor.constraint(equalTo: view.topAnchor),
+            imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
         
                firstButtonHome.layer.cornerRadius = 20
                firstButtonHome.layer.masksToBounds = true
