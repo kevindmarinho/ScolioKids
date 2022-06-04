@@ -20,7 +20,7 @@ class StopwatchViewController: UIViewController {
     
     var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
-        imageView.image = UIImage(named: "backgroundPersonal")
+        imageView.image = UIImage(named: "backgroundOficial")
         imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView

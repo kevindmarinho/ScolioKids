@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
-        imageView.image = UIImage(named: "backgroundPersonal")
+        imageView.image = UIImage(named: "backgroundOficial")
         imageView.contentMode = .scaleToFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
        return imageView
@@ -40,15 +40,15 @@ class ViewController: UIViewController {
                
                secondButtonHome.layer.cornerRadius = 20
                secondButtonHome.layer.masksToBounds = true
-               secondButtonHome.contentHorizontalAlignment = .left
+             //  secondButtonHome.contentHorizontalAlignment = .left
                
                thirdButtonHome.layer.cornerRadius = 20
                thirdButtonHome.layer.masksToBounds = true
-               thirdButtonHome.contentHorizontalAlignment = .left
+              // thirdButtonHome.contentHorizontalAlignment = .left
                
                fourthButtonHome.layer.cornerRadius = 20
                fourthButtonHome.layer.masksToBounds = true
-               fourthButtonHome.contentHorizontalAlignment = .left
+               //fourthButtonHome.contentHorizontalAlignment = .left
     }
     
 //    override func viewWillAppear(_ animated: Bool) {

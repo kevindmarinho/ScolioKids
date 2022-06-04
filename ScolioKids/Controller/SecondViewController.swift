@@ -15,7 +15,7 @@ class SecondViewController: UIViewController {
     
     var imageView: UIImageView = {
             let imageView = UIImageView(frame: .zero)
-            imageView.image = UIImage(named: "backgroundPersonal")
+            imageView.image = UIImage(named: "backgroundOficial")
             imageView.contentMode = .scaleToFill
             imageView.translatesAutoresizingMaskIntoConstraints = false
             return imageView

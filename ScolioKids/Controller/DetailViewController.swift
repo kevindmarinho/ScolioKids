@@ -24,11 +24,28 @@ class DetailViewController: UIViewController {
         ],
     ]
     
+    var imageView: UIImageView = {
+            let imageView = UIImageView(frame: .zero)
+            imageView.image = UIImage(named: "backgroundOficial")
+            imageView.contentMode = .scaleToFill
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+            return imageView
+        }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Instruções"
         
+        view.insertSubview(imageView, at: 0)
+                NSLayoutConstraint.activate([
+                    imageView.topAnchor.constraint(equalTo: view.topAnchor),
+                    imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                    imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                    imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+                ])
+
+    
         InstructionView.delegate = self
         InstructionView.dataSource = self
     }
