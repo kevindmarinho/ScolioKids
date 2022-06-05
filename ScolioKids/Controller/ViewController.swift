@@ -37,6 +37,7 @@ class ViewController: UIViewController {
                firstButtonHome.layer.cornerRadius = 20
                firstButtonHome.layer.masksToBounds = true
                firstButtonHome.contentHorizontalAlignment = .left
+               firstButtonHome.setImage(UIImage(named: "Group 58"), for: .normal)
                
                secondButtonHome.layer.cornerRadius = 20
                secondButtonHome.layer.masksToBounds = true
