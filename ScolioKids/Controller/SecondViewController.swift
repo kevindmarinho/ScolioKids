@@ -29,8 +29,8 @@ class SecondViewController: UIViewController {
     // TableCell
 
     let exercises = [
-        "Lombar",
-        "Cervical"
+        "Aviãozinho",
+        "Prancha Lateral"
     ]
  
     var isCellSelected: Bool = false
@@ -155,6 +155,12 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         SomeCellSelected = true
         let passa = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
+        if searching{
+            passa?.title = searchExercicies[indexPath.row]
+        }
+        else{
+            passa?.title = exercises[indexPath.row]
+        }
         if !isCellSelected {
             
             isCellSelected = false
