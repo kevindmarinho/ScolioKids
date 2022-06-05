@@ -96,51 +96,46 @@
                                                     <constraint firstAttribute="width" constant="167" id="jcL-Sj-1K7"/>
                                                     <constraint firstAttribute="height" constant="42" id="ntY-ll-jEA"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCT-U4-s7d">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCT-U4-s7d">
                                                 <rect key="frame" x="20" y="106" width="374" height="114"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="374" id="eIZ-Jp-Dut"/>
-                                                    <constraint firstAttribute="height" constant="114" id="gMU-X2-Ht5"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Exercício">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
-                                                </buttonConfiguration>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" backgroundImage="Group 61"/>
                                                 <connections>
                                                     <action selector="onClickfirstButtonHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IDH-Qc-BRG"/>
                                                     <segue destination="1vw-bk-mUS" kind="show" id="bHw-85-8Ih"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informações" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhE-me-2Bm">
-                                                <rect key="frame" x="20" y="240" width="203.5" height="42"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                <rect key="frame" x="20" y="246" width="175.5" height="36"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvf-bu-W2b">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvf-bu-W2b">
                                                 <rect key="frame" x="20" y="302" width="374" height="114"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="374" id="7Y9-D5-ofe"/>
                                                     <constraint firstAttribute="height" constant="114" id="FdZ-nQ-2Ai"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" backgroundImage="Group 58"/>
                                                 <connections>
                                                     <action selector="onClickSecondButtonHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kD0-C8-BjD"/>
                                                     <segue destination="GGb-Y0-ku2" kind="show" id="4fh-YR-mGS"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thg-Cb-wrV">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thg-Cb-wrV">
                                                 <rect key="frame" x="20" y="426.5" width="374" height="114"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="114" id="MMj-nY-8Jt"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" backgroundImage="Group 59"/>
                                                 <connections>
                                                     <action selector="onClickThirdButtonHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0DB-M3-OAi"/>
                                                     <segue destination="uc2-vX-Dv6" kind="show" id="1Xl-Lx-PiP"/>
@@ -156,14 +151,14 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ma-1V-ICD">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ma-1V-ICD">
                                                 <rect key="frame" x="20" y="551" width="374" height="114"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="374" id="1w9-EX-uvX"/>
                                                     <constraint firstAttribute="height" constant="114" id="mxa-vD-Fza"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" backgroundImage="Group 60"/>
                                                 <connections>
                                                     <action selector="onClickFourthButtonHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MG3-Xj-Ph2"/>
                                                     <segue destination="ppi-gr-oSJ" kind="show" id="cwV-Yc-05G"/>
@@ -189,22 +184,32 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercícios" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9y7-5O-v1O">
+                                                <rect key="frame" x="36" y="138" width="238" height="63"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="63" id="0WE-uD-pqr"/>
+                                                    <constraint firstAttribute="width" constant="238" id="Aze-Ry-hg4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="WCT-U4-s7d" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="0sA-ZT-nQi"/>
                                             <constraint firstItem="hvf-bu-W2b" firstAttribute="top" secondItem="vhE-me-2Bm" secondAttribute="bottom" constant="20" id="2hr-hv-3jU"/>
                                             <constraint firstItem="thg-Cb-wrV" firstAttribute="top" secondItem="hvf-bu-W2b" secondAttribute="bottom" constant="10.6" id="6JX-oa-2kx"/>
+                                            <constraint firstItem="WCT-U4-s7d" firstAttribute="top" secondItem="pkc-hU-gyl" secondAttribute="bottom" constant="20" id="7tJ-8X-Fiw"/>
                                             <constraint firstItem="pkc-hU-gyl" firstAttribute="top" secondItem="Wub-6M-5cz" secondAttribute="top" constant="44" id="8As-Ls-deJ"/>
                                             <constraint firstAttribute="height" constant="720" id="GuD-MV-syR"/>
+                                            <constraint firstAttribute="trailing" secondItem="WCT-U4-s7d" secondAttribute="trailing" constant="20" id="HLu-u0-5nt"/>
                                             <constraint firstItem="vhE-me-2Bm" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="Jv9-PD-J0x"/>
                                             <constraint firstItem="kT9-s0-Zpr" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="36" id="Ly4-eP-ZLC"/>
                                             <constraint firstItem="hvf-bu-W2b" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="Q5b-Tc-2cY"/>
                                             <constraint firstAttribute="trailing" secondItem="kT9-s0-Zpr" secondAttribute="trailing" constant="140" id="R45-vZ-5Iv"/>
-                                            <constraint firstItem="WCT-U4-s7d" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="RcX-Ru-og4"/>
                                             <constraint firstItem="pkc-hU-gyl" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="UDm-WL-J7N"/>
-                                            <constraint firstItem="vhE-me-2Bm" firstAttribute="top" secondItem="WCT-U4-s7d" secondAttribute="bottom" constant="20" id="UgG-pd-e3P"/>
                                             <constraint firstAttribute="trailing" secondItem="6Ma-1V-ICD" secondAttribute="trailing" constant="20" id="VRs-tq-V4f"/>
-                                            <constraint firstItem="WCT-U4-s7d" firstAttribute="top" secondItem="pkc-hU-gyl" secondAttribute="bottom" constant="20" id="Von-1Q-fRJ"/>
                                             <constraint firstAttribute="trailing" secondItem="thg-Cb-wrV" secondAttribute="trailing" constant="20" id="WqD-yt-ZBt"/>
                                             <constraint firstItem="thg-Cb-wrV" firstAttribute="top" secondItem="wHr-Mt-LmJ" secondAttribute="bottom" constant="35.5" id="WqF-Jg-uIo"/>
                                             <constraint firstAttribute="bottom" secondItem="GdL-gq-A6e" secondAttribute="bottom" constant="80" id="ZBj-ym-d11"/>
@@ -213,9 +218,10 @@
                                             <constraint firstItem="6Ma-1V-ICD" firstAttribute="top" secondItem="kT9-s0-Zpr" secondAttribute="bottom" constant="36" id="eyv-tN-ulv"/>
                                             <constraint firstItem="6Ma-1V-ICD" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="iur-PZ-w4r"/>
                                             <constraint firstAttribute="trailing" secondItem="wHr-Mt-LmJ" secondAttribute="trailing" constant="140" id="nhz-jR-Fd6"/>
+                                            <constraint firstItem="9y7-5O-v1O" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="36" id="pA0-pj-6Uh"/>
                                             <constraint firstItem="GdL-gq-A6e" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="36" id="pQj-II-TIO"/>
                                             <constraint firstAttribute="trailing" secondItem="GdL-gq-A6e" secondAttribute="trailing" constant="140" id="rNh-dF-rqU"/>
-                                            <constraint firstAttribute="trailing" secondItem="WCT-U4-s7d" secondAttribute="trailing" constant="20" id="tMd-S8-vce"/>
+                                            <constraint firstItem="vhE-me-2Bm" firstAttribute="top" secondItem="9y7-5O-v1O" secondAttribute="bottom" constant="45" id="vRe-sp-GE0"/>
                                             <constraint firstAttribute="trailing" secondItem="hvf-bu-W2b" secondAttribute="trailing" constant="20" id="wDp-5t-abC"/>
                                             <constraint firstItem="6Ma-1V-ICD" firstAttribute="top" secondItem="thg-Cb-wrV" secondAttribute="bottom" constant="10.6" id="wrh-ce-aME"/>
                                             <constraint firstItem="GdL-gq-A6e" firstAttribute="top" secondItem="thg-Cb-wrV" secondAttribute="bottom" constant="36.5" id="x6O-Pt-gun"/>
@@ -534,6 +540,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Group 58" width="350" height="114.66666412353516"/>
+        <image name="Group 59" width="1050" height="344"/>
+        <image name="Group 60" width="1050" height="346"/>
+        <image name="Group 61" width="350" height="114.66666412353516"/>
         <image name="TexturaCronometro" width="390" height="415"/>
         <image name="backgroundPersonal" width="391" height="844"/>
         <image name="botao" width="116.66666412353516" height="19.666666030883789"/>
