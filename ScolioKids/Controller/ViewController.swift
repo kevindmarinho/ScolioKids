@@ -36,8 +36,11 @@ class ViewController: UIViewController {
         
                firstButtonHome.layer.cornerRadius = 20
                firstButtonHome.layer.masksToBounds = true
-               firstButtonHome.contentHorizontalAlignment = .left
-               firstButtonHome.setImage(UIImage(named: "Group 58"), for: .normal)
+               
+//               firstButtonHome.setImage(UIImage(named: "Group 58"), for: .normal)
+//               firstButtonHome.contentHorizontalAlignment = .fill
+//               firstButtonHome.contentVerticalAlignment = .fill
+            
                
                secondButtonHome.layer.cornerRadius = 20
                secondButtonHome.layer.masksToBounds = true
@@ -50,6 +53,8 @@ class ViewController: UIViewController {
                fourthButtonHome.layer.cornerRadius = 20
                fourthButtonHome.layer.masksToBounds = true
                //fourthButtonHome.contentHorizontalAlignment = .left
+        
+    
     }
     
 //    override func viewWillAppear(_ animated: Bool) {
