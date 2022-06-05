@@ -25,20 +25,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
                title = "Home"
-        
         view.insertSubview(imageView, at: 0)
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: view.topAnchor),
             imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
         
-               firstButtonHome.layer.cornerRadius = 20
-               firstButtonHome.layer.masksToBounds = true
-               firstButtonHome.contentHorizontalAlignment = .left
-               firstButtonHome.setImage(UIImage(named: "Group 58"), for: .normal)
-               
+//               firstButtonHome.layer.cornerRadius = 20
+//               firstButtonHome.layer.masksToBounds = true
+////        firstButtonHome.contentHorizontalAlignment = .leading
+//               firstButtonHome.setImage(UIImage(named: "Group 58"), for: .normal)
+//               firstButtonHome.contentHorizontalAlignment = .fill
+//               firstButtonHome.contentVerticalAlignment = .fill
+//        firstButtonHome.automaticallyUpdatesConfiguration = true
+//
                secondButtonHome.layer.cornerRadius = 20
                secondButtonHome.layer.masksToBounds = true
              //  secondButtonHome.contentHorizontalAlignment = .left

@@ -100,16 +100,17 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCT-U4-s7d">
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCT-U4-s7d">
                                                 <rect key="frame" x="20" y="106" width="374" height="114"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="374" id="eIZ-Jp-Dut"/>
                                                     <constraint firstAttribute="height" constant="114" id="gMU-X2-Ht5"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Exercício">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
-                                                </buttonConfiguration>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Exercício" backgroundImage="Group 58">
+                                                    <color key="titleColor" name="backgroundOne"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="onClickfirstButtonHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IDH-Qc-BRG"/>
                                                     <segue destination="1vw-bk-mUS" kind="show" id="bHw-85-8Ih"/>
@@ -189,6 +190,11 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hBU-7l-ZjE">
+                                                <rect key="frame" x="36" y="-46" width="335" height="51"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -240,7 +246,9 @@
                             <constraint firstItem="8ud-0R-eBs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aLV-5B-anv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="YNp-zz-W2p"/>
+                    <navigationItem key="navigationItem" id="YNp-zz-W2p">
+                        <nil key="title"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="firstButtonHome" destination="WCT-U4-s7d" id="gzh-Ly-dEr"/>
                         <outlet property="fourthButtonHome" destination="6Ma-1V-ICD" id="Vsa-fx-R18"/>
@@ -285,11 +293,11 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="botao" translatesAutoresizingMaskIntoConstraints="NO" id="TCX-9J-uY2">
                                                     <rect key="frame" x="5" y="4" width="404" height="62"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBM-yi-fvr">
-                                                    <rect key="frame" x="35" y="5" width="71" height="61"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBM-yi-fvr">
+                                                    <rect key="frame" x="35" y="5" width="318" height="61"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                    <color key="textColor" name="backgroundOne"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -336,7 +344,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qd6-Eb-fcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-591" y="1323"/>
+            <point key="canvasLocation" x="-591.304347826087" y="1322.5446428571429"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="saW-uR-npe">
@@ -534,6 +542,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Group 58" width="1050" height="344"/>
         <image name="TexturaCronometro" width="390" height="415"/>
         <image name="backgroundPersonal" width="391" height="844"/>
         <image name="botao" width="116.66666412353516" height="19.666666030883789"/>
@@ -551,6 +560,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
