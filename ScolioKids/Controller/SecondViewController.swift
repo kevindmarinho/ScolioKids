@@ -34,6 +34,7 @@ class SecondViewController: UIViewController {
     ]
  
     var isCellSelected: Bool = false
+    var SomeCellSelected: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,7 +80,7 @@ class SecondViewController: UIViewController {
             self.SelectionButton.title = "Selecionar"
             self.present(alert, animated: true)
     })
-               
+            if SomeCellSelected {
         let sendToStopwatch = UIAlertAction(title: "Send to Stopwatch", style: .default)
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
                
@@ -88,21 +89,28 @@ class SecondViewController: UIViewController {
         actionSheet.addAction(cancelAction)
                
         self.present(actionSheet, animated: true, completion: nil)
+            }
         }
     }
 }
 
 extension SecondViewController: UISearchBarDelegate{
+    
+    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
+        searchBar.setShowsCancelButton(true, animated: true)
+        return true
+    }
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         searchExercicies = exercises.filter({$0.lowercased().prefix(searchText.count) == searchText.lowercased()})
         searching = true
         ExercicioView.reloadData()
     }
     
-
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searching = false
         searchBar.text = ""
+        searchBar.resignFirstResponder()
         ExercicioView.reloadData()
     }
 }
@@ -135,10 +143,17 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
         } else {
             cells.nameLabel.text = exercises[indexPath.row]
         }
+        if cells.isSelected {
+            SomeCellSelected = true
+        } else {
+            SomeCellSelected = false
+        }
+        
         return cells
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        SomeCellSelected = true
         let passa = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
         if !isCellSelected {
             

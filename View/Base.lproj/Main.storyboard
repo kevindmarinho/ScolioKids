@@ -264,7 +264,7 @@
                                 <rect key="frame" x="0.0" y="103" width="414" height="793"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" backgroundImage="backgroundPersonal" id="Seg-SU-evL">
+                                <searchBar key="tableHeaderView" contentMode="redraw" backgroundImage="backgroundPersonal" id="Seg-SU-evL">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -539,7 +539,7 @@
         <image name="botao" width="116.66666412353516" height="19.666666030883789"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
-        <image name="home 2" width="29" height="25"/>
+        <image name="home 2" width="128" height="128"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="stopwatch" catalog="system" width="121" height="128"/>
         <image name="stopwatch.fill" catalog="system" width="121" height="128"/>
