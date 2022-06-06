@@ -213,15 +213,15 @@
         <!--Dicas-->
         <scene sceneID="dRW-H4-Tpt">
             <objects>
-                <viewController id="qAH-hE-fBd" userLabel="Dicas" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JKF-uE-6OH">
+                <viewController id="qAH-hE-fBd" userLabel="Dicas" customClass="DicasScene" customModule="ScolioKids" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="JKF-uE-6OH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deg-PU-u7O">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="deg-PU-u7O">
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6a-1N-iEk">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u6a-1N-iEk">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -257,15 +257,15 @@
         <!--ColunaSaudavel-->
         <scene sceneID="dYU-Th-zcv">
             <objects>
-                <viewController id="j8e-Ve-al5" userLabel="ColunaSaudavel" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1nQ-0M-EZs">
+                <viewController id="j8e-Ve-al5" userLabel="ColunaSaudavel" customClass="ColunaSaudavelScene" customModule="ScolioKids" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="1nQ-0M-EZs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jiO-E1-1lp">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jiO-E1-1lp">
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pTf-l4-MkR" userLabel="Content View">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pTf-l4-MkR" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="406" height="1500"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -301,15 +301,15 @@
         <!--Escolio-->
         <scene sceneID="bDW-FI-nG6">
             <objects>
-                <viewController id="hby-jl-HNh" userLabel="Escolio" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="59B-9U-Psg">
+                <viewController id="hby-jl-HNh" userLabel="Escolio" customClass="ScolioScene" customModule="ScolioKids" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="59B-9U-Psg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUM-7w-VYm">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oUM-7w-VYm">
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHQ-Ry-C8t" userLabel="Content View">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zHQ-Ry-C8t" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>

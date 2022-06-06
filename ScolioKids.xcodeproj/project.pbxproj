@@ -17,6 +17,7 @@
 		866AA4132847DA5900ED37A1 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866AA4122847DA5900ED37A1 /* StopwatchViewController.swift */; };
 		9F077F862846B48200BBF49F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F077F852846B48200BBF49F /* SecondViewController.swift */; };
 		9F5AD3A928494BE20072624A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5AD3A828494BE20072624A /* CustomCell.swift */; };
+		9F9603C2284D91DE00886C22 /* InformationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9603C1284D91DE00886C22 /* InformationsViewController.swift */; };
 		9FA2A9B6284A7A9900CF6C53 /* CustomNewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA2A9B5284A7A9900CF6C53 /* CustomNewCell.swift */; };
 		9FA2A9B8284A803F00CF6C53 /* dataInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA2A9B7284A803F00CF6C53 /* dataInstruction.swift */; };
 		9FE4EEF02847F0780048B827 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4EEEF2847F0780048B827 /* DetailViewController.swift */; };
@@ -54,6 +55,7 @@
 		866AA4122847DA5900ED37A1 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
 		9F077F852846B48200BBF49F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9F5AD3A828494BE20072624A /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		9F9603C1284D91DE00886C22 /* InformationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationsViewController.swift; sourceTree = "<group>"; };
 		9FA2A9B5284A7A9900CF6C53 /* CustomNewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNewCell.swift; sourceTree = "<group>"; };
 		9FA2A9B7284A803F00CF6C53 /* dataInstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = dataInstruction.swift; path = ScolioKids/Controller/dataInstruction.swift; sourceTree = SOURCE_ROOT; };
 		9FE4EEEF2847F0780048B827 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				9FE4EEEF2847F0780048B827 /* DetailViewController.swift */,
 				9FA2A9B5284A7A9900CF6C53 /* CustomNewCell.swift */,
 				866AA4122847DA5900ED37A1 /* StopwatchViewController.swift */,
+				9F9603C1284D91DE00886C22 /* InformationsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				9FA2A9B6284A7A9900CF6C53 /* CustomNewCell.swift in Sources */,
 				9F5AD3A928494BE20072624A /* CustomCell.swift in Sources */,
 				9FE4EEF02847F0780048B827 /* DetailViewController.swift in Sources */,
+				9F9603C2284D91DE00886C22 /* InformationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
