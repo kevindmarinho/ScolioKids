@@ -18,24 +18,24 @@ class StopwatchViewController: UIViewController {
     var count: Int = 0
     var timerCount: Bool = false
     
-    var imageView: UIImageView = {
-        let imageView = UIImageView(frame: .zero)
-        imageView.image = UIImage(named: "backgroundOficial")
-        imageView.contentMode = .scaleAspectFill
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        return imageView
-    }()
+//    var imageView: UIImageView = {
+//        let imageView = UIImageView(frame: .zero)
+//        imageView.image = UIImage(named: "backgroundOficial")
+//        imageView.contentMode = .scaleAspectFill
+//        imageView.translatesAutoresizingMaskIntoConstraints = false
+//        return imageView
+//    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.insertSubview(imageView, at: 0)
-                    NSLayoutConstraint.activate([
-                    imageView.topAnchor.constraint(equalTo: view.topAnchor),
-                    imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-                    imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-                    imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
+//        view.insertSubview(imageView, at: 0)
+//                    NSLayoutConstraint.activate([
+//                    imageView.topAnchor.constraint(equalTo: view.topAnchor),
+//                    imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+//                    imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+//                    imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+//        ])
         
         
         startButton.setTitle("Iniciar", for: .normal)
