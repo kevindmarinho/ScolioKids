@@ -263,13 +263,131 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jiO-E1-1lp">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pTf-l4-MkR" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="406" height="1500"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como ter uma coluna saúdavel ?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chh-c5-Xgv">
+                                                <rect key="frame" x="20" y="0.0" width="366" height="95.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXW-KR-9nX">
+                                                <rect key="frame" x="20" y="125.5" width="366" height="86"/>
+                                                <string key="text">Alguns hábitos podem ser adotados para manter uma coluna saudável, evitar problemas futuros ou até ajudar na recuperação de um já existente.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuide da sua postura" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g52-xH-m5a">
+                                                <rect key="frame" x="20" y="241.5" width="366" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaY-NZ-phd">
+                                                <rect key="frame" x="20" y="305" width="366" height="86"/>
+                                                <string key="text">A postura inadequada afeta diretamente a saúde da coluna vertebral. É preciso manter uma boa postura durante o dia, sem forçar a coluna ou deixá-la muito curvada.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alongue-se" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZX-tF-uup">
+                                                <rect key="frame" x="20" y="421" width="366" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ull-AK-YFy">
+                                                <rect key="frame" x="20" y="484.5" width="366" height="129"/>
+                                                <string key="text">Alongamentos são essenciais para a coluna e precisam ser rotineiros. Esse hábito ajuda a evitar atrofia e contraturas musculares.
+Essa dica é importante principalmente para pessoas que passam muito tempo sentadas, sempre levante e alongue-se!</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pratique exercícios" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsD-J8-Fea">
+                                                <rect key="frame" x="20" y="643.5" width="366" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hL4-Ft-nao">
+                                                <rect key="frame" x="20" y="707" width="366" height="129"/>
+                                                <string key="text">Exercícios que trabalhem e fortaleçam a musculatura das costas e do abdomem são essenciais para manter a saúde da coluna, evitar lesões etc.
+Lembre-se que os exercícios devem ser administrados por um profissional.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mantenha seus ossos fortes" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gti-Ga-idT">
+                                                <rect key="frame" x="20" y="866" width="366" height="67"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1i-34-6wi">
+                                                <rect key="frame" x="20" y="963" width="366" height="86"/>
+                                                <string key="text">Verifique com um médico se você precisa tomar suplemento de cállcio e/ou vitamina D. Esses suplementos podem ajudar a fortalecer os ossos e deixá-los saudáveis.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mantenha o peso adequado" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjL-JH-gi7">
+                                                <rect key="frame" x="20" y="1079" width="366" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9F-Tp-QeD">
+                                                <rect key="frame" x="20" y="1132.5" width="366" height="193.5"/>
+                                                <string key="text">O peso extra, particularmente quando concentrado na região abdominal, muda o centro de gravidade do corpo, deslocando-o para frente e realizando uma tensão desnecessária sobre os músculos da coluna lombar. Por outro lado, a magreza excessiva, que também pode ser acompanhada por baixa massa óssea, ocasiona o risco de desenvolver osteoporose.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Gti-Ga-idT" secondAttribute="trailing" constant="20" id="0Wc-HU-PGw"/>
+                                            <constraint firstItem="hL4-Ft-nao" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="1op-eG-kqG"/>
+                                            <constraint firstItem="Chh-c5-Xgv" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="1qQ-Zc-oy0"/>
+                                            <constraint firstItem="qZX-tF-uup" firstAttribute="top" secondItem="iaY-NZ-phd" secondAttribute="bottom" constant="30" id="3Zl-jC-b23"/>
+                                            <constraint firstItem="iaY-NZ-phd" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="5FF-b4-Z5G"/>
+                                            <constraint firstItem="c9F-Tp-QeD" firstAttribute="top" secondItem="IjL-JH-gi7" secondAttribute="bottom" constant="20" id="8wi-Ei-yfV"/>
+                                            <constraint firstItem="Chh-c5-Xgv" firstAttribute="top" secondItem="pTf-l4-MkR" secondAttribute="top" id="ByK-oz-Qcf"/>
+                                            <constraint firstAttribute="trailing" secondItem="qZX-tF-uup" secondAttribute="trailing" constant="20" id="DCq-Oh-omN"/>
+                                            <constraint firstItem="qZX-tF-uup" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="GRe-pb-flu"/>
+                                            <constraint firstItem="g52-xH-m5a" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="HLN-OS-3ac"/>
+                                            <constraint firstItem="e1i-34-6wi" firstAttribute="top" secondItem="Gti-Ga-idT" secondAttribute="bottom" constant="30" id="JSL-db-NVT"/>
+                                            <constraint firstItem="ull-AK-YFy" firstAttribute="top" secondItem="qZX-tF-uup" secondAttribute="bottom" constant="30" id="NWU-Mo-mk9"/>
+                                            <constraint firstAttribute="trailing" secondItem="Chh-c5-Xgv" secondAttribute="trailing" constant="20" id="OX6-dF-AlA"/>
+                                            <constraint firstAttribute="trailing" secondItem="iaY-NZ-phd" secondAttribute="trailing" constant="20" id="PKd-jy-peG"/>
+                                            <constraint firstAttribute="trailing" secondItem="e1i-34-6wi" secondAttribute="trailing" constant="20" id="R7R-rb-ZLl"/>
+                                            <constraint firstItem="e1i-34-6wi" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="SwG-Bq-Wf3"/>
+                                            <constraint firstAttribute="trailing" secondItem="c9F-Tp-QeD" secondAttribute="trailing" constant="20" id="Vz6-nR-ccE"/>
+                                            <constraint firstAttribute="trailing" secondItem="g52-xH-m5a" secondAttribute="trailing" constant="20" id="W0s-jb-dqe"/>
+                                            <constraint firstItem="IjL-JH-gi7" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="XIJ-c2-QY1"/>
+                                            <constraint firstAttribute="trailing" secondItem="ull-AK-YFy" secondAttribute="trailing" constant="20" id="Z9u-ec-jZd"/>
+                                            <constraint firstItem="IjL-JH-gi7" firstAttribute="top" secondItem="e1i-34-6wi" secondAttribute="bottom" constant="30" id="bMu-93-BAJ"/>
+                                            <constraint firstItem="c9F-Tp-QeD" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="bfY-Vb-cDy"/>
+                                            <constraint firstAttribute="trailing" secondItem="hL4-Ft-nao" secondAttribute="trailing" constant="20" id="do9-xc-HeM"/>
+                                            <constraint firstItem="g52-xH-m5a" firstAttribute="top" secondItem="jXW-KR-9nX" secondAttribute="bottom" constant="30" id="f3I-xs-DVo"/>
                                             <constraint firstAttribute="height" constant="1500" id="fF3-Ri-eqT"/>
+                                            <constraint firstAttribute="trailing" secondItem="IjL-JH-gi7" secondAttribute="trailing" constant="20" id="g1h-Ma-YFl"/>
+                                            <constraint firstItem="hL4-Ft-nao" firstAttribute="top" secondItem="FsD-J8-Fea" secondAttribute="bottom" constant="30" id="hDa-R0-Lfh"/>
+                                            <constraint firstItem="Gti-Ga-idT" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="k4t-y7-05n"/>
+                                            <constraint firstItem="jXW-KR-9nX" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="lBN-7i-N7d"/>
+                                            <constraint firstAttribute="trailing" secondItem="FsD-J8-Fea" secondAttribute="trailing" constant="20" id="nQv-aX-1Nr"/>
+                                            <constraint firstAttribute="trailing" secondItem="jXW-KR-9nX" secondAttribute="trailing" constant="20" id="p0k-M0-R9J"/>
+                                            <constraint firstItem="ull-AK-YFy" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="qPL-Jo-DPL"/>
+                                            <constraint firstItem="jXW-KR-9nX" firstAttribute="top" secondItem="Chh-c5-Xgv" secondAttribute="bottom" constant="30" id="qor-U6-hXY"/>
+                                            <constraint firstItem="FsD-J8-Fea" firstAttribute="top" secondItem="ull-AK-YFy" secondAttribute="bottom" constant="30" id="rNV-9k-bTR"/>
+                                            <constraint firstItem="iaY-NZ-phd" firstAttribute="top" secondItem="g52-xH-m5a" secondAttribute="bottom" constant="30" id="s9R-0T-t9q"/>
+                                            <constraint firstItem="FsD-J8-Fea" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="x2r-vD-keR"/>
+                                            <constraint firstItem="Gti-Ga-idT" firstAttribute="top" secondItem="hL4-Ft-nao" secondAttribute="bottom" constant="30" id="zmI-4X-7tk"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -285,11 +403,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tKR-ya-S14" firstAttribute="bottom" secondItem="jiO-E1-1lp" secondAttribute="bottom" id="C5O-nX-p9W"/>
-                            <constraint firstItem="pTf-l4-MkR" firstAttribute="width" secondItem="1nQ-0M-EZs" secondAttribute="width" multiplier="0.980676" id="GSN-jP-E1c"/>
+                            <constraint firstItem="pTf-l4-MkR" firstAttribute="height" secondItem="1nQ-0M-EZs" secondAttribute="height" multiplier="1.67411" id="DFh-J3-eMJ"/>
+                            <constraint firstItem="pTf-l4-MkR" firstAttribute="width" secondItem="1nQ-0M-EZs" secondAttribute="width" multiplier="0.980676" id="Dw5-dH-hX6"/>
                             <constraint firstItem="jiO-E1-1lp" firstAttribute="top" secondItem="tKR-ya-S14" secondAttribute="top" id="H35-BR-Lzd"/>
-                            <constraint firstItem="pTf-l4-MkR" firstAttribute="height" secondItem="1nQ-0M-EZs" secondAttribute="height" multiplier="1.67411" id="PFC-Se-WE1"/>
                             <constraint firstItem="tKR-ya-S14" firstAttribute="trailing" secondItem="jiO-E1-1lp" secondAttribute="trailing" id="cpJ-AS-Koj"/>
                             <constraint firstItem="jiO-E1-1lp" firstAttribute="leading" secondItem="tKR-ya-S14" secondAttribute="leading" id="usD-6L-1Is"/>
+                            <constraint firstItem="pTf-l4-MkR" firstAttribute="width" secondItem="1nQ-0M-EZs" secondAttribute="width" multiplier="0.980676" id="yTg-vj-SAJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Rrc-6l-49i"/>
