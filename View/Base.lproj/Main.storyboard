@@ -214,76 +214,94 @@
         <scene sceneID="dRW-H4-Tpt">
             <objects>
                 <viewController id="qAH-hE-fBd" userLabel="Dicas" customClass="DicasScene" customModule="ScolioKids" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="JKF-uE-6OH">
+                    <view key="view" contentMode="scaleToFill" id="JKF-uE-6OH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="deg-PU-u7O">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deg-PU-u7O">
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u6a-1N-iEk">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1308"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6a-1N-iEk">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Dicas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujt-G1-yWy">
-                                                <rect key="frame" x="8" y="8" width="133" height="37"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Deixe a atividade lúdica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4F0-pV-rfc">
-                                                <rect key="frame" x="8" y="66" width="323" height="37"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Deixe a atividade lúdica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4F0-pV-rfc">
+                                                <rect key="frame" x="8" y="144" width="323" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCX-cX-KTK">
-                                                <rect key="frame" x="8" y="337" width="377" height="198"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCX-cX-KTK">
+                                                <rect key="frame" x="8" y="387" width="377" height="198"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">É comum as crianças não quererem fazer os exercícios, se distraírem, chorarem e terem dificuldade. Portanto é preciso paciência, compreensão, diálogo e respeitar o tempo dela.
 Muitas vezes é interessante um acomphamento psicológico para os pais e para criança.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seja paciente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LV5-2b-riz">
-                                                <rect key="frame" x="8" y="292" width="323" height="37"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="37" id="VeM-3l-oVo"/>
-                                                </constraints>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLb-pZ-kJP">
+                                                <rect key="frame" x="8" y="656" width="377" height="161"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Os pais precisam participar ativamente do tratamento, eles passam segurança para a criança e também a auxiliam na realização dos exercícios feitos em casa.
+Para isso é necessário que estejam bem informados e que sigam as instruçoes dos médicos e fisioterapeutas.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jar-bg-Aty">
+                                                <rect key="frame" x="8" y="870" width="377" height="160"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Cada criança tem sua individualidade e, por isso, é necessária uma avaliação profissional para realizar um trabalho personalizado.
+Exercícios errados ou feitos de forma incorreta podem piorar o quadro da criança. 
+Procure um profissinal e siga suas instruções e recomendações.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seja paciente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LV5-2b-riz">
+                                                <rect key="frame" x="8" y="342" width="323" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Participação dos pais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMO-FF-XxI">
-                                                <rect key="frame" x="8" y="543" width="323" height="37"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Participação dos pais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMO-FF-XxI">
+                                                <rect key="frame" x="8" y="611" width="323" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqm-oM-dpj">
-                                                <rect key="frame" x="8" y="121" width="377" height="163"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Procure um profissional" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pT1-n1-sSu">
+                                                <rect key="frame" x="8" y="825" width="323" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqm-oM-dpj">
+                                                <rect key="frame" x="8" y="171" width="377" height="163"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">Associar brincadeiras durante a sessão de exercícios faz com que eles se tornem mais prazerosos e toleráveis para a criança. Use brinquedos e faça brincadeiras com a criança, isso ajuda a ter resultados positivos e deixa a atividade mais lúdica.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xzQ-tb-cv2">
+                                                <rect key="frame" x="8" y="132" width="377" height="4"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.8784313725490196" green="0.87058823529411766" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dicas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujt-G1-yWy">
+                                                <rect key="frame" x="8" y="62" width="133" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="LV5-2b-riz" secondAttribute="trailing" constant="83" id="6Qb-Ph-pm1"/>
-                                            <constraint firstItem="LV5-2b-riz" firstAttribute="leading" secondItem="pqm-oM-dpj" secondAttribute="leading" id="A8e-xV-D9h"/>
-                                            <constraint firstAttribute="height" constant="1500" id="F2v-xa-CqS"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ujt-G1-yWy" secondAttribute="trailing" constant="20" symbolic="YES" id="JgG-gM-bU1"/>
-                                            <constraint firstItem="LV5-2b-riz" firstAttribute="trailing" secondItem="bMO-FF-XxI" secondAttribute="trailing" id="KDm-Cc-PqW"/>
-                                            <constraint firstItem="LV5-2b-riz" firstAttribute="leading" secondItem="bMO-FF-XxI" secondAttribute="leading" id="O1Q-hb-qOF"/>
-                                            <constraint firstItem="LV5-2b-riz" firstAttribute="leading" secondItem="Ujt-G1-yWy" secondAttribute="leading" id="UGc-cQ-zmU"/>
-                                            <constraint firstItem="LV5-2b-riz" firstAttribute="trailing" secondItem="4F0-pV-rfc" secondAttribute="trailing" id="WEo-Xt-sgo"/>
-                                            <constraint firstItem="LV5-2b-riz" firstAttribute="top" secondItem="u6a-1N-iEk" secondAttribute="top" constant="292" id="aGh-53-ubW"/>
-                                            <constraint firstItem="LV5-2b-riz" firstAttribute="leading" secondItem="u6a-1N-iEk" secondAttribute="leadingMargin" id="aLY-w4-pfr"/>
-                                            <constraint firstItem="bCX-cX-KTK" firstAttribute="top" secondItem="LV5-2b-riz" secondAttribute="bottom" constant="8" symbolic="YES" id="gOS-4j-ark"/>
-                                            <constraint firstItem="LV5-2b-riz" firstAttribute="top" secondItem="pqm-oM-dpj" secondAttribute="bottom" constant="8" symbolic="YES" id="pkh-ke-Wka"/>
-                                            <constraint firstItem="LV5-2b-riz" firstAttribute="leading" secondItem="bCX-cX-KTK" secondAttribute="leading" id="qMC-EY-DYq"/>
-                                            <constraint firstItem="LV5-2b-riz" firstAttribute="leading" secondItem="4F0-pV-rfc" secondAttribute="leading" id="tuk-CB-ycl"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -318,19 +336,117 @@ Muitas vezes é interessante um acomphamento psicológico para os pais e para cr
         <scene sceneID="dYU-Th-zcv">
             <objects>
                 <viewController id="j8e-Ve-al5" userLabel="ColunaSaudavel" customClass="ColunaSaudavelScene" customModule="ScolioKids" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="1nQ-0M-EZs">
+                    <view key="view" contentMode="scaleToFill" id="1nQ-0M-EZs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jiO-E1-1lp">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jiO-E1-1lp">
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pTf-l4-MkR" userLabel="Content View">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pTf-l4-MkR" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="406" height="1500"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Como ter uma coluna saudável?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYI-De-Bpr">
+                                                <rect key="frame" x="20" y="69" width="334" height="99"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXW-fi-FR5">
+                                                <rect key="frame" x="16" y="200" width="358" height="95"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Alguns hábitos podem ser adotados para manter uma coluna saudável, evitar problemas futuros ou até ajudar na recuperação de um já existente.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQ3-Ln-WOx">
+                                                <rect key="frame" x="16" y="357" width="358" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">A postura inadequada afeta diretamente a saúde da coluna vertebral. É preciso manter uma boa postura durante o dia, sem forçar a coluna ou deixá-la muito curvada.
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abH-zq-YSR">
+                                                <rect key="frame" x="20" y="542" width="358" height="156"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Alongamentos são essenciais para a coluna e precisam ser rotineiros. Esse hábito ajuda a evitar atrofia e contraturas musculares.
+Essa dica é importante principalmente para pessoas que passam muito tempo sentadas, sempre levante e alongue-se!
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnQ-vq-JX8">
+                                                <rect key="frame" x="16" y="771" width="358" height="138"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Exercícios que trabalhem e fortaleçam a musculatura das costas e do abdomem são essenciais para manter a saúde da coluna, evitar lesões etc.
+Lembre-se que os exercícios devem ser administrados por um profissional.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJY-mb-Rln">
+                                                <rect key="frame" x="20" y="966" width="358" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Verifique com um médico se você precisa tomar suplemento de cállcio e/ou vitamina D. Esses suplementos podem ajudar a fortalecer os ossos e deixá-los saudáveis.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktN-pQ-bcQ">
+                                                <rect key="frame" x="20" y="1124" width="358" height="200"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">O peso extra, particularmente quando concentrado na região abdominal, muda o centro de gravidade do corpo, deslocando-o para frente e realizando uma tensão desnecessária sobre os músculos da coluna lombar. Por outro lado, a magreza excessiva, que também pode ser acompanhada por baixa massa óssea, ocasiona o risco de desenvolver osteoporose.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cuide da sua postura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFh-MV-yxN">
+                                                <rect key="frame" x="20" y="289" width="327" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alongue-se" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qd-Sz-s1i">
+                                                <rect key="frame" x="16" y="466" width="327" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pratique exercícios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WH7-kl-4ZB">
+                                                <rect key="frame" x="16" y="692" width="327" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mantenha seus ossos fortes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQw-3V-CrB">
+                                                <rect key="frame" x="16" y="907" width="378" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mantenha o peso adequado" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QD1-1Q-ISE">
+                                                <rect key="frame" x="16" y="1074" width="378" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9y9-8a-Nwu">
+                                                <rect key="frame" x="16" y="188" width="358" height="4"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.8784313725490196" green="0.87058823529411766" blue="0.84313725490196079" alpha="0.73999999999999999" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </view>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1500" id="fF3-Ri-eqT"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -367,27 +483,27 @@ Muitas vezes é interessante um acomphamento psicológico para os pais e para cr
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUM-7w-VYm">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHQ-Ry-C8t" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="O que é?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTF-GG-Vvo">
-                                                <rect key="frame" x="20" y="-10" width="164" height="48"/>
+                                                <rect key="frame" x="22" y="0.0" width="164" height="48"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Conceito" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4W-fA-uIL">
-                                                <rect key="frame" x="22" y="52" width="118.5" height="21"/>
+                                                <rect key="frame" x="22" y="71" width="118.5" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzS-62-nU9">
-                                                <rect key="frame" x="20" y="92" width="359" height="108"/>
+                                                <rect key="frame" x="20" y="117" width="359" height="108"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">A escoliose infantil é um desvio na coluna vertebral que pode prejudicar a criança em suas atividades cotidianas, causando dor e desconforto. 
 </string>
@@ -396,24 +512,24 @@ Muitas vezes é interessante um acomphamento psicológico para os pais e para cr
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Como identificar?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9z-rY-rgb">
-                                                <rect key="frame" x="20" y="203" width="374" height="44"/>
+                                                <rect key="frame" x="20" y="216" width="374" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Hw-ji-5QP">
-                                                <rect key="frame" x="20" y="38" width="374" height="4"/>
+                                                <rect key="frame" x="22" y="52" width="374" height="4"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.81568627450980391" green="0.80784313725490198" blue="0.77254901960784317" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0t-gZ-aaS">
                                                 <rect key="frame" x="20" y="255" width="359" height="474"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <mutableString key="text">Dor e má postura podem ser indicativos de que a criança possui escoliose. Porém, nem sempre a escoliose dá sinais visíveis (principalmente no início), por isso é necessário observar se seu tronco e ombros estão desalinhados (um está mais alto que o outro) ou se ela fica mais "torta” para um lado.
+                                                <string key="text">Dor e má postura podem ser indicativos de que a criança possui escoliose. Porém, nem sempre a escoliose dá sinais visíveis (principalmente no início), por isso é necessário observar se seu tronco e ombros estão desalinhados (um está mais alto que o outro) ou se ela fica mais "torta” para um lado.
 A hereditariedade é um fator a ser avaliado, pois se algum familiar tem ou teve escoliose, principalmente a infantil, há chances de a criança ter.
 É de extrema importância levar a criança para consultas com ortopedistas e fisioterapeutas, são eles que vão passar exames e alguns testes que mostrarão se ela tem escoliose e identifficarão o tipo de acordo com os resultados obtidos.
-Quanto mais cedo identificada e tratada, melhores serão os resultados.</mutableString>
+Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -443,7 +559,7 @@ A má postura é outro fator que contribui para o desenvolvimento da escoliose.<
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EwJ-6L-k1i">
-                                                <rect key="frame" x="38" y="1073" width="341" height="244"/>
+                                                <rect key="frame" x="22" y="1073" width="372" height="244"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">O tratamento se dá de acordo com o tipo de escoliose e a gravidade das curvas. Dependendo do caso, o tratamento pode consistir em sessões de fisioterapia, uso de colete (curvatura de 20 e 45 graus) e, em casos mais extremos, cirurgia (para curvas acima de 45 a 50 graus).
 É importante concultar um profissinal para saber qual tratamento é adequado e receber as orientações necessárias.</string>
