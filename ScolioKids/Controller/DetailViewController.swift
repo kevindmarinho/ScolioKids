@@ -15,15 +15,15 @@ class DetailViewController: UIViewController {
     var nameTrainning: String = ""
     var dicEx: [String : [listaInst]] = [
         "Aviãozinho" : [
-            listaInst(textoCelula: "1. De pé, você deve abrir os braços como um avião.", imageCelula: ""),
-            listaInst(textoCelula: "2. Eleve uma de suas pernas para trás e segure a posiçao mantendo o corpo equilibrado por pelo menos 20 segundos (é importante seguir a recomendação do médico em relação ao tempo e repetições).", imageCelula: ""),
+            listaInst(textoCelula: "1. De pé, você deve abrir os braços como um avião.", imageCelula: "Aviaozinho"),
+            listaInst(textoCelula: "2. Eleve a pernas para trás e segure a posiçao mantendo o corpo equilibrado.", imageCelula: ""),
             listaInst(textoCelula: "3. Faça o mesmo processo com a outra perna.", imageCelula: ""),
                ],
         "Prancha Lateral" : [
-            listaInst(textoCelula: "1. Comece deitando de lado. 2. Apoie um cotovelo no chão, na mesma direção do seu ombro, eleve o quadril e deixe as pernas retas, apenas com os pés encostados no chão.", imageCelula: "Prancha"),
+            listaInst(textoCelula: "1. Comece deitando de lado.", imageCelula: "Prancha"),
 //            listaInst(textoCelula: "2. Apoie um cotovelo no chão, na mesma direção do seu ombro, eleve o quadril e deixe as pernas retas, apenas com os pés encostados no chão.", imageCelula: ""),
             listaInst(textoCelula: "3. Eleve seus braços na linha do ombro e mantenha o abdômem para dentro.", imageCelula: ""),
-            listaInst(textoCelula: "4. Repita o processo e segure a posição seguindo as recomendações do fisioterapeuta.", imageCelula: ""),
+            listaInst(textoCelula: "4. Repita o processo e segure a posição.", imageCelula: ""),
             listaInst(textoCelula: "5. Alterne os lados.", imageCelula: ""),
         ],
     ]
