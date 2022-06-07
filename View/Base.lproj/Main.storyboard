@@ -20,6 +20,7 @@
                     <connections>
                         <segue destination="DaE-Hh-tR4" kind="relationship" relationship="viewControllers" id="RgL-8f-n14"/>
                         <segue destination="D1n-nB-lA8" kind="relationship" relationship="viewControllers" id="mqs-ID-vwV"/>
+                        <segue destination="57m-Am-ud3" kind="relationship" relationship="viewControllers" id="apn-JG-gMZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HXB-la-dHr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -832,7 +833,8 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
         <!--Favoritos-->
         <scene sceneID="crU-XI-HIF">
             <objects>
-                <viewController id="57m-Am-ud3" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Oe-w0-CRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController modalPresentationStyle="fullScreen" id="57m-Am-ud3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ivf-rE-E0x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -840,8 +842,8 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                         <color key="backgroundColor" name="backgroundOne"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Favoritos" image="heart" catalog="system" selectedImage="heart.fill" id="D98-UX-pxm"/>
+                    <navigationItem key="navigationItem" id="unB-fD-eHD"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1Oe-w0-CRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-407" y="502"/>
         </scene>
