@@ -97,6 +97,7 @@ class SecondViewController: UIViewController {
 extension SecondViewController: UISearchBarDelegate{
     
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
+        searchBar.setValue("Cancelar", forKey: "cancelButtonText")
         searchBar.setShowsCancelButton(true, animated: true)
         return true
     }
