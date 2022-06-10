@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-               title = "Home"
+               title = "Início"
         
         view.insertSubview(imageView, at: 0)
         NSLayoutConstraint.activate([
