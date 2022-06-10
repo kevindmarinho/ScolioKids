@@ -39,7 +39,7 @@ class StopwatchViewController: UIViewController {
         
         
         startButton.setTitle("Iniciar", for: .normal)
-        self.startButton.backgroundColor = UIColor.systemGreen
+        self.startButton.backgroundColor = UIColor.init(red: 27/255, green: 188/255, blue: 130/255, alpha: 1)
         ///Rounding start button
 //        startButton.frame = CGRect(x: 270, y: 307, width: 80, height: 80)
         startButton.layer.cornerRadius = 0.5 * startButton.bounds.size.width
@@ -50,7 +50,7 @@ class StopwatchViewController: UIViewController {
         //RESET BUTTON
         resetButton.setTitle("Zerar", for: .normal)
         
-        self.resetButton.backgroundColor = UIColor.systemBrown
+        self.resetButton.backgroundColor = UIColor.white
         ///Rounding reset button
 //        resetButton.frame = CGRect(x: 40, y: 307, width: 80, height: 80)
         resetButton.layer.cornerRadius = 0.5 * resetButton.bounds.size.width
@@ -68,7 +68,7 @@ class StopwatchViewController: UIViewController {
         self.timer.invalidate()
         self.timeLabel.text = makeTimeString(hours: 0, minutes: 0, seconds: 0)
         self.startButton.setTitle("Iniciar", for: .normal)
-        self.startButton.backgroundColor = UIColor.systemGreen
+        self.startButton.backgroundColor = UIColor.init(red: 27/255, green: 188/255, blue: 130/255, alpha: 1)
         
     }
     
@@ -82,12 +82,12 @@ class StopwatchViewController: UIViewController {
             timerCount = false
             timer.invalidate()
             startButton.setTitle("Iniciar", for: .normal)
-            startButton.backgroundColor = UIColor.systemGreen
+            startButton.backgroundColor = UIColor.init(red: 27/255, green: 188/255, blue: 130/255, alpha: 1)
         } else {
             
             timerCount = true
             startButton.setTitle("Pausar", for: .normal)
-            startButton.backgroundColor = UIColor.systemRed
+            startButton.backgroundColor = UIColor.init(red: 226/255, green: 105/255, blue: 76/255, alpha: 1)
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countingTime), userInfo: nil, repeats: true)
             
         }
