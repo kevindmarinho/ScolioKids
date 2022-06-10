@@ -14,6 +14,7 @@
 		28CBFBC32843B13100926D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CBFBC22843B13100926D6F /* Assets.xcassets */; };
 		28CBFBC62843B13100926D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CBFBC42843B13100926D6F /* LaunchScreen.storyboard */; };
 		28CBFBE92843B6CA00926D6F /* README in Sources */ = {isa = PBXBuildFile; fileRef = 28CBFBD02843B13100926D6F /* README */; };
+		28F7B94C2853BFCC00693357 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7B94B2853BFCC00693357 /* LoadingView.swift */; };
 		866AA4132847DA5900ED37A1 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866AA4122847DA5900ED37A1 /* StopwatchViewController.swift */; };
 		9F077F862846B48200BBF49F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F077F852846B48200BBF49F /* SecondViewController.swift */; };
 		9F5AD3A928494BE20072624A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5AD3A828494BE20072624A /* CustomCell.swift */; };
@@ -52,6 +53,7 @@
 		28CBFBCC2843B13100926D6F /* ScolioKidsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScolioKidsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28CBFBD02843B13100926D6F /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		28CBFBD62843B13100926D6F /* ScolioKidsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScolioKidsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F7B94B2853BFCC00693357 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		866AA4122847DA5900ED37A1 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
 		9F077F852846B48200BBF49F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9F5AD3A828494BE20072624A /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				9FA2A9B5284A7A9900CF6C53 /* CustomNewCell.swift */,
 				866AA4122847DA5900ED37A1 /* StopwatchViewController.swift */,
 				9F9603C1284D91DE00886C22 /* InformationsViewController.swift */,
+				28F7B94B2853BFCC00693357 /* LoadingView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				28CBFBBA2843B13100926D6F /* AppDelegate.swift in Sources */,
 				28CBFBBC2843B13100926D6F /* SceneDelegate.swift in Sources */,
 				9F077F862846B48200BBF49F /* SecondViewController.swift in Sources */,
+				28F7B94C2853BFCC00693357 /* LoadingView.swift in Sources */,
 				28CBFBE92843B6CA00926D6F /* README in Sources */,
 				9FA2A9B8284A803F00CF6C53 /* dataInstruction.swift in Sources */,
 				9FA2A9B6284A7A9900CF6C53 /* CustomNewCell.swift in Sources */,

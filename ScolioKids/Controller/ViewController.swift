@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
                title = "Início"
         
         view.insertSubview(imageView, at: 0)
@@ -56,6 +57,7 @@ class ViewController: UIViewController {
         
     
     }
+    
     
 //    override func viewWillAppear(_ animated: Bool) {
 //        super.viewWillAppear(animated)
@@ -115,6 +117,14 @@ class ViewController: UIViewController {
             self.fourthButtonHome.transform = CGAffineTransform.identity
             }
         })
+    }
+}
+
+class tabBarHome : UITabBarController, UITabBarControllerDelegate {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
     }
 }
 
