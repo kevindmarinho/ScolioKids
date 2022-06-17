@@ -9,6 +9,7 @@ import UIKit
 
 class StopwatchTableViewController: UITableViewController {
 
+    @IBOutlet var stopwatchUI: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
