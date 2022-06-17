@@ -12,11 +12,13 @@ class Exercises {
     
     var exercise: String
     var isFavorited: Bool
+    var isChronometer: Bool
     
-    init(exercise: String, isFavorited: Bool) {
+    init(exercise: String, isFavorited: Bool, isChronometer: Bool) {
     
     self.exercise = exercise
     self.isFavorited = isFavorited
+    self.isChronometer = isChronometer
         
     }
     
