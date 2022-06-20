@@ -56,34 +56,34 @@ class StopwatchTableViewController: UITableViewController {
     // MARK: - Table view data source
 
   
-//    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-//        return true
-//    }
-//
-//    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-//
-//
-//        let deleteAction = UIContextualAction(style: .destructive, title:  "Delete", handler:{[self] (_, _, completionHandler) in
-//            // delete the item here
-//
-//            context.delete(self.chronometer[indexPath.row])
-//            self.chronometer.remove(at: indexPath.row)
-//            // Save Changes
-//            appDelegate!.saveContext()
-//            // Remove row from TableView
-//            self.stopwatchUI.deleteRows(at: [indexPath], with: .left)
-//
-//            completionHandler(true)
-//
-//        })
-//
-//        let action = UISwipeActionsConfiguration(actions: [deleteAction])
-//
-//        return action
-//
-//
-//    }
-//
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+
+
+        let deleteAction = UIContextualAction(style: .destructive, title:  "Delete", handler:{[self] (_, _, completionHandler) in
+            // delete the item here
+
+            context.delete(self.chronometer[indexPath.row])
+            self.chronometer.remove(at: indexPath.row)
+            // Save Changes
+            appDelegate!.saveContext()
+            // Remove row from TableView
+            self.stopwatchUI.deleteRows(at: [indexPath], with: .left)
+
+            completionHandler(true)
+
+        })
+
+        let action = UISwipeActionsConfiguration(actions: [deleteAction])
+
+        return action
+
+
+    }
+
     
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -92,18 +92,18 @@ class StopwatchTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
-//        return chronometer.count
+//        return 5
+        return chronometer.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-//        let chronometerExercise = chronometer[indexPath.row]
+        let chronometerExercise = chronometer[indexPath.row]
         
             let cell = tableView.dequeueReusableCell(withIdentifier: "reusebleChronometerCell", for: indexPath)
-        cell.textLabel?.text = "hello world"
-//            cell.textLabel?.text = chronometerExercise.value(forKeyPath: "chronometerName") as? String
+//        cell.textLabel?.text = "hello world"
+            cell.textLabel?.text = chronometerExercise.value(forKeyPath: "chronometerName") as? String
     
         return cell
     }
