@@ -49,7 +49,7 @@
                     <connections>
                         <segue destination="DaE-Hh-tR4" kind="relationship" relationship="viewControllers" id="RgL-8f-n14"/>
                         <segue destination="D1n-nB-lA8" kind="relationship" relationship="viewControllers" id="mqs-ID-vwV"/>
-                        <segue destination="57m-Am-ud3" kind="relationship" relationship="viewControllers" id="apn-JG-gMZ"/>
+                        <segue destination="HxO-bS-p4d" kind="relationship" relationship="viewControllers" id="apn-JG-gMZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HXB-la-dHr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -59,7 +59,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="ScolioKids" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="ScolioKids" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -751,18 +751,10 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="UWR-n9-n7U">
-                        <barButtonItem key="rightBarButtonItem" title="Selecionar" id="REA-yK-79Z">
-                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="seleciona:" destination="1vw-bk-mUS" id="VXj-Gb-pqQ"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="UWR-n9-n7U"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="ExercicioView" destination="bvX-h5-luO" id="LVK-KD-hIh"/>
-                        <outlet property="SelectionButton" destination="REA-yK-79Z" id="Pjm-Qo-5wU"/>
                         <outlet property="searchBar" destination="Seg-SU-evL" id="51Z-tS-swo"/>
                     </connections>
                 </viewController>
@@ -851,6 +843,7 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                             <constraint firstItem="aMa-Wy-TW6" firstAttribute="top" secondItem="L6D-lS-i55" secondAttribute="top" constant="15" id="un3-oW-abL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="MgL-2G-MRE"/>
                     <connections>
                         <outlet property="InstructionView" destination="aMa-Wy-TW6" id="ado-2E-dyZ"/>
                     </connections>
@@ -859,7 +852,7 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
             </objects>
             <point key="canvasLocation" x="221.73913043478262" y="1322.5446428571429"/>
         </scene>
-        <!--Favoritos-->
+        <!--View Controller-->
         <scene sceneID="crU-XI-HIF">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="57m-Am-ud3" sceneMemberID="viewController">
@@ -868,22 +861,28 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LiI-Jh-GWY">
-                                <rect key="frame" x="20" y="44" width="374" height="769"/>
+                                <rect key="frame" x="0.0" y="168" width="414" height="645"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="WRE-9B-MYY" kind="embed" id="gzp-7P-5Ne"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favoritos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4y-Wc-YFw">
+                                <rect key="frame" x="20" y="56" width="148" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GZB-B5-r9P"/>
                         <color key="backgroundColor" name="backgroundOne"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Favoritos" image="heart" catalog="system" selectedImage="heart.fill" id="D98-UX-pxm"/>
                     <navigationItem key="navigationItem" id="unB-fD-eHD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Oe-w0-CRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-407.24637681159425" y="501.5625"/>
+            <point key="canvasLocation" x="502.89855072463774" y="501.5625"/>
         </scene>
         <!--Cronômetro-->
         <scene sceneID="VAR-ER-Hmq">
@@ -961,22 +960,30 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="946-gf-BS7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="621.73913043478262" y="501.5625"/>
+            <point key="canvasLocation" x="1531.8840579710145" y="501.5625"/>
         </scene>
         <!--Favorites Table View Controller-->
         <scene sceneID="b0r-WZ-k2A">
             <objects>
                 <tableViewController id="WRE-9B-MYY" customClass="FavoritesTableViewController" customModule="ScolioKids" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="7V4-8k-hMu">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="769"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="645"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="gUK-QB-yNJ">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="WRE-9B-MYY" id="epe-F0-0EF"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reusebleFavoritesCell" id="Fj1-0Q-PxW">
-                                <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reusebleFavoritesCell" id="Fj1-0Q-PxW" customClass="FavoritesTableViewCell" customModule="ScolioKids" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fj1-0Q-PxW" id="tqS-ko-jl6" customClass="FavoritesTableViewCell" customModule="ScolioKids" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fj1-0Q-PxW" id="tqS-ko-jl6">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -986,13 +993,15 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                             <outlet property="delegate" destination="WRE-9B-MYY" id="mQi-kh-G41"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="Whs-iZ-Afk"/>
                     <connections>
                         <outlet property="favoritesUI" destination="7V4-8k-hMu" id="h2X-9V-JYe"/>
+                        <outlet property="searchFav" destination="gUK-QB-yNJ" id="0Bp-ec-WoG"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S3h-Uy-qj3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="622" y="-263"/>
+            <point key="canvasLocation" x="1286" y="-214"/>
         </scene>
         <!--Stopwatch Table View Controller-->
         <scene sceneID="n7C-6m-KEv">
@@ -1029,7 +1038,7 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a0P-OA-8QP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1544.9275362318842" y="501.5625"/>
+            <point key="canvasLocation" x="2455.072463768116" y="501.5625"/>
         </scene>
         <!--Home-->
         <scene sceneID="2hP-5T-v6t">
@@ -1049,6 +1058,25 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qno-SB-nFF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1504.3478260869567" y="501.5625"/>
+        </scene>
+        <!--Favoritos-->
+        <scene sceneID="Yjf-qp-eUq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HxO-bS-p4d" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favoritos" image="heart" catalog="system" selectedImage="heart.fill" id="D98-UX-pxm"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="989-cR-34b">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="57m-Am-ud3" kind="relationship" relationship="rootViewController" id="ac6-UZ-LyG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ew-HN-uUD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-407.24637681159425" y="501.5625"/>
         </scene>
     </scenes>
     <resources>

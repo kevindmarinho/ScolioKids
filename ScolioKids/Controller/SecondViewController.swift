@@ -10,11 +10,9 @@ import UIKit
 import CoreData
 
 class SecondViewController: UIViewController {
-    @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var SelectionButton: UIBarButtonItem!
-    @IBOutlet weak var ExercicioView: UITableView!
     
-    var actionsModel = ActionsModel()
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var ExercicioView: UITableView!
     
     var imageView: UIImageView = {
             let imageView = UIImageView(frame: .zero)
@@ -24,8 +22,8 @@ class SecondViewController: UIViewController {
             return imageView
         }()
     
-    
     //COREDATA
+    var actionsModel = ActionsModel()
     
     let appDelegate = UIApplication.shared.delegate as? AppDelegate
 
@@ -44,23 +42,24 @@ class SecondViewController: UIViewController {
     
     //Search
 
-    var searchExercicies = [String]()
+   // var searchExercicies = [String]()
+    var filterUser: [Exercises] = []
     var searching = false
     
     // TableCell
 
-    let exercises = [
-        "Aviãozinho",
-        "Prancha Lateral"
-    ]
- 
-    var isCellSelected: Bool = false
-    var SomeCellSelected: Bool = false
+//    let exercises = [
+//        "Aviãozinho",
+//        "Prancha Lateral"
+//    ]
+    
+//    var isCellSelected: Bool = false
+//    var SomeCellSelected: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Exercício"
+        title = "Exercícios"
         
         view.insertSubview(imageView, at: 0)
                 NSLayoutConstraint.activate([
@@ -73,6 +72,10 @@ class SecondViewController: UIViewController {
         ExercicioView.delegate = self
         ExercicioView.dataSource = self
         
+        self.filterUser = actionsModel.exercisesList
+        searchBar.placeholder = "Buscar"
+        searchBar.delegate = self
+        
         navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
@@ -82,46 +85,9 @@ class SecondViewController: UIViewController {
         ExercicioView.dataSource = self
         ExercicioView.reloadData()
     }
-    
-    @IBAction func seleciona(_ sender: Any) {
-        ExercicioView.allowsSelection = true
-        ExercicioView.reloadData()
-        
-        if !isCellSelected {
-           modifyBarButtonTitle()
-        }
-        
-        else{
-            let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-               
-            let addToFavourites = UIAlertAction(title: "Add to favourites",style: .default,handler: { (action) ->Void in
-            //Adicionar a transição de tela aqui
-            let alert = UIAlertController(title: "Exercises favorited",
-                                          message: "The selected exercises were favorited!",
-                                          preferredStyle: .alert)
-            
-            alert.addAction(UIAlertAction(title: "Ok",
-                                          style: .default,
-                                          handler: nil))
-            
-            self.isCellSelected = false
-            self.SelectionButton.title = "Selecionar"
-            self.present(alert, animated: true)
-    })
-            if SomeCellSelected {
-        let sendToStopwatch = UIAlertAction(title: "Send to Stopwatch", style: .default)
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
-               
-        actionSheet.addAction(addToFavourites)
-        actionSheet.addAction(sendToStopwatch)
-        actionSheet.addAction(cancelAction)
-               
-        self.present(actionSheet, animated: true, completion: nil)
-            }
-        }
-    }
 }
 
+// SEARCH
 extension SecondViewController: UISearchBarDelegate{
     
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
@@ -131,19 +97,35 @@ extension SecondViewController: UISearchBarDelegate{
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        searchExercicies = exercises.filter({$0.lowercased().prefix(searchText.count) == searchText.lowercased()})
+       // searchExercicies = exercises.filter({$0.lowercased().prefix(searchText.count) == searchText.lowercased()})
+        self.filterUser = []
+        if searchText.isEmpty{
+            self.filterUser = actionsModel.exercisesList
+        }else{
+            for value in actionsModel.exercisesList{
+                if value.exercise.uppercased().contains(searchText.uppercased()){
+                    self.filterUser.append(value)
+                }
+            }
+        }
         searching = true
         ExercicioView.reloadData()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searching = false
         searchBar.text = ""
         searchBar.resignFirstResponder()
+        searchBar.setShowsCancelButton(false, animated: true)
         ExercicioView.reloadData()
     }
 }
 
+// Table View -> Exercícios
 extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -154,136 +136,104 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
         return true
     }
     
-    
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
 //        ExercicioView.reloadData()
         
-        
-        
-        
         //CRONOMETRO
-        //FAVORITOS
         var chronometerActionTitle = "Chronos" // 7
-        
         let chronometerRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Chronometer")
               
-              //3
+        //3
         chronometerRequest.predicate = NSPredicate(format: "chronometerName = %@", "\(actionsModel.exercisesList[indexPath.row].exercise)")
 //        request.predicate = NSPredicate(format: "isFavorited = %@", true)
               chronometerRequest.returnsObjectsAsFaults = false
               do {
                   let chronometer = try actionsModel.context.fetch(chronometerRequest)
-                 
                   //5
-                  for data in chronometer as! [NSManagedObject]
-                  {
-                      var boolean = data.value(forKey: "isFavorited") as! Bool
+                  for data in chronometer as! [NSManagedObject]{
+                      let boolean = data.value(forKey: "isFavorited") as! Bool
                       
                       if boolean == true {
                           // 7
-                          chronometerActionTitle = "UnChronos"
+                        chronometerActionTitle = "UnChronos"
 //                          context.delete(data)
                       }
                       //
                       do {
-                          try actionsModel.context.save()
+                        try actionsModel.context.save()
                       }
                       catch {
                           // Handle Error
                       }
                   }
-                  
               } catch {
                   print("Failed")
-              }
+        }
         
         let chronometerAction = UIContextualAction(style: .normal, title: chronometerActionTitle, handler:{[self] (_, _, completionHandler) in
             // delete the item here
-            
-          
             if chronometerActionTitle == "Favorite" {
-            
                 actionsModel.savingToChronometer(index: indexPath.row)
-
             }
             
             if chronometerActionTitle == "Unfavorite" {
-     
-                actionsModel.deleteFromChronometer(index: indexPath.row)
-         
-            }
-            
-            self.actionsModel.exercisesList[indexPath.row].isChronometer.toggle()
                 
+                actionsModel.deleteFromChronometer(index: indexPath.row)
+            }
+            self.actionsModel.exercisesList[indexPath.row].isChronometer.toggle()
+            
             completionHandler(true)
-  
+            
         })
-       
-  
-        
         
         //FAVORITOS
-        var favoriteActionTitle = "Favorite" // 7
+        var favoriteActionTitle = "Favorite"
         
         let favoritesRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Favorites")
-              
-              //3
+        //3
         favoritesRequest.predicate = NSPredicate(format: "favoritesName = %@", "\(actionsModel.exercisesList[indexPath.row].exercise)")
 //        request.predicate = NSPredicate(format: "isFavorited = %@", true)
-              favoritesRequest.returnsObjectsAsFaults = false
-              do {
-                  let favorites = try actionsModel.context.fetch(favoritesRequest)
+        favoritesRequest.returnsObjectsAsFaults = false
+            do {
+                let favorites = try actionsModel.context.fetch(favoritesRequest)
                  
-                  //5
-                  for data in favorites as! [NSManagedObject]
-                  {
-                      var boolean = data.value(forKey: "isFavorited") as! Bool
+            //5
+            for data in favorites as! [NSManagedObject]{
+                var boolean = data.value(forKey: "isFavorited") as! Bool
                       
-                      if boolean == true {
-                          // 7
+                if boolean == true {
                           favoriteActionTitle = "Unfavorite"
 //                          context.delete(data)
                       }
-                      //
                       do {
                           try actionsModel.context.save()
                       }
                       catch {
                           // Handle Error
                       }
-                  }
-                  
-              } catch {
-                  print("Failed")
+            }
+            } catch {
+                print("Failed")
               }
         
-        
-
-       
         let favoriteAction = UIContextualAction(style: .normal, title:  favoriteActionTitle, handler:{ [self] (_, _, completionHandler) in
             // delete the item here
 
-            let userExercises = actionsModel.exercisesList[indexPath.row].exercise
+           // let userExercises = actionsModel.exercisesList[indexPath.row].exercise
             if favoriteActionTitle == "Favorite" {
-            
+                
                 actionsModel.savingToFavorites(index: indexPath.row)
-
             }
             
             if favoriteActionTitle == "Unfavorite" {
      
                 actionsModel.deleteFromFavorites(index: indexPath.row)
-         
             }
-                
-
-              
             
             self.actionsModel.exercisesList[indexPath.row].isFavorited.toggle()
                 
             completionHandler(true)
-            
         })
         
   
@@ -293,16 +243,11 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
         if favoriteActionTitle == "Unfavorite" {
             
             favoriteAction.image = UIImage(systemName: "heart.fill")?.withTintColor(.systemRed, renderingMode: .alwaysOriginal)
-            
         }
-
-        
         
         favoriteAction.image?.withTintColor(UIColor.systemRed)
 //        favoriteAction.backgroundColor = UIColor.systemBlue
 //        chronometerAction.backgroundColor = UIColor.systemMint
-        
-        
 //        return [chronometerAction, favoriteAction]
         let action = UISwipeActionsConfiguration(actions: [chronometerAction, favoriteAction])
         
@@ -310,83 +255,70 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
       
 //        ExercicioView.reloadData()
    
-
-
     }
-
     
-    
-    
-    
-    
+    // Table View Data Souce -> Exercícios
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if searching {
-            return searchExercicies.count
+           // return searchExercicies.count
+            return filterUser.count
         } else {
             return actionsModel.exercisesList.count
         }
     }
     
-    
-    
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cells = ExercicioView.dequeueReusableCell(withIdentifier: "customcell") as! CustomCell
         
 //        let lista = exercises[indexPath.row]
+    
         let lista = actionsModel.exercisesList[indexPath.row].exercise
         
         cells.nameLabel?.text = lista
 //        cells.assetsImg.image = UIImage(named: lista)
         
         if searching {
-            cells.nameLabel.text = searchExercicies[indexPath.row]
+            cells.nameLabel.text = filterUser[indexPath.row].exercise
+//          cells.nameLabel.text = searchExercicies[indexPath.row]
 //          cells.assetsImg.image = UIImage(named: searchExercicies[indexPath.row])!
         } else {
-//            cells.nameLabel.text = exercises[indexPath.row]
             cells.nameLabel.text = lista
-        }
-        if cells.isSelected {
-            SomeCellSelected = true
-        } else {
-            SomeCellSelected = false
         }
         
         return cells
     }
     
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        SomeCellSelected = true
+     //   SomeCellSelected = true
+        
         let passa = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
+        
         if searching{
-            passa?.title = searchExercicies[indexPath.row]
+            passa?.title = filterUser[indexPath.row].exercise
         }
         else{
-            passa?.title = exercises[indexPath.row]
+            passa?.title = actionsModel.exercisesList[indexPath.row].exercise
         }
-        if !isCellSelected {
-            
-            isCellSelected = false
             
             if let customCell = tableView.cellForRow(at: indexPath) as? CustomCell,
                let trainningName = customCell.nameLabel.text{
                 passa?.nameTrainning = "\(trainningName)"
-            }
+
             self.navigationController?.pushViewController(passa!, animated: true)
             ExercicioView.reloadData()
         }
     }
-    func modifyBarButtonTitle() {
-            isCellSelected = true
-            SelectionButton.title = "OK"
-        }
 }
+
+//    func modifyBarButtonTitle() {
+//            isCellSelected = true
+//            SelectionButton.title = "OK"
+//        }
+
 
 
     
