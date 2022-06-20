@@ -8,12 +8,17 @@
 import UIKit
 import CoreData
 
-class FavoritesTableViewController: UITableViewController {
+class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
 
-    
-    
+    @IBOutlet weak var searchFav: UISearchBar!
     @IBOutlet var favoritesUI: UITableView!
     
+    var actionsModel = ActionsModel()
+    
+    var filterFav: [NSManagedObject] = []
+    var searching2 = false
+    
+    var favorites: [NSManagedObject] = []
     
     let appDelegate = UIApplication.shared.delegate as? AppDelegate
 
@@ -27,25 +32,17 @@ class FavoritesTableViewController: UITableViewController {
         return container.viewContext
     }()
     
-    
-    var favorites: [NSManagedObject] = []
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        searchFav.placeholder = "Buscar"
+        searchFav.delegate = self
+        self.filterFav = favorites
     }
     
     override func viewWillAppear(_ animated: Bool) {
-  
         //2
-        let fetchRequest =
-          NSFetchRequest<NSManagedObject>(entityName: "Favorites")
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Favorites")
         
         //3
         do {
@@ -61,7 +58,6 @@ class FavoritesTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-  
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -70,7 +66,6 @@ class FavoritesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
-    
     
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
@@ -84,7 +79,7 @@ class FavoritesTableViewController: UITableViewController {
             // Save Changes
             appDelegate!.saveContext()
             // Remove row from TableView
-         self.favoritesUI.deleteRows(at: [indexPath], with: .left)
+            self.favoritesUI.deleteRows(at: [indexPath], with: .left)
             
             completionHandler(true)
             
@@ -97,29 +92,70 @@ class FavoritesTableViewController: UITableViewController {
         return action
       
 //        ExercicioView.reloadData()
-   
-
 
     }
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        
         return favorites.count
-//        return 5
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let favoritesExercise = favorites[indexPath.row]
-            let cell =
-              tableView.dequeueReusableCell(withIdentifier: "reusebleFavoritesCell",
-                                            for: indexPath)
+        
+            let cell = tableView.dequeueReusableCell(withIdentifier: "reusebleFavoritesCell", for: indexPath)
             cell.textLabel?.text = favoritesExercise.value(forKeyPath: "favoritesName") as? String
-//        cell.textLabel?.text = "hello world"
+    
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("clicou")
+//        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let homeViewController = mainStoryboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+//        self.present(homeViewController, animated: true)
+        let passa2 = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
 
+        passa2?.title = actionsModel.exercisesList[indexPath.row].exercise
+        navigationController?.pushViewController(passa2!, animated: true)
+
+        favoritesUI.reloadData()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        self.filterFav = []
+        if searchText.isEmpty{
+            self.filterFav = favorites
+            
+        }else{
+            for value in favorites{
+               // if value.uppercased().contains(searchText.uppercased()){
+                    self.filterFav.append(value)
+                //}
+            }
+                searching2 = true
+                favoritesUI.reloadData()
+        }
+        favoritesUI.reloadData()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchFav.resignFirstResponder()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchFav.text = ""
+        searchFav.resignFirstResponder()
+        searchFav.setShowsCancelButton(false, animated: true)
+        favoritesUI.reloadData()
+    }
+    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
+        searchFav.setValue("Cancelar", forKey: "cancelButtonText")
+        searchFav.setShowsCancelButton(true, animated: true)
+        return true
+    }
 }
+
