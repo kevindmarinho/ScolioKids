@@ -173,11 +173,11 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
         
         let chronometerAction = UIContextualAction(style: .normal, title: chronometerActionTitle, handler:{[self] (_, _, completionHandler) in
             // delete the item here
-            if chronometerActionTitle == "Favorite" {
+            if chronometerActionTitle == "Chronos" {
                 actionsModel.savingToChronometer(index: indexPath.row)
             }
             
-            if chronometerActionTitle == "Unfavorite" {
+            if chronometerActionTitle == "UnChronos" {
                 
                 actionsModel.deleteFromChronometer(index: indexPath.row)
             }
@@ -245,7 +245,15 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
             favoriteAction.image = UIImage(systemName: "heart.fill")?.withTintColor(.systemRed, renderingMode: .alwaysOriginal)
         }
         
-        favoriteAction.image?.withTintColor(UIColor.systemRed)
+        if chronometerActionTitle == "Chronos" {
+            chronometerAction.image = UIImage(systemName: "clock")?.withTintColor(.systemYellow, renderingMode: .alwaysOriginal) }
+        
+        if chronometerActionTitle == "UnChronos" {
+            
+            chronometerAction.image = UIImage(systemName: "clock.fill")?.withTintColor(.systemYellow, renderingMode: .alwaysOriginal)
+        }
+        
+//        favoriteAction.image?.withTintColor(UIColor.systemRed)
 //        favoriteAction.backgroundColor = UIColor.systemBlue
 //        chronometerAction.backgroundColor = UIColor.systemMint
 //        return [chronometerAction, favoriteAction]

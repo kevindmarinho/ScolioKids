@@ -13,7 +13,7 @@ class StopwatchTableViewController: UITableViewController {
     
     @IBOutlet var stopwatchUI: UITableView!
     
-    var chronometer: [NSManagedObject] = []
+  
     
     let appDelegate = UIApplication.shared.delegate as? AppDelegate
 
@@ -27,7 +27,9 @@ class StopwatchTableViewController: UITableViewController {
         return container.viewContext
     }()
 
-
+    var chronometer: [NSManagedObject] = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,7 +44,7 @@ class StopwatchTableViewController: UITableViewController {
         
         //3
         do {
-          chronometer = try context.fetch(fetchRequest)
+        chronometer = try context.fetch(fetchRequest)
         } catch let error as NSError {
           print("Could not fetch. \(error), \(error.userInfo)")
         }
