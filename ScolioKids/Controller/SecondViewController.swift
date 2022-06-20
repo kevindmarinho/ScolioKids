@@ -200,7 +200,7 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
                  
             //5
             for data in favorites as! [NSManagedObject]{
-                var boolean = data.value(forKey: "isFavorited") as! Bool
+                let boolean = data.value(forKey: "isFavorited") as! Bool
                       
                 if boolean == true {
                           favoriteActionTitle = "Unfavorite"
