@@ -10,6 +10,7 @@ import UIKit
 class StopwatchTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDataSource {
 
 //    @IBOutlet weak var pickerVie
+
     @IBOutlet weak var pickerViewNumbers: UIPickerView!
     var pickerNumbers = Array(0...30)
 
