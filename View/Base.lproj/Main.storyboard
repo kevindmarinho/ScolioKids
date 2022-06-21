@@ -852,10 +852,10 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
             </objects>
             <point key="canvasLocation" x="221.73913043478262" y="1322.5446428571429"/>
         </scene>
-        <!--View Controller-->
+        <!--Favorites View Controller-->
         <scene sceneID="crU-XI-HIF">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="57m-Am-ud3" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="57m-Am-ud3" customClass="FavoritesViewController" customModule="ScolioKids" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ivf-rE-E0x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

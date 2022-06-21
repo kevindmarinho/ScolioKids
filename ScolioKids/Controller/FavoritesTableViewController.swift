@@ -36,7 +36,7 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        searchFav.placeholder = "Buscar"
+        searchFav.placeholder = "Buscar Exercício"
         searchFav.delegate = self
         
        // self.filterFav = favorites
