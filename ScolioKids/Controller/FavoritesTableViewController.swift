@@ -46,9 +46,9 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
         //2
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Favorites")
         
-        fetchRequest.predicate = NSPredicate(format: "favoritesName = %@", "\(favorites)")
-        //3
-        fetchRequest.returnsObjectsAsFaults = false
+//        fetchRequest.predicate = NSPredicate(format: "favoritesName = %@", "\(favorites)")
+//        //3
+//        fetchRequest.returnsObjectsAsFaults = false
         do {
           favorites = try context.fetch(fetchRequest)
         } catch let error as NSError {
@@ -103,14 +103,8 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if searching2 {
-           // return searchExercicies.count
-            return filterFav.count
-        } else {
-            return favorites.count
-        }
-        
-       // return favorites.count
+        return favorites.count
+  
     }
 
     
@@ -125,10 +119,6 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("clicou")
-//        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//        let homeViewController = mainStoryboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-//        self.present(homeViewController, animated: true)
         
         let passa2 = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
         
@@ -136,13 +126,13 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
             passa2?.title = filterFav[indexPath.row].exercise
         }
         else{
-//            passa?.title = actionsModel.exercisesList[indexPath.row].exercise
+        // passa2?.title = actionsModel.exercisesList[indexPath.row].exercise
             passa2?.title = tableView.cellForRow(at: indexPath)?.textLabel?.text ?? ""
         }
         
         passa2?.nameTrainning = tableView.cellForRow(at: indexPath)?.textLabel?.text ?? ""
         
-//        passa2?.title = tableView.cellForRow(at: indexPath)?.textLabel?.text ?? ""
+      //  passa2?.title = tableView.cellForRow(at: indexPath)?.textLabel?.text ?? ""
         
 //        passa2?.title = actionsModel.exercisesList[indexPath.row].exercise
         
@@ -153,16 +143,16 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
 //
-//        if searchText.isEmpty{
-//            self.filterFav = favorites
-//
-//        }else{
-//            for value in favorites{
-//                if value.uppercased().contains(searchText.uppercased()){
-//                    self.filterFav.append(value)
-//                }
-//            }
-//        }
+        if searchText.isEmpty{
+            self.filterFav = actionsModel.exercisesList
+
+        }else{
+            for value in actionsModel.exercisesList{
+                if value.exercise.uppercased().contains(searchText.uppercased()){
+                    self.filterFav.append(value)
+                }
+            }
+        }
         searching2 = true
         favoritesUI.reloadData()
     }
