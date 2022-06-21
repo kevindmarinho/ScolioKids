@@ -45,15 +45,12 @@ struct ActionsModel {
         
         do {
             try context.save()
-            
-            //4
             favorites.append(favoriteExercise)
             
         } catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
         }
     }
-    
     
     func deleteFromFavorites(index: Int){
      
@@ -63,15 +60,12 @@ struct ActionsModel {
         request.predicate = NSPredicate(format: "favoritesName = %@", "\(exercisesList[index].exercise)")
         request.returnsObjectsAsFaults = false
         do {
-            //4
             let result = try context.fetch(request)
-           
-            //5
+
             for data in result as! [NSManagedObject]
             {
-                //6
                 context.delete(data)
-                //
+
                 do {
                     try context.save()
                 }
@@ -97,7 +91,6 @@ struct ActionsModel {
         
         do {
             try context.save()
-            //4
             chronometer.append(chronometerExercise)
             
         } catch let error as NSError {
