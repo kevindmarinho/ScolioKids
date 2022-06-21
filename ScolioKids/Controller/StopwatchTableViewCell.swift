@@ -14,7 +14,7 @@ class StopwatchTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var pickerViewNumbers: UIPickerView!
     var pickerNumbers = Array(0...30)
 
-   
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 

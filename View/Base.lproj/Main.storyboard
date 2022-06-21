@@ -714,7 +714,7 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="botao" translatesAutoresizingMaskIntoConstraints="NO" id="TCX-9J-uY2">
-                                                    <rect key="frame" x="5" y="4" width="404" height="62"/>
+                                                    <rect key="frame" x="15" y="4" width="384" height="62"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBM-yi-fvr">
                                                     <rect key="frame" x="35" y="5" width="339" height="61"/>
@@ -726,10 +726,10 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="TCX-9J-uY2" secondAttribute="trailing" constant="5" id="AZC-jk-Sc1"/>
                                                 <constraint firstAttribute="bottom" secondItem="TCX-9J-uY2" secondAttribute="bottom" constant="4" id="OYt-ZK-fa3"/>
                                                 <constraint firstItem="TCX-9J-uY2" firstAttribute="top" secondItem="utu-wA-3oP" secondAttribute="top" constant="4" id="T0g-2u-zyt"/>
-                                                <constraint firstItem="TCX-9J-uY2" firstAttribute="leading" secondItem="utu-wA-3oP" secondAttribute="leading" constant="5" id="iPH-jC-8HC"/>
+                                                <constraint firstAttribute="trailing" secondItem="TCX-9J-uY2" secondAttribute="trailing" constant="15" id="u3U-EM-hbE"/>
+                                                <constraint firstItem="TCX-9J-uY2" firstAttribute="leading" secondItem="utu-wA-3oP" secondAttribute="leading" constant="15" id="vvz-7R-9gR"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -932,19 +932,29 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B4E-LG-OFW">
-                                <rect key="frame" x="20" y="468" width="374" height="345"/>
+                                <rect key="frame" x="20" y="523" width="374" height="290"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <connections>
                                     <segue destination="Hvv-v2-Ebf" kind="embed" id="2Xm-zD-INF"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercícios de Hoje" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AN-lB-GLa">
+                                <rect key="frame" x="20" y="430" width="207" height="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bcu-Bj-SO6"/>
                         <color key="backgroundColor" name="backgroundOne"/>
                         <constraints>
                             <constraint firstItem="h0c-6v-muh" firstAttribute="top" secondItem="bcu-Bj-SO6" secondAttribute="top" constant="80" id="9TX-MM-II8"/>
                             <constraint firstItem="h0c-6v-muh" firstAttribute="leading" secondItem="bcu-Bj-SO6" secondAttribute="leading" constant="46" id="BFA-Lv-uPJ"/>
+                            <constraint firstItem="7AN-lB-GLa" firstAttribute="leading" secondItem="bcu-Bj-SO6" secondAttribute="leading" constant="20" id="FQK-4R-daB"/>
                             <constraint firstItem="8SL-Ca-TA3" firstAttribute="leading" secondItem="bcu-Bj-SO6" secondAttribute="leading" id="G7g-iR-IFO"/>
+                            <constraint firstItem="bcu-Bj-SO6" firstAttribute="trailing" secondItem="7AN-lB-GLa" secondAttribute="trailing" constant="187" id="PGU-tP-sVI"/>
+                            <constraint firstItem="7AN-lB-GLa" firstAttribute="top" secondItem="8SL-Ca-TA3" secondAttribute="bottom" constant="15" id="XYt-Gz-z2Z"/>
                             <constraint firstItem="h0n-al-fEw" firstAttribute="top" secondItem="h0c-6v-muh" secondAttribute="bottom" constant="90" id="aT3-Tf-OTj"/>
                             <constraint firstItem="8SL-Ca-TA3" firstAttribute="top" secondItem="zvw-Jw-FUB" secondAttribute="top" id="cdn-eY-DUW"/>
                             <constraint firstItem="bcu-Bj-SO6" firstAttribute="trailing" secondItem="h0c-6v-muh" secondAttribute="trailing" constant="46" id="crw-Rz-fSp"/>
@@ -972,10 +982,12 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="7V4-8k-hMu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="645"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="backgroundOne"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="gUK-QB-yNJ">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="barTintColor" name="backgroundOne"/>
                             <textInputTraits key="textInputTraits"/>
                             <connections>
                                 <outlet property="delegate" destination="WRE-9B-MYY" id="epe-F0-0EF"/>
@@ -988,7 +1000,9 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fj1-0Q-PxW" id="tqS-ko-jl6">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" name="backgroundOne"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" name="backgroundOne"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1011,23 +1025,30 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
             <objects>
                 <tableViewController id="Hvv-v2-Ebf" customClass="StopwatchTableViewController" customModule="ScolioKids" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="JRU-bC-wR2">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="345"/>
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="290"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="backgroundOne"/>
+                        <color key="sectionIndexBackgroundColor" systemColor="systemGreenColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reusebleChronometerCell" id="faE-df-X2a" customClass="StopwatchTableViewCell" customModule="ScolioKids" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reusebleChronometerCell" rowHeight="59" id="faE-df-X2a" customClass="StopwatchTableViewCell" customModule="ScolioKids" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="374" height="59"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="faE-df-X2a" id="5gn-rT-Tdx" customClass="StopwatchTableViewCell" customModule="ScolioKids" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="59"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="botao" translatesAutoresizingMaskIntoConstraints="NO" id="S1X-hn-CeY">
+                                            <rect key="frame" x="0.0" y="1" width="344" height="59"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                         <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q4I-cU-1hg">
-                                            <rect key="frame" x="254" y="-7" width="100" height="58"/>
+                                            <rect key="frame" x="264" y="1" width="100" height="58"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         </pickerView>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="pickerViewNumbers" destination="q4I-cU-1hg" id="IRN-Jn-UEP"/>
                                 </connections>
@@ -1105,8 +1126,8 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
         <namedColor name="backgroundOne">
             <color red="1" green="0.96862745098039216" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
