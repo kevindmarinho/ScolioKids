@@ -120,9 +120,14 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
         
         if searching2 {
             cell.textLabel?.text = filterFav[indexPath.row].favoritesName
+            cell.textLabel?.textColor = .white
+            cell.textLabel?.font = .boldSystemFont(ofSize: 18)
+            
 
         } else {
             cell.textLabel?.text = favoritesExercise.value(forKeyPath: "favoritesName") as? String
+            cell.textLabel?.textColor = .white
+            cell.textLabel?.font = .boldSystemFont(ofSize: 18)
         }
                    
 //        cell.textLabel?.text = favoritesExercise.value(forKeyPath: "favoritesName") as? String
