@@ -109,6 +109,9 @@ class StopwatchTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "reusebleChronometerCell", for: indexPath)
 //        cell.textLabel?.text = "hello world"
             cell.textLabel?.text = chronometerExercise.value(forKeyPath: "chronometerName") as? String
+            cell.textLabel?.textColor = .white
+            cell.textLabel?.font = .boldSystemFont(ofSize: 18)
+            
     
         return cell
     }
