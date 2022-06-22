@@ -17,7 +17,7 @@ class ScolioScene: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "O que é?"
+       // title = "O que é?"
         
         view.insertSubview(imageView, at: 0)
                     NSLayoutConstraint.activate([
@@ -44,7 +44,7 @@ class DicasScene: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Dicas"
+       // title = "Dicas"
         
         view.insertSubview(imageView, at: 0)
                     NSLayoutConstraint.activate([
