@@ -70,18 +70,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wub-6M-5cz">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="720"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercícios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkc-hU-gyl">
-                                                <rect key="frame" x="20" y="44" width="167" height="42"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="167" id="jcL-Sj-1K7"/>
-                                                    <constraint firstAttribute="height" constant="42" id="ntY-ll-jEA"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCT-U4-s7d">
-                                                <rect key="frame" x="20" y="106" width="374" height="114"/>
+                                                <rect key="frame" x="20" y="25" width="374" height="114"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="Group 61"/>
@@ -91,13 +81,13 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informações" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhE-me-2Bm">
-                                                <rect key="frame" x="20" y="246" width="175.5" height="36"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <rect key="frame" x="20" y="169" width="146" height="30"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvf-bu-W2b">
-                                                <rect key="frame" x="20" y="302" width="374" height="114"/>
+                                                <rect key="frame" x="20" y="229" width="374" height="114"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="374" id="7Y9-D5-ofe"/>
                                                     <constraint firstAttribute="height" constant="114" id="FdZ-nQ-2Ai"/>
@@ -110,7 +100,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thg-Cb-wrV">
-                                                <rect key="frame" x="20" y="426.5" width="374" height="114"/>
+                                                <rect key="frame" x="20" y="353" width="374" height="114"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="114" id="MMj-nY-8Jt"/>
                                                 </constraints>
@@ -122,7 +112,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dicas para tratar crianças" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kT9-s0-Zpr">
-                                                <rect key="frame" x="46" y="452" width="238" height="63"/>
+                                                <rect key="frame" x="41" y="379" width="238" height="63"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="238" id="70l-uu-ONv"/>
                                                     <constraint firstAttribute="height" constant="63" id="yGt-QR-g0L"/>
@@ -132,7 +122,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ma-1V-ICD">
-                                                <rect key="frame" x="20" y="551" width="374" height="114"/>
+                                                <rect key="frame" x="20" y="477" width="374" height="114"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="374" id="1w9-EX-uvX"/>
                                                     <constraint firstAttribute="height" constant="114" id="mxa-vD-Fza"/>
@@ -144,18 +134,8 @@
                                                     <segue destination="j8e-Ve-al5" kind="show" id="UqX-xf-UO3"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como ter uma coluna saudável ?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdL-gq-A6e">
-                                                <rect key="frame" x="46" y="577" width="238" height="63"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="238" id="1BE-5D-dC1"/>
-                                                    <constraint firstAttribute="height" constant="63" id="wbt-qU-a8c"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercícios" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9y7-5O-v1O">
-                                                <rect key="frame" x="46" y="132" width="238" height="63"/>
+                                                <rect key="frame" x="41" y="51" width="238" height="63"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="63" id="bLy-1X-d8l"/>
                                                     <constraint firstAttribute="width" constant="238" id="uYg-Zr-pAa"/>
@@ -165,10 +145,20 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O que é escoliose ?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHr-Mt-LmJ">
-                                                <rect key="frame" x="46" y="348" width="179" height="24"/>
+                                                <rect key="frame" x="41" y="274" width="179" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="179" id="O8p-fc-rdt"/>
                                                     <constraint firstAttribute="height" constant="24" id="o4a-cl-lpY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como ter uma coluna saudável ?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdL-gq-A6e">
+                                                <rect key="frame" x="41" y="509" width="238" height="63"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="238" id="1BE-5D-dC1"/>
+                                                    <constraint firstAttribute="height" constant="63" id="wbt-qU-a8c"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -178,31 +168,30 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="WCT-U4-s7d" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="0sA-ZT-nQi"/>
-                                            <constraint firstItem="hvf-bu-W2b" firstAttribute="top" secondItem="vhE-me-2Bm" secondAttribute="bottom" constant="20" id="2hr-hv-3jU"/>
-                                            <constraint firstItem="thg-Cb-wrV" firstAttribute="top" secondItem="hvf-bu-W2b" secondAttribute="bottom" constant="10.6" id="6JX-oa-2kx"/>
-                                            <constraint firstItem="WCT-U4-s7d" firstAttribute="top" secondItem="pkc-hU-gyl" secondAttribute="bottom" constant="20" id="7tJ-8X-Fiw"/>
-                                            <constraint firstItem="9y7-5O-v1O" firstAttribute="top" secondItem="pkc-hU-gyl" secondAttribute="bottom" constant="46" id="7y3-qp-LA6"/>
-                                            <constraint firstItem="pkc-hU-gyl" firstAttribute="top" secondItem="Wub-6M-5cz" secondAttribute="top" constant="44" id="8As-Ls-deJ"/>
-                                            <constraint firstItem="vhE-me-2Bm" firstAttribute="top" secondItem="9y7-5O-v1O" secondAttribute="bottom" constant="51" id="Duo-Hw-I3C"/>
-                                            <constraint firstItem="GdL-gq-A6e" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="46" id="DxX-3B-UOz"/>
+                                            <constraint firstItem="wHr-Mt-LmJ" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="41" id="3jj-mf-rTn"/>
+                                            <constraint firstItem="hvf-bu-W2b" firstAttribute="top" secondItem="vhE-me-2Bm" secondAttribute="bottom" constant="30" id="5bL-S9-lGQ"/>
+                                            <constraint firstItem="GdL-gq-A6e" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="41" id="F9K-Im-PgB"/>
+                                            <constraint firstItem="vhE-me-2Bm" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="FQq-JF-hGQ"/>
+                                            <constraint firstItem="vhE-me-2Bm" firstAttribute="top" secondItem="WCT-U4-s7d" secondAttribute="bottom" constant="30" id="Fqz-5t-8ZG"/>
                                             <constraint firstAttribute="height" constant="720" id="GuD-MV-syR"/>
                                             <constraint firstAttribute="trailing" secondItem="WCT-U4-s7d" secondAttribute="trailing" constant="20" id="HLu-u0-5nt"/>
-                                            <constraint firstItem="vhE-me-2Bm" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="Jv9-PD-J0x"/>
-                                            <constraint firstItem="kT9-s0-Zpr" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="46" id="PqA-qO-WFV"/>
+                                            <constraint firstAttribute="trailing" secondItem="hvf-bu-W2b" secondAttribute="trailing" constant="20" id="Mht-OU-ymu"/>
+                                            <constraint firstItem="9y7-5O-v1O" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="41" id="Mz9-Fa-xYV"/>
+                                            <constraint firstItem="WCT-U4-s7d" firstAttribute="top" secondItem="Wub-6M-5cz" secondAttribute="top" constant="25" id="OHe-sY-98R"/>
                                             <constraint firstItem="hvf-bu-W2b" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="Q5b-Tc-2cY"/>
-                                            <constraint firstItem="pkc-hU-gyl" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="UDm-WL-J7N"/>
-                                            <constraint firstItem="9y7-5O-v1O" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="46" id="UId-QN-atI"/>
+                                            <constraint firstItem="thg-Cb-wrV" firstAttribute="top" secondItem="wHr-Mt-LmJ" secondAttribute="bottom" constant="55" id="SmL-yg-aJd"/>
+                                            <constraint firstItem="thg-Cb-wrV" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" symbolic="YES" id="T7B-gf-6cv"/>
                                             <constraint firstAttribute="trailing" secondItem="6Ma-1V-ICD" secondAttribute="trailing" constant="20" id="VRs-tq-V4f"/>
+                                            <constraint firstItem="thg-Cb-wrV" firstAttribute="top" secondItem="hvf-bu-W2b" secondAttribute="bottom" constant="10" id="WPH-r7-wP0"/>
                                             <constraint firstAttribute="trailing" secondItem="thg-Cb-wrV" secondAttribute="trailing" constant="20" id="WqD-yt-ZBt"/>
-                                            <constraint firstAttribute="bottom" secondItem="GdL-gq-A6e" secondAttribute="bottom" constant="80" id="ZBj-ym-d11"/>
                                             <constraint firstItem="thg-Cb-wrV" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="ZbR-wV-X5T"/>
-                                            <constraint firstItem="thg-Cb-wrV" firstAttribute="top" secondItem="wHr-Mt-LmJ" secondAttribute="bottom" constant="54.5" id="apv-6Y-XYD"/>
-                                            <constraint firstItem="6Ma-1V-ICD" firstAttribute="top" secondItem="kT9-s0-Zpr" secondAttribute="bottom" constant="36" id="eyv-tN-ulv"/>
+                                            <constraint firstItem="hvf-bu-W2b" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="anK-9f-fLe"/>
                                             <constraint firstItem="6Ma-1V-ICD" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="iur-PZ-w4r"/>
-                                            <constraint firstItem="wHr-Mt-LmJ" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="46" id="nFU-8w-Gb4"/>
-                                            <constraint firstAttribute="trailing" secondItem="hvf-bu-W2b" secondAttribute="trailing" constant="20" id="wDp-5t-abC"/>
-                                            <constraint firstItem="6Ma-1V-ICD" firstAttribute="top" secondItem="thg-Cb-wrV" secondAttribute="bottom" constant="10.6" id="wrh-ce-aME"/>
-                                            <constraint firstItem="GdL-gq-A6e" firstAttribute="top" secondItem="thg-Cb-wrV" secondAttribute="bottom" constant="36.5" id="x6O-Pt-gun"/>
+                                            <constraint firstAttribute="bottom" secondItem="GdL-gq-A6e" secondAttribute="bottom" constant="148" id="j1u-4Q-DS2"/>
+                                            <constraint firstItem="6Ma-1V-ICD" firstAttribute="top" secondItem="kT9-s0-Zpr" secondAttribute="bottom" constant="35" id="kUE-up-Ptq"/>
+                                            <constraint firstItem="kT9-s0-Zpr" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="41" id="qUd-2b-2Lf"/>
+                                            <constraint firstItem="6Ma-1V-ICD" firstAttribute="top" secondItem="thg-Cb-wrV" secondAttribute="bottom" constant="10" id="sXD-fZ-RAT"/>
+                                            <constraint firstItem="vhE-me-2Bm" firstAttribute="top" secondItem="9y7-5O-v1O" secondAttribute="bottom" constant="55" id="t2r-AN-6Cw"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -971,7 +960,7 @@ A má postura é outro fator que contribui para o desenvolvimento da escoliose.<
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="7V4-8k-hMu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="645"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" name="backgroundOne"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" id="gUK-QB-yNJ">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -987,15 +976,21 @@ A má postura é outro fator que contribui para o desenvolvimento da escoliose.<
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reusebleFavoritesCell" id="Fj1-0Q-PxW" customClass="FavoritesTableViewCell" customModule="ScolioKids" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="95.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reusebleFavoritesCell" rowHeight="66" id="Fj1-0Q-PxW" customClass="FavoritesTableViewCell" customModule="ScolioKids" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="95.5" width="414" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fj1-0Q-PxW" id="tqS-ko-jl6">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" name="backgroundOne"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="botao" translatesAutoresizingMaskIntoConstraints="NO" id="joi-bA-zZt">
+                                            <rect key="frame" x="13" y="5" width="367" height="55"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" name="backgroundOne"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1011,7 +1006,7 @@ A má postura é outro fator que contribui para o desenvolvimento da escoliose.<
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S3h-Uy-qj3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1286" y="-214"/>
+            <point key="canvasLocation" x="1285.5072463768117" y="-214.62053571428569"/>
         </scene>
         <!--Stopwatch Table View Controller-->
         <scene sceneID="n7C-6m-KEv">
