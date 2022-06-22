@@ -782,7 +782,7 @@ A má postura é outro fator que contribui para o desenvolvimento da escoliose.<
                                                                 <constraint firstAttribute="height" constant="224" id="o3N-ec-vgt"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9b-9x-PIl">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9b-9x-PIl">
                                                             <rect key="frame" x="32" y="275" width="350" height="120"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="350" id="1f3-e5-EuS"/>
