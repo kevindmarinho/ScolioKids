@@ -743,7 +743,7 @@ A má postura é outro fator que contribui para o desenvolvimento da escoliose.<
         <!--Detail View Controller-->
         <scene sceneID="saW-uR-npe">
             <objects>
-                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0cK-9v-dxM" customClass="DetailViewController" customModule="ScolioKids" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0cK-9v-dxM" customClass="DetailViewController" customModule="ScolioKids" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="abP-Ht-rF8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
