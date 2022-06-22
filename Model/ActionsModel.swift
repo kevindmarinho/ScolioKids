@@ -11,7 +11,7 @@ import CoreData
 
 struct ActionsModel {
     
-    var exercisesList: [Exercises] = ["Aviãozinho", "Prancha Lateral", "Nome 3", "Nome 4"].compactMap({Exercises(exercise: $0, isFavorited: false, isChronometer: false)})
+    var exercisesList: [Exercises] = ["Aviãozinho", "Prancha Lateral"].compactMap({Exercises(exercise: $0, isFavorited: false, isChronometer: false)})
     
     
     let appDelegate = UIApplication.shared.delegate as? AppDelegate
