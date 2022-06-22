@@ -238,11 +238,12 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
         
   
         if favoriteActionTitle == "Favorite" {
-            favoriteAction.image = UIImage(systemName: "heart")?.withTintColor(.systemRed, renderingMode: .alwaysOriginal) }
+//            favoriteAction.image = UIImage(named: "FrameCronometro")?.withTintColor(.systemRed, renderingMode: .alwaysOriginal) }
+            favoriteAction.image = UIImage(named: "Group-140")}
         
         if favoriteActionTitle == "Unfavorite" {
             
-            favoriteAction.image = UIImage(systemName: "heart.fill")?.withTintColor(.systemRed, renderingMode: .alwaysOriginal)
+            favoriteAction.image = UIImage(named: "Group-136")
         }
         
         if chronometerActionTitle == "Chronos" {
@@ -257,6 +258,7 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
 //        favoriteAction.backgroundColor = UIColor.systemBlue
 //        chronometerAction.backgroundColor = UIColor.systemMint
 //        return [chronometerAction, favoriteAction]
+        favoriteAction.backgroundColor = .white
         let action = UISwipeActionsConfiguration(actions: [chronometerAction, favoriteAction])
         
         return action
