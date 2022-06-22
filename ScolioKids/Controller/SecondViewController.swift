@@ -13,7 +13,7 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var ExercicioView: UITableView!
-    
+
     var imageView: UIImageView = {
             let imageView = UIImageView(frame: .zero)
             imageView.image = UIImage(named: "backgroundOficial")
@@ -40,25 +40,17 @@ class SecondViewController: UIViewController {
     var favorites: [NSManagedObject] = []
     var chronometer: [NSManagedObject] = []
     
-    //Search
 
+    //Search
    // var searchExercicies = [String]()
     var filterUser: [Exercises] = []
     var searching = false
     
-    // TableCell
-
-//    let exercises = [
-//        "Aviãozinho",
-//        "Prancha Lateral"
-//    ]
-    
-//    var isCellSelected: Bool = false
-//    var SomeCellSelected: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+                
         title = "Exercícios"
         
         view.insertSubview(imageView, at: 0)
@@ -71,6 +63,8 @@ class SecondViewController: UIViewController {
         
         ExercicioView.delegate = self
         ExercicioView.dataSource = self
+        ExercicioView.reloadData()
+        
         
         self.filterUser = actionsModel.exercisesList
         searchBar.placeholder = "Buscar"
@@ -80,6 +74,16 @@ class SecondViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        //2
+        let chronometerFetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Chronometer")
+        
+        //3
+        do {
+          chronometer = try context.fetch(chronometerFetchRequest)
+        } catch let error as NSError {
+          print("Could not fetch. \(error), \(error.userInfo)")
+        }
        
         ExercicioView.delegate = self
         ExercicioView.dataSource = self
@@ -138,8 +142,6 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
-//        ExercicioView.reloadData()
-        
         //CRONOMETRO
         var chronometerActionTitle = "Chronos" // 7
         let chronometerRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Chronometer")
@@ -159,7 +161,6 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
                         chronometerActionTitle = "UnChronos"
 //                          context.delete(data)
                       }
-                      //
                       do {
                         try actionsModel.context.save()
                       }
@@ -253,16 +254,13 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
             chronometerAction.image = UIImage(systemName: "clock.fill")?.withTintColor(.systemYellow, renderingMode: .alwaysOriginal)
         }
         
-//        favoriteAction.image?.withTintColor(UIColor.systemRed)
-//        favoriteAction.backgroundColor = UIColor.systemBlue
-//        chronometerAction.backgroundColor = UIColor.systemMint
-//        return [chronometerAction, favoriteAction]
+     
+   
         let action = UISwipeActionsConfiguration(actions: [chronometerAction, favoriteAction])
         
         return action
       
-//        ExercicioView.reloadData()
-   
+       
     }
     
     // Table View Data Souce -> Exercícios
