@@ -20,7 +20,7 @@ class DetailViewController: UIViewController {
 
                ],
         "Prancha Lateral" : [
-            listaInst(textoCelula: "1. Comece deitando de lado.\n2. Apoie um cotovelo no chão, na mesma direção do seu ombro, eleve o quadril e deixe as pernas retas, apenas com os pés encostados no chão./n3. Eleve seus braços na linha do ombro e mantenha o abdômem para dentro.\n4. Repita o processo e segure a posição\n5. Alterne os lados.", imageCelula: "prancha1"),
+            listaInst(textoCelula: "1. Comece deitando de lado.\n2. Apoie um cotovelo no chão, na mesma direção do seu ombro, eleve o quadril e deixe as pernas retas, apenas com os pés encostados no chão.", imageCelula: "prancha1"),
             //listaInst(textoCelula: "3. Eleve seus braços na linha do ombro e mantenha o abdômem para dentro.\n4. Repita o processo e segure a posição\n5. Alterne os lados.", imageCelula: ""),
 
         ],
