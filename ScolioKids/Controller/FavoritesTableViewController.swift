@@ -59,7 +59,9 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
     
 
     // MARK: - Table view data source
-
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+          return 70
+      }
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
