@@ -48,8 +48,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="DaE-Hh-tR4" kind="relationship" relationship="viewControllers" id="RgL-8f-n14"/>
-                        <segue destination="D1n-nB-lA8" kind="relationship" relationship="viewControllers" id="mqs-ID-vwV"/>
-                        <segue destination="HxO-bS-p4d" kind="relationship" relationship="viewControllers" id="apn-JG-gMZ"/>
+                        <segue destination="HxO-bS-p4d" kind="relationship" relationship="viewControllers" id="HX1-cd-bxf"/>
+                        <segue destination="D1n-nB-lA8" kind="relationship" relationship="viewControllers" id="rni-nk-NEe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HXB-la-dHr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -564,10 +564,10 @@ Lembre-se que os exercícios devem ser administrados por um profissional.</strin
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0t-gZ-aaS">
                                                 <rect key="frame" x="20" y="325.5" width="374" height="385.5"/>
-                                                <mutableString key="text">Dor e má postura podem ser indicativos de que a criança possui escoliose. Porém, nem sempre a escoliose dá sinais visíveis (principalmente no início), por isso é necessário observar se seu tronco e ombros estão desalinhados (um está mais alto que o outro) ou se ela fica mais "torta” para um lado.
+                                                <string key="text">Dor e má postura podem ser indicativos de que a criança possui escoliose. Porém, nem sempre a escoliose dá sinais visíveis (principalmente no início), por isso é necessário observar se seu tronco e ombros estão desalinhados (um está mais alto que o outro) ou se ela fica mais "torta” para um lado.
 A hereditariedade é um fator a ser avaliado, pois se algum familiar tem ou teve escoliose, principalmente a infantil, há chances de a criança ter.
 É de extrema importância levar a criança para consultas com ortopedistas e fisioterapeutas, são eles que vão passar exames e alguns testes que mostrarão se ela tem escoliose e identificarão o tipo de acordo com os resultados obtidos.
-Quanto mais cedo identificada e tratada, melhores serão os resultados.</mutableString>
+Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
