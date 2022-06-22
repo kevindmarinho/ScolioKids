@@ -247,18 +247,21 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
         }
         
         if chronometerActionTitle == "Chronos" {
-            chronometerAction.image = UIImage(systemName: "clock")?.withTintColor(.systemYellow, renderingMode: .alwaysOriginal) }
+            chronometerAction.image = UIImage(named: "Group-134")
+            
+        }
         
         if chronometerActionTitle == "UnChronos" {
             
-            chronometerAction.image = UIImage(systemName: "clock.fill")?.withTintColor(.systemYellow, renderingMode: .alwaysOriginal)
+            chronometerAction.image = UIImage(named: "Group-135")
         }
         
 //        favoriteAction.image?.withTintColor(UIColor.systemRed)
 //        favoriteAction.backgroundColor = UIColor.systemBlue
 //        chronometerAction.backgroundColor = UIColor.systemMint
 //        return [chronometerAction, favoriteAction]
-        favoriteAction.backgroundColor = .white
+        favoriteAction.backgroundColor = .init(named: "backgroundOne")
+        chronometerAction.backgroundColor = .init(named: "backgroundOne")
         let action = UISwipeActionsConfiguration(actions: [chronometerAction, favoriteAction])
         
         return action
