@@ -108,7 +108,13 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
             return filterFav.count
         }
         else {
+            
+//            if favorites.isEmpty{
+//                tableView.backgroundColor = .init(patternImage: .init(named: "heart")!)
+//
+//            }
             return favorites.count
+            
         }
     }
     
