@@ -164,6 +164,18 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maefilho" translatesAutoresizingMaskIntoConstraints="NO" id="Tiv-Hg-7CB">
+                                                <rect key="frame" x="20" y="352" width="350" height="115"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pensando" translatesAutoresizingMaskIntoConstraints="NO" id="153-RF-F8S">
+                                                <rect key="frame" x="20" y="228" width="346" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coluna" translatesAutoresizingMaskIntoConstraints="NO" id="aWy-r9-Ws5">
+                                                <rect key="frame" x="20" y="486" width="350" height="105"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1102,10 +1114,13 @@ A má postura é outro fator que contribui para o desenvolvimento da escoliose.<
         <image name="TexturaCronometro" width="390" height="415"/>
         <image name="backgroundPersonal" width="391" height="844"/>
         <image name="botao" width="116.66666412353516" height="19.666666030883789"/>
+        <image name="coluna" width="1050" height="344"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="home 2" width="128" height="128"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="maefilho" width="1050" height="344"/>
+        <image name="pensando" width="1050" height="344"/>
         <image name="stopwatch" catalog="system" width="121" height="128"/>
         <image name="stopwatch.fill" catalog="system" width="121" height="128"/>
         <namedColor name="AccentColor">
