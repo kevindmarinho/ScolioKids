@@ -71,7 +71,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="720"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCT-U4-s7d">
-                                                <rect key="frame" x="20" y="25" width="374" height="114"/>
+                                                <rect key="frame" x="20" y="21" width="374" height="114"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="Group 61"/>
@@ -81,13 +81,13 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informações" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhE-me-2Bm">
-                                                <rect key="frame" x="20" y="169" width="146" height="30"/>
+                                                <rect key="frame" x="20" y="155" width="146" height="30"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvf-bu-W2b">
-                                                <rect key="frame" x="20" y="229" width="374" height="114"/>
+                                                <rect key="frame" x="20" y="205" width="374" height="114"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="374" id="7Y9-D5-ofe"/>
                                                     <constraint firstAttribute="height" constant="114" id="FdZ-nQ-2Ai"/>
@@ -100,7 +100,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thg-Cb-wrV">
-                                                <rect key="frame" x="20" y="353" width="374" height="114"/>
+                                                <rect key="frame" x="20" y="329" width="374" height="114"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="114" id="MMj-nY-8Jt"/>
                                                 </constraints>
@@ -112,7 +112,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dicas para tratar crianças" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kT9-s0-Zpr">
-                                                <rect key="frame" x="41" y="379" width="238" height="63"/>
+                                                <rect key="frame" x="41" y="355" width="238" height="63"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="238" id="70l-uu-ONv"/>
                                                     <constraint firstAttribute="height" constant="63" id="yGt-QR-g0L"/>
@@ -122,7 +122,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ma-1V-ICD">
-                                                <rect key="frame" x="20" y="477" width="374" height="114"/>
+                                                <rect key="frame" x="20" y="453" width="374" height="114"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="374" id="1w9-EX-uvX"/>
                                                     <constraint firstAttribute="height" constant="114" id="mxa-vD-Fza"/>
@@ -135,7 +135,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercícios" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9y7-5O-v1O">
-                                                <rect key="frame" x="41" y="51" width="238" height="63"/>
+                                                <rect key="frame" x="41" y="47" width="238" height="63"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="63" id="bLy-1X-d8l"/>
                                                     <constraint firstAttribute="width" constant="238" id="uYg-Zr-pAa"/>
@@ -145,7 +145,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O que é escoliose ?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHr-Mt-LmJ">
-                                                <rect key="frame" x="41" y="274" width="179" height="24"/>
+                                                <rect key="frame" x="41" y="250" width="179" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="179" id="O8p-fc-rdt"/>
                                                     <constraint firstAttribute="height" constant="24" id="o4a-cl-lpY"/>
@@ -155,7 +155,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como ter uma coluna saudável ?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdL-gq-A6e">
-                                                <rect key="frame" x="41" y="509" width="238" height="63"/>
+                                                <rect key="frame" x="41" y="479" width="238" height="63"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="238" id="1BE-5D-dC1"/>
                                                     <constraint firstAttribute="height" constant="63" id="wbt-qU-a8c"/>
@@ -165,31 +165,35 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maefilho" translatesAutoresizingMaskIntoConstraints="NO" id="Tiv-Hg-7CB">
-                                                <rect key="frame" x="20" y="352" width="350" height="115"/>
+                                                <rect key="frame" x="20" y="330" width="350" height="115"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pensando" translatesAutoresizingMaskIntoConstraints="NO" id="153-RF-F8S">
-                                                <rect key="frame" x="20" y="228" width="346" height="117"/>
+                                                <rect key="frame" x="24" y="204" width="346" height="117"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 exercícios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfx-jr-C34">
+                                                <rect key="frame" x="41" y="92" width="72" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coluna" translatesAutoresizingMaskIntoConstraints="NO" id="aWy-r9-Ws5">
-                                                <rect key="frame" x="20" y="486" width="350" height="105"/>
+                                                <rect key="frame" x="22" y="462" width="350" height="105"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="vhE-me-2Bm" firstAttribute="top" secondItem="WCT-U4-s7d" secondAttribute="bottom" constant="20" id="0iw-6O-j5N"/>
                                             <constraint firstItem="WCT-U4-s7d" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="0sA-ZT-nQi"/>
                                             <constraint firstItem="wHr-Mt-LmJ" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="41" id="3jj-mf-rTn"/>
-                                            <constraint firstItem="hvf-bu-W2b" firstAttribute="top" secondItem="vhE-me-2Bm" secondAttribute="bottom" constant="30" id="5bL-S9-lGQ"/>
                                             <constraint firstItem="GdL-gq-A6e" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="41" id="F9K-Im-PgB"/>
                                             <constraint firstItem="vhE-me-2Bm" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="FQq-JF-hGQ"/>
-                                            <constraint firstItem="vhE-me-2Bm" firstAttribute="top" secondItem="WCT-U4-s7d" secondAttribute="bottom" constant="30" id="Fqz-5t-8ZG"/>
                                             <constraint firstAttribute="height" constant="720" id="GuD-MV-syR"/>
                                             <constraint firstAttribute="trailing" secondItem="WCT-U4-s7d" secondAttribute="trailing" constant="20" id="HLu-u0-5nt"/>
                                             <constraint firstAttribute="trailing" secondItem="hvf-bu-W2b" secondAttribute="trailing" constant="20" id="Mht-OU-ymu"/>
                                             <constraint firstItem="9y7-5O-v1O" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="41" id="Mz9-Fa-xYV"/>
-                                            <constraint firstItem="WCT-U4-s7d" firstAttribute="top" secondItem="Wub-6M-5cz" secondAttribute="top" constant="25" id="OHe-sY-98R"/>
                                             <constraint firstItem="hvf-bu-W2b" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="Q5b-Tc-2cY"/>
                                             <constraint firstItem="thg-Cb-wrV" firstAttribute="top" secondItem="wHr-Mt-LmJ" secondAttribute="bottom" constant="55" id="SmL-yg-aJd"/>
                                             <constraint firstItem="thg-Cb-wrV" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" symbolic="YES" id="T7B-gf-6cv"/>
@@ -197,13 +201,17 @@
                                             <constraint firstItem="thg-Cb-wrV" firstAttribute="top" secondItem="hvf-bu-W2b" secondAttribute="bottom" constant="10" id="WPH-r7-wP0"/>
                                             <constraint firstAttribute="trailing" secondItem="thg-Cb-wrV" secondAttribute="trailing" constant="20" id="WqD-yt-ZBt"/>
                                             <constraint firstItem="thg-Cb-wrV" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="ZbR-wV-X5T"/>
+                                            <constraint firstItem="Qfx-jr-C34" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="41" id="aZA-hX-GWB"/>
                                             <constraint firstItem="hvf-bu-W2b" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="anK-9f-fLe"/>
+                                            <constraint firstAttribute="bottom" secondItem="GdL-gq-A6e" secondAttribute="bottom" constant="178" id="cey-Zi-DfJ"/>
+                                            <constraint firstItem="vhE-me-2Bm" firstAttribute="top" secondItem="Qfx-jr-C34" secondAttribute="bottom" constant="47" id="d8w-DB-qll"/>
+                                            <constraint firstItem="WCT-U4-s7d" firstAttribute="top" secondItem="Wub-6M-5cz" secondAttribute="top" constant="21" id="eWo-VH-alY"/>
+                                            <constraint firstItem="hvf-bu-W2b" firstAttribute="top" secondItem="vhE-me-2Bm" secondAttribute="bottom" constant="20" id="f6L-eH-IOr"/>
                                             <constraint firstItem="6Ma-1V-ICD" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="iur-PZ-w4r"/>
-                                            <constraint firstAttribute="bottom" secondItem="GdL-gq-A6e" secondAttribute="bottom" constant="148" id="j1u-4Q-DS2"/>
+                                            <constraint firstItem="vhE-me-2Bm" firstAttribute="top" secondItem="9y7-5O-v1O" secondAttribute="bottom" constant="45" id="jvG-Cd-iDO"/>
                                             <constraint firstItem="6Ma-1V-ICD" firstAttribute="top" secondItem="kT9-s0-Zpr" secondAttribute="bottom" constant="35" id="kUE-up-Ptq"/>
                                             <constraint firstItem="kT9-s0-Zpr" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="41" id="qUd-2b-2Lf"/>
                                             <constraint firstItem="6Ma-1V-ICD" firstAttribute="top" secondItem="thg-Cb-wrV" secondAttribute="bottom" constant="10" id="sXD-fZ-RAT"/>
-                                            <constraint firstItem="vhE-me-2Bm" firstAttribute="top" secondItem="9y7-5O-v1O" secondAttribute="bottom" constant="55" id="t2r-AN-6Cw"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1071,7 +1079,7 @@ A má postura é outro fator que contribui para o desenvolvimento da escoliose.<
         <scene sceneID="2hP-5T-v6t">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DaE-Hh-tR4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" selectedImage="home 2" id="aUZ-uO-ZrC"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" selectedImage="homeOficial" id="aUZ-uO-ZrC"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="GED-Jt-8hc">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -1107,17 +1115,17 @@ A má postura é outro fator que contribui para o desenvolvimento da escoliose.<
         </scene>
     </scenes>
     <resources>
-        <image name="Group 58" width="350" height="114.66666412353516"/>
-        <image name="Group 59" width="1050" height="344"/>
-        <image name="Group 60" width="1050" height="346"/>
-        <image name="Group 61" width="350" height="114.66666412353516"/>
+        <image name="Group 58" width="136.33332824707031" height="114.66666412353516"/>
+        <image name="Group 59" width="130.66667175292969" height="114.66666412353516"/>
+        <image name="Group 60" width="129" height="115.33333587646484"/>
+        <image name="Group 61" width="173.66667175292969" height="114.66666412353516"/>
         <image name="TexturaCronometro" width="390" height="415"/>
         <image name="backgroundPersonal" width="391" height="844"/>
         <image name="botao" width="116.66666412353516" height="19.666666030883789"/>
         <image name="coluna" width="1050" height="344"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
-        <image name="home 2" width="128" height="128"/>
+        <image name="homeOficial" width="27.333333969116211" height="24"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="maefilho" width="1050" height="344"/>
         <image name="pensando" width="1050" height="344"/>
