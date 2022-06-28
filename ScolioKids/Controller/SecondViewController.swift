@@ -257,17 +257,14 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
             chronometerAction.image = UIImage(named: "Group-135")
         }
         
-<<<<<<< HEAD
-     
-   
-=======
+
 //        favoriteAction.image?.withTintColor(UIColor.systemRed)
 //        favoriteAction.backgroundColor = UIColor.systemBlue
 //        chronometerAction.backgroundColor = UIColor.systemMint
 //        return [chronometerAction, favoriteAction]
         favoriteAction.backgroundColor = .init(named: "backgroundOne")
         chronometerAction.backgroundColor = .init(named: "backgroundOne")
->>>>>>> 06902116819208457300ed377ee3a560a403bcd6
+
         let action = UISwipeActionsConfiguration(actions: [chronometerAction, favoriteAction])
         
         return action
