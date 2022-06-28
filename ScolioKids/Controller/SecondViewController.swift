@@ -24,7 +24,6 @@ class SecondViewController: UIViewController {
     
     //COREDATA
     var actionsModel = ActionsModel()
-    
 
     //Search
    // var searchExercicies = [String]()
@@ -115,9 +114,7 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
         var chronometerActionTitle = "Chronos" // 7
         let chronometerRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Chronometer")
               
-        //3
         chronometerRequest.predicate = NSPredicate(format: "chronometerName = %@", "\(actionsModel.exercisesList[indexPath.row].exercise)")
-//        request.predicate = NSPredicate(format: "isFavorited = %@", true)
               chronometerRequest.returnsObjectsAsFaults = false
               do {
                   let chronometer = try actionsModel.context.fetch(chronometerRequest)
@@ -128,7 +125,6 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
                       if boolean == true {
                           // 7
                         chronometerActionTitle = "UnChronos"
-//                          context.delete(data)
                       }
                       do {
                         try actionsModel.context.save()
@@ -163,18 +159,15 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
         let favoritesRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Favorites")
         //3
         favoritesRequest.predicate = NSPredicate(format: "favoritesName = %@", "\(actionsModel.exercisesList[indexPath.row].exercise)")
-//        request.predicate = NSPredicate(format: "isFavorited = %@", true)
         favoritesRequest.returnsObjectsAsFaults = false
             do {
                 let favorites = try actionsModel.context.fetch(favoritesRequest)
                  
-            //5
             for data in favorites as! [NSManagedObject]{
                 let boolean = data.value(forKey: "isFavorited") as! Bool
                       
                 if boolean == true {
                           favoriteActionTitle = "Unfavorite"
-//                          context.delete(data)
                       }
                       do {
                           try actionsModel.context.save()
@@ -190,7 +183,6 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
         let favoriteAction = UIContextualAction(style: .normal, title:  favoriteActionTitle, handler:{ [self] (_, _, completionHandler) in
             // delete the item here
 
-           // let userExercises = actionsModel.exercisesList[indexPath.row].exercise
             if favoriteActionTitle == "Favorite" {
                 
                 actionsModel.savingToFavorites(index: indexPath.row)
@@ -208,7 +200,7 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
         
   
         if favoriteActionTitle == "Favorite" {
-//            favoriteAction.image = UIImage(named: "FrameCronometro")?.withTintColor(.systemRed, renderingMode: .alwaysOriginal) }
+
             favoriteAction.image = UIImage(named: "Group-140")}
         
         if favoriteActionTitle == "Unfavorite" {
@@ -227,10 +219,6 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
         }
         
 
-//        favoriteAction.image?.withTintColor(UIColor.systemRed)
-//        favoriteAction.backgroundColor = UIColor.systemBlue
-//        chronometerAction.backgroundColor = UIColor.systemMint
-//        return [chronometerAction, favoriteAction]
         favoriteAction.backgroundColor = .init(named: "backgroundOne")
         chronometerAction.backgroundColor = .init(named: "backgroundOne")
 
