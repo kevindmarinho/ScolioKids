@@ -81,6 +81,19 @@ class ActionsModel {
         }
     }
     
+    func favoritesFetchRequest() {
+        
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Favorites")
+        do {
+            favorites = try context.fetch(fetchRequest)
+        } catch let error as NSError {
+          print("Could not fetch. \(error), \(error.userInfo)")
+        }
+    }
+    
+    
+    
+    
     // CRONOMETERO
     func savingToChronometer(index: Int) {
 
@@ -126,6 +139,16 @@ class ActionsModel {
             
         } catch {
             print("Failed")
+        }
+    }
+    
+    func chronometerFetchRequest() {
+        
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Chronometer")
+        do {
+            chronometer = try context.fetch(fetchRequest)
+        } catch let error as NSError {
+          print("Could not fetch. \(error), \(error.userInfo)")
         }
     }
 }

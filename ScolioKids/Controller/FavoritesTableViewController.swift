@@ -30,13 +30,15 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         //2
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Favorites")
-
-        do {
-            actionsModel.favorites = try actionsModel.context.fetch(fetchRequest)
-        } catch let error as NSError {
-          print("Could not fetch. \(error), \(error.userInfo)")
-        }
+        
+        actionsModel.favoritesFetchRequest()
+//        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Favorites")
+//
+//        do {
+//            actionsModel.favorites = try actionsModel.context.fetch(fetchRequest)
+//        } catch let error as NSError {
+//          print("Could not fetch. \(error), \(error.userInfo)")
+//        }
         
         favoritesUI.delegate = self
         favoritesUI.dataSource = self

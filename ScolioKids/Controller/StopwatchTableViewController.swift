@@ -25,16 +25,8 @@ class StopwatchTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func viewWillAppear(_ animated: Bool) {
-        //2
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Chronometer")
-        
-        //3
-        do {
-            actionsModel.chronometer = try actionsModel.context.fetch(fetchRequest)
-        } catch let error as NSError {
-          print("Could not fetch. \(error), \(error.userInfo)")
-        }
-        
+  
+        actionsModel.chronometerFetchRequest()
         stopwatchUI.delegate = self
         stopwatchUI.dataSource = self
         stopwatchUI.reloadData()
