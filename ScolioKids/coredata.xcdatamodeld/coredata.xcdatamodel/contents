@@ -9,7 +9,7 @@
         <attribute name="isFavorited" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
     </entity>
     <elements>
-        <element name="Favorites" positionX="-36" positionY="9" width="128" height="59"/>
         <element name="Chronometer" positionX="0" positionY="54" width="128" height="59"/>
+        <element name="Favorites" positionX="-36" positionY="9" width="128" height="59"/>
     </elements>
 </model>

@@ -125,6 +125,10 @@ class tabBarHome : UITabBarController, UITabBarControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
     }
+    
+
 }
 

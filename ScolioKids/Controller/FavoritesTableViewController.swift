@@ -83,7 +83,12 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
             context.delete(self.favorites[indexPath.row])
             self.favorites.remove(at: indexPath.row)
             // Save Changes
-            appDelegate!.saveContext()
+            do {
+                try context.save()
+            } catch let error as NSError {
+                print("Could not save. \(error), \(error.userInfo)")
+            }
+
             // Remove row from TableView
             self.favoritesUI.deleteRows(at: [indexPath], with: .left)
             

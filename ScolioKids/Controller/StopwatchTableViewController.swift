@@ -74,7 +74,12 @@ class StopwatchTableViewController: UITableViewController {
             context.delete(self.chronometer[indexPath.row])
             self.chronometer.remove(at: indexPath.row)
             // Save Changes
-            appDelegate!.saveContext()
+            do {
+                try context.save()
+            } catch let error as NSError {
+                print("Could not save. \(error), \(error.userInfo)")
+            }
+            
             // Remove row from TableView
             self.stopwatchUI.deleteRows(at: [indexPath], with: .left)
 
