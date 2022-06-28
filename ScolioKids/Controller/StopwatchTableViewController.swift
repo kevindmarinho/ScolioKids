@@ -13,7 +13,7 @@ class StopwatchTableViewController: UITableViewController {
     
     @IBOutlet var stopwatchUI: UITableView!
     
-  
+    //let imageView = UIImageView(frame: CGRect(x: 10, y: 10, width: , height: <#T##CGFloat#>))
     
     let appDelegate = UIApplication.shared.delegate as? AppDelegate
 
@@ -57,7 +57,10 @@ class StopwatchTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-  
+  override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
+    
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
@@ -106,6 +109,9 @@ class StopwatchTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "reusebleChronometerCell", for: indexPath)
 //        cell.textLabel?.text = "hello world"
             cell.textLabel?.text = chronometerExercise.value(forKeyPath: "chronometerName") as? String
+            cell.textLabel?.textColor = .white
+            cell.textLabel?.font = .boldSystemFont(ofSize: 18)
+            
     
         return cell
     }

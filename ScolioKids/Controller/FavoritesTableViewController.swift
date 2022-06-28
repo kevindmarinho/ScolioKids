@@ -15,7 +15,7 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
     
     var actionsModel = ActionsModel()
     
-    var filterFav: [NSManagedObject] = []
+    var filterFav: [Favorites] = []
     var searching2 = false
     
     var favorites: [NSManagedObject] = []
@@ -32,19 +32,20 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
         return container.viewContext
     }()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        searchFav.placeholder = "Buscar"
+        searchFav.placeholder = "Buscar Exercício"
         searchFav.delegate = self
-        self.filterFav = favorites
+        
+       // self.filterFav = favorites
     }
     
     override func viewWillAppear(_ animated: Bool) {
         //2
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Favorites")
-        
-        //3
+
         do {
           favorites = try context.fetch(fetchRequest)
         } catch let error as NSError {
@@ -55,8 +56,13 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
         favoritesUI.dataSource = self
         favoritesUI.reloadData()
     }
+    
 
     // MARK: - Table view data source
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+          return 70
+      }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -101,63 +107,115 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
 
     }
     
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return favorites.count
+        if searching2 {
+            
+            return filterFav.count
+        }
+        else {
+            
+//            if favorites.isEmpty{
+//                tableView.backgroundColor = .init(patternImage: .init(named: "heart")!)
+//
+//            }
+            return favorites.count
+            
+        }
     }
-
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
 
         let favoritesExercise = favorites[indexPath.row]
         
-            let cell = tableView.dequeueReusableCell(withIdentifier: "reusebleFavoritesCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reusebleFavoritesCell", for: indexPath)
+        
+        if searching2 {
+            cell.textLabel?.text = filterFav[indexPath.row].favoritesName
+            cell.textLabel?.textColor = .white
+            cell.textLabel?.font = .boldSystemFont(ofSize: 18)
+            
+
+        } else {
             cell.textLabel?.text = favoritesExercise.value(forKeyPath: "favoritesName") as? String
+            cell.textLabel?.textColor = .white
+            cell.textLabel?.font = .boldSystemFont(ofSize: 18)
+        }
+                   
+//        cell.textLabel?.text = favoritesExercise.value(forKeyPath: "favoritesName") as? String
     
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("clicou")
-//        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//        let homeViewController = mainStoryboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-//        self.present(homeViewController, animated: true)
+        
         let passa2 = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
-
-        passa2?.title = actionsModel.exercisesList[indexPath.row].exercise
+        
+        if searching2 {
+            passa2?.title = filterFav[indexPath.row].favoritesName
+        }
+        else{
+        // passa2?.title = actionsModel.exercisesList[indexPath.row].exercise
+            passa2?.title = tableView.cellForRow(at: indexPath)?.textLabel?.text ?? ""
+        }
+        
+        passa2?.nameTrainning = tableView.cellForRow(at: indexPath)?.textLabel?.text ?? ""
+        
+      //  passa2?.title = tableView.cellForRow(at: indexPath)?.textLabel?.text ?? ""
+        
+//        passa2?.title = actionsModel.exercisesList[indexPath.row].exercise
+        
         navigationController?.pushViewController(passa2!, animated: true)
 
         favoritesUI.reloadData()
     }
     
+    // Search Bar
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        self.filterFav = []
+        let favoritos = favorites as! [Favorites]
+
         if searchText.isEmpty{
-            self.filterFav = favorites
-            
-        }else{
-            for value in favorites{
-               // if value.uppercased().contains(searchText.uppercased()){
-                    self.filterFav.append(value)
-                //}
-            }
-                searching2 = true
-                favoritesUI.reloadData()
+            self.filterFav = favoritos
         }
+        else{
+            
+            filterFav = favoritos.filter(){ favorito in
+                return favorito.favoritesName?.contains(searchText) ?? false
+                
+        }
+        
+            for favorito in filterFav{
+                print(favorito.favoritesName ?? "nao tem")
+            }
+        }
+        
+//            else{
+//            for value in actionsModel.exercisesList{
+//                if value.exercise.uppercased().contains(searchText.uppercased()){
+//                    self.filterFav.append(value)
+//                }
+//            }
+//        }
+
+        searching2 = true
         favoritesUI.reloadData()
+        
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchFav.resignFirstResponder()
+        
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searching2 = false
         searchFav.text = ""
         searchFav.resignFirstResponder()
         searchFav.setShowsCancelButton(false, animated: true)
         favoritesUI.reloadData()
     }
+    
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
         searchFav.setValue("Cancelar", forKey: "cancelButtonText")
         searchFav.setShowsCancelButton(true, animated: true)

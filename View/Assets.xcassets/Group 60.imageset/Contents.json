@@ -1,7 +1,6 @@
 {
   "images" : [
     {
-      "filename" : "Group 60.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -10,7 +9,22 @@
       "scale" : "2x"
     },
     {
+      "filename" : "Group 60.png",
       "idiom" : "universal",
+      "resizing" : {
+        "cap-insets" : {
+          "bottom" : 173,
+          "left" : 58,
+          "right" : 328,
+          "top" : 172
+        },
+        "center" : {
+          "height" : 1,
+          "mode" : "tile",
+          "width" : 1
+        },
+        "mode" : "9-part"
+      },
       "scale" : "3x"
     }
   ],

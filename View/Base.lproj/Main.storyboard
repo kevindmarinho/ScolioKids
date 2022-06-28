@@ -48,8 +48,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="DaE-Hh-tR4" kind="relationship" relationship="viewControllers" id="RgL-8f-n14"/>
-                        <segue destination="D1n-nB-lA8" kind="relationship" relationship="viewControllers" id="mqs-ID-vwV"/>
-                        <segue destination="HxO-bS-p4d" kind="relationship" relationship="viewControllers" id="apn-JG-gMZ"/>
+                        <segue destination="HxO-bS-p4d" kind="relationship" relationship="viewControllers" id="HX1-cd-bxf"/>
+                        <segue destination="D1n-nB-lA8" kind="relationship" relationship="viewControllers" id="rni-nk-NEe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HXB-la-dHr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -70,18 +70,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wub-6M-5cz">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="720"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercícios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkc-hU-gyl">
-                                                <rect key="frame" x="20" y="44" width="167" height="42"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="167" id="jcL-Sj-1K7"/>
-                                                    <constraint firstAttribute="height" constant="42" id="ntY-ll-jEA"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCT-U4-s7d">
-                                                <rect key="frame" x="20" y="106" width="374" height="114"/>
+                                                <rect key="frame" x="20" y="21" width="374" height="114"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="Group 61"/>
@@ -91,13 +81,13 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informações" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhE-me-2Bm">
-                                                <rect key="frame" x="20" y="246" width="175.5" height="36"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <rect key="frame" x="20" y="155" width="146" height="30"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvf-bu-W2b">
-                                                <rect key="frame" x="20" y="302" width="374" height="114"/>
+                                                <rect key="frame" x="20" y="205" width="374" height="114"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="374" id="7Y9-D5-ofe"/>
                                                     <constraint firstAttribute="height" constant="114" id="FdZ-nQ-2Ai"/>
@@ -110,7 +100,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thg-Cb-wrV">
-                                                <rect key="frame" x="20" y="426.5" width="374" height="114"/>
+                                                <rect key="frame" x="20" y="329" width="374" height="114"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="114" id="MMj-nY-8Jt"/>
                                                 </constraints>
@@ -122,7 +112,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dicas para tratar crianças" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kT9-s0-Zpr">
-                                                <rect key="frame" x="46" y="452" width="238" height="63"/>
+                                                <rect key="frame" x="41" y="355" width="238" height="63"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="238" id="70l-uu-ONv"/>
                                                     <constraint firstAttribute="height" constant="63" id="yGt-QR-g0L"/>
@@ -132,7 +122,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ma-1V-ICD">
-                                                <rect key="frame" x="20" y="551" width="374" height="114"/>
+                                                <rect key="frame" x="20" y="453" width="374" height="114"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="374" id="1w9-EX-uvX"/>
                                                     <constraint firstAttribute="height" constant="114" id="mxa-vD-Fza"/>
@@ -144,18 +134,8 @@
                                                     <segue destination="j8e-Ve-al5" kind="show" id="UqX-xf-UO3"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como ter uma coluna saudável ?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdL-gq-A6e">
-                                                <rect key="frame" x="46" y="577" width="238" height="63"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="238" id="1BE-5D-dC1"/>
-                                                    <constraint firstAttribute="height" constant="63" id="wbt-qU-a8c"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercícios" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9y7-5O-v1O">
-                                                <rect key="frame" x="46" y="132" width="238" height="63"/>
+                                                <rect key="frame" x="41" y="47" width="238" height="63"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="63" id="bLy-1X-d8l"/>
                                                     <constraint firstAttribute="width" constant="238" id="uYg-Zr-pAa"/>
@@ -165,7 +145,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O que é escoliose ?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHr-Mt-LmJ">
-                                                <rect key="frame" x="46" y="348" width="179" height="24"/>
+                                                <rect key="frame" x="41" y="250" width="179" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="179" id="O8p-fc-rdt"/>
                                                     <constraint firstAttribute="height" constant="24" id="o4a-cl-lpY"/>
@@ -174,35 +154,64 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como ter uma coluna saudável ?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdL-gq-A6e">
+                                                <rect key="frame" x="41" y="479" width="238" height="63"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="238" id="1BE-5D-dC1"/>
+                                                    <constraint firstAttribute="height" constant="63" id="wbt-qU-a8c"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maefilho" translatesAutoresizingMaskIntoConstraints="NO" id="Tiv-Hg-7CB">
+                                                <rect key="frame" x="20" y="330" width="350" height="115"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pensando" translatesAutoresizingMaskIntoConstraints="NO" id="153-RF-F8S">
+                                                <rect key="frame" x="24" y="204" width="346" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 exercícios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfx-jr-C34">
+                                                <rect key="frame" x="41" y="92" width="72" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coluna" translatesAutoresizingMaskIntoConstraints="NO" id="aWy-r9-Ws5">
+                                                <rect key="frame" x="22" y="462" width="350" height="105"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="vhE-me-2Bm" firstAttribute="top" secondItem="WCT-U4-s7d" secondAttribute="bottom" constant="20" id="0iw-6O-j5N"/>
                                             <constraint firstItem="WCT-U4-s7d" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="0sA-ZT-nQi"/>
-                                            <constraint firstItem="hvf-bu-W2b" firstAttribute="top" secondItem="vhE-me-2Bm" secondAttribute="bottom" constant="20" id="2hr-hv-3jU"/>
-                                            <constraint firstItem="thg-Cb-wrV" firstAttribute="top" secondItem="hvf-bu-W2b" secondAttribute="bottom" constant="10.6" id="6JX-oa-2kx"/>
-                                            <constraint firstItem="WCT-U4-s7d" firstAttribute="top" secondItem="pkc-hU-gyl" secondAttribute="bottom" constant="20" id="7tJ-8X-Fiw"/>
-                                            <constraint firstItem="9y7-5O-v1O" firstAttribute="top" secondItem="pkc-hU-gyl" secondAttribute="bottom" constant="46" id="7y3-qp-LA6"/>
-                                            <constraint firstItem="pkc-hU-gyl" firstAttribute="top" secondItem="Wub-6M-5cz" secondAttribute="top" constant="44" id="8As-Ls-deJ"/>
-                                            <constraint firstItem="vhE-me-2Bm" firstAttribute="top" secondItem="9y7-5O-v1O" secondAttribute="bottom" constant="51" id="Duo-Hw-I3C"/>
-                                            <constraint firstItem="GdL-gq-A6e" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="46" id="DxX-3B-UOz"/>
+                                            <constraint firstItem="wHr-Mt-LmJ" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="41" id="3jj-mf-rTn"/>
+                                            <constraint firstItem="GdL-gq-A6e" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="41" id="F9K-Im-PgB"/>
+                                            <constraint firstItem="vhE-me-2Bm" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="FQq-JF-hGQ"/>
                                             <constraint firstAttribute="height" constant="720" id="GuD-MV-syR"/>
                                             <constraint firstAttribute="trailing" secondItem="WCT-U4-s7d" secondAttribute="trailing" constant="20" id="HLu-u0-5nt"/>
-                                            <constraint firstItem="vhE-me-2Bm" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="Jv9-PD-J0x"/>
-                                            <constraint firstItem="kT9-s0-Zpr" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="46" id="PqA-qO-WFV"/>
+                                            <constraint firstAttribute="trailing" secondItem="hvf-bu-W2b" secondAttribute="trailing" constant="20" id="Mht-OU-ymu"/>
+                                            <constraint firstItem="9y7-5O-v1O" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="41" id="Mz9-Fa-xYV"/>
                                             <constraint firstItem="hvf-bu-W2b" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="Q5b-Tc-2cY"/>
-                                            <constraint firstItem="pkc-hU-gyl" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="UDm-WL-J7N"/>
-                                            <constraint firstItem="9y7-5O-v1O" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="46" id="UId-QN-atI"/>
+                                            <constraint firstItem="thg-Cb-wrV" firstAttribute="top" secondItem="wHr-Mt-LmJ" secondAttribute="bottom" constant="55" id="SmL-yg-aJd"/>
+                                            <constraint firstItem="thg-Cb-wrV" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" symbolic="YES" id="T7B-gf-6cv"/>
                                             <constraint firstAttribute="trailing" secondItem="6Ma-1V-ICD" secondAttribute="trailing" constant="20" id="VRs-tq-V4f"/>
+                                            <constraint firstItem="thg-Cb-wrV" firstAttribute="top" secondItem="hvf-bu-W2b" secondAttribute="bottom" constant="10" id="WPH-r7-wP0"/>
                                             <constraint firstAttribute="trailing" secondItem="thg-Cb-wrV" secondAttribute="trailing" constant="20" id="WqD-yt-ZBt"/>
-                                            <constraint firstAttribute="bottom" secondItem="GdL-gq-A6e" secondAttribute="bottom" constant="80" id="ZBj-ym-d11"/>
                                             <constraint firstItem="thg-Cb-wrV" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="ZbR-wV-X5T"/>
-                                            <constraint firstItem="thg-Cb-wrV" firstAttribute="top" secondItem="wHr-Mt-LmJ" secondAttribute="bottom" constant="54.5" id="apv-6Y-XYD"/>
-                                            <constraint firstItem="6Ma-1V-ICD" firstAttribute="top" secondItem="kT9-s0-Zpr" secondAttribute="bottom" constant="36" id="eyv-tN-ulv"/>
+                                            <constraint firstItem="Qfx-jr-C34" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="41" id="aZA-hX-GWB"/>
+                                            <constraint firstItem="hvf-bu-W2b" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="anK-9f-fLe"/>
+                                            <constraint firstAttribute="bottom" secondItem="GdL-gq-A6e" secondAttribute="bottom" constant="178" id="cey-Zi-DfJ"/>
+                                            <constraint firstItem="vhE-me-2Bm" firstAttribute="top" secondItem="Qfx-jr-C34" secondAttribute="bottom" constant="47" id="d8w-DB-qll"/>
+                                            <constraint firstItem="WCT-U4-s7d" firstAttribute="top" secondItem="Wub-6M-5cz" secondAttribute="top" constant="21" id="eWo-VH-alY"/>
+                                            <constraint firstItem="hvf-bu-W2b" firstAttribute="top" secondItem="vhE-me-2Bm" secondAttribute="bottom" constant="20" id="f6L-eH-IOr"/>
                                             <constraint firstItem="6Ma-1V-ICD" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="20" id="iur-PZ-w4r"/>
-                                            <constraint firstItem="wHr-Mt-LmJ" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="46" id="nFU-8w-Gb4"/>
-                                            <constraint firstAttribute="trailing" secondItem="hvf-bu-W2b" secondAttribute="trailing" constant="20" id="wDp-5t-abC"/>
-                                            <constraint firstItem="6Ma-1V-ICD" firstAttribute="top" secondItem="thg-Cb-wrV" secondAttribute="bottom" constant="10.6" id="wrh-ce-aME"/>
-                                            <constraint firstItem="GdL-gq-A6e" firstAttribute="top" secondItem="thg-Cb-wrV" secondAttribute="bottom" constant="36.5" id="x6O-Pt-gun"/>
+                                            <constraint firstItem="vhE-me-2Bm" firstAttribute="top" secondItem="9y7-5O-v1O" secondAttribute="bottom" constant="45" id="jvG-Cd-iDO"/>
+                                            <constraint firstItem="6Ma-1V-ICD" firstAttribute="top" secondItem="kT9-s0-Zpr" secondAttribute="bottom" constant="35" id="kUE-up-Ptq"/>
+                                            <constraint firstItem="kT9-s0-Zpr" firstAttribute="leading" secondItem="Wub-6M-5cz" secondAttribute="leading" constant="41" id="qUd-2b-2Lf"/>
+                                            <constraint firstItem="6Ma-1V-ICD" firstAttribute="top" secondItem="thg-Cb-wrV" secondAttribute="bottom" constant="10" id="sXD-fZ-RAT"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -245,105 +254,104 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deg-PU-u7O">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6a-1N-iEk">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deixe a atividade lúdica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4F0-pV-rfc">
-                                                <rect key="frame" x="20" y="39" width="374" height="33.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCX-cX-KTK">
-                                                <rect key="frame" x="20" y="280" width="374" height="172"/>
-                                                <string key="text">É comum as crianças não quererem fazer os exercícios, se distraírem, chorarem e terem dificuldade. Portanto é preciso paciência, compreensão, diálogo e respeitar o tempo dela.
-Muitas vezes é interessante um acomphamento psicológico para os pais e para criança.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLb-pZ-kJP">
-                                                <rect key="frame" x="20" y="515.5" width="374" height="150.5"/>
-                                                <string key="text">Os pais precisam participar ativamente do tratamento, eles passam segurança para a criança e também a auxiliam na realização dos exercícios feitos em casa.
-Para isso é necessário que estejam bem informados e que sigam as instruçoes dos médicos e fisioterapeutas.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jar-bg-Aty">
-                                                <rect key="frame" x="20" y="729.5" width="374" height="150.5"/>
-                                                <string key="text">Cada criança tem sua individualidade e, por isso, é necessária uma avaliação profissional para realizar um trabalho personalizado.
-Exercícios errados ou feitos de forma incorreta podem piorar o quadro da criança. 
-Procure um profissinal e siga suas instruções e recomendações.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seja paciente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LV5-2b-riz">
-                                                <rect key="frame" x="20" y="231.5" width="374" height="33.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Participação dos pais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMO-FF-XxI">
-                                                <rect key="frame" x="20" y="467" width="374" height="33.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Procure um profissional" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pT1-n1-sSu">
-                                                <rect key="frame" x="20" y="681" width="374" height="33.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <rect key="frame" x="20" y="104" width="374" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqm-oM-dpj">
-                                                <rect key="frame" x="20" y="87.5" width="374" height="129"/>
+                                                <rect key="frame" x="20" y="152.5" width="374" height="122"/>
                                                 <string key="text">Associar brincadeiras durante a sessão de exercícios faz com que eles se tornem mais prazerosos e toleráveis para a criança. Use brinquedos e faça brincadeiras com a criança, isso ajuda a ter resultados positivos e deixa a atividade mais lúdica.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xzQ-tb-cv2">
-                                                <rect key="frame" x="20" y="20" width="374" height="4"/>
-                                                <color key="backgroundColor" red="0.8784313725490196" green="0.87058823529411766" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="4" id="gYR-XS-60M"/>
-                                                </constraints>
-                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seja paciente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LV5-2b-riz">
+                                                <rect key="frame" x="20" y="297.5" width="374" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCX-cX-KTK">
+                                                <rect key="frame" x="20" y="346" width="374" height="122"/>
+                                                <string key="text">É comum as crianças não quererem fazer os exercícios, se distraírem, chorarem e terem dificuldade. Portanto é preciso paciência, compreensão, diálogo e respeitar o tempo dela.
+Muitas vezes é interessante um acomphamento psicológico para os pais e para criança.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLb-pZ-kJP">
+                                                <rect key="frame" x="20" y="539.5" width="374" height="142.5"/>
+                                                <string key="text">Os pais precisam participar ativamente do tratamento, eles passam segurança para a criança e também a auxiliam na realização dos exercícios feitos em casa.
+Para isso é necessário que estejam bem informados e que sigam as instruçoes dos médicos e fisioterapeutas.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Participação dos pais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMO-FF-XxI">
+                                                <rect key="frame" x="20" y="491" width="374" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Procure um profissional" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pT1-n1-sSu">
+                                                <rect key="frame" x="20" y="705" width="374" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jar-bg-Aty">
+                                                <rect key="frame" x="20" y="753.5" width="374" height="142.5"/>
+                                                <string key="text">Cada criança tem sua individualidade e, por isso, é necessária uma avaliação profissional para realizar um trabalho personalizado.
+Exercícios errados ou feitos de forma incorreta podem piorar o quadro da criança. 
+Procure um profissinal e siga suas instruções e recomendações.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dicas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hyo-9c-ce0">
+                                                <rect key="frame" x="20" y="30" width="374" height="41"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="LV5-2b-riz" firstAttribute="top" secondItem="pqm-oM-dpj" secondAttribute="bottom" constant="15" id="1M2-gl-U5e"/>
-                                            <constraint firstItem="pT1-n1-sSu" firstAttribute="top" secondItem="WLb-pZ-kJP" secondAttribute="bottom" constant="15" id="3uB-k2-l7c"/>
-                                            <constraint firstItem="jar-bg-Aty" firstAttribute="leading" secondItem="u6a-1N-iEk" secondAttribute="leading" constant="20" id="6Wt-U6-2QS"/>
-                                            <constraint firstAttribute="trailing" secondItem="pT1-n1-sSu" secondAttribute="trailing" constant="20" id="88e-hb-EiH"/>
-                                            <constraint firstItem="4F0-pV-rfc" firstAttribute="leading" secondItem="u6a-1N-iEk" secondAttribute="leading" constant="20" id="8sE-Fo-MRb"/>
-                                            <constraint firstItem="bMO-FF-XxI" firstAttribute="top" secondItem="bCX-cX-KTK" secondAttribute="bottom" constant="15" id="AKa-T7-fwt"/>
-                                            <constraint firstItem="pT1-n1-sSu" firstAttribute="leading" secondItem="u6a-1N-iEk" secondAttribute="leading" constant="20" id="B4I-nm-pfq"/>
-                                            <constraint firstAttribute="trailing" secondItem="WLb-pZ-kJP" secondAttribute="trailing" constant="20" id="D6c-Wy-8xb"/>
-                                            <constraint firstItem="LV5-2b-riz" firstAttribute="leading" secondItem="u6a-1N-iEk" secondAttribute="leading" constant="20" id="DAI-MP-L12"/>
-                                            <constraint firstItem="xzQ-tb-cv2" firstAttribute="top" secondItem="u6a-1N-iEk" secondAttribute="top" constant="20" id="Gdv-yz-iB4"/>
-                                            <constraint firstItem="bCX-cX-KTK" firstAttribute="top" secondItem="LV5-2b-riz" secondAttribute="bottom" constant="15" id="J3b-pV-y27"/>
-                                            <constraint firstAttribute="trailing" secondItem="pqm-oM-dpj" secondAttribute="trailing" constant="20" id="NJC-tH-9lB"/>
-                                            <constraint firstAttribute="trailing" secondItem="LV5-2b-riz" secondAttribute="trailing" constant="20" id="OCc-w3-Jus"/>
-                                            <constraint firstItem="pqm-oM-dpj" firstAttribute="top" secondItem="4F0-pV-rfc" secondAttribute="bottom" constant="15" id="OzH-oW-byh"/>
-                                            <constraint firstItem="bMO-FF-XxI" firstAttribute="leading" secondItem="u6a-1N-iEk" secondAttribute="leading" constant="20" id="TQx-Wu-yGF"/>
+                                            <constraint firstItem="jar-bg-Aty" firstAttribute="top" secondItem="pT1-n1-sSu" secondAttribute="bottom" constant="23" id="0ax-24-6iY"/>
+                                            <constraint firstAttribute="trailing" secondItem="4F0-pV-rfc" secondAttribute="trailing" constant="20" id="1sV-cd-l10"/>
+                                            <constraint firstItem="jar-bg-Aty" firstAttribute="leading" secondItem="u6a-1N-iEk" secondAttribute="leading" constant="20" id="55d-dp-NUI"/>
+                                            <constraint firstItem="pqm-oM-dpj" firstAttribute="top" secondItem="4F0-pV-rfc" secondAttribute="bottom" constant="23" id="7ij-0L-zpo"/>
+                                            <constraint firstItem="WLb-pZ-kJP" firstAttribute="top" secondItem="bMO-FF-XxI" secondAttribute="bottom" constant="23" id="CKA-dr-9UN"/>
+                                            <constraint firstAttribute="trailing" secondItem="bMO-FF-XxI" secondAttribute="trailing" constant="20" id="CPg-n7-3gR"/>
+                                            <constraint firstAttribute="trailing" secondItem="pqm-oM-dpj" secondAttribute="trailing" constant="20" id="GgM-uT-zeT"/>
+                                            <constraint firstAttribute="trailing" secondItem="pT1-n1-sSu" secondAttribute="trailing" constant="20" id="JEY-eW-S4e"/>
+                                            <constraint firstItem="4F0-pV-rfc" firstAttribute="leading" secondItem="u6a-1N-iEk" secondAttribute="leading" constant="20" id="R2T-Mi-s2S"/>
+                                            <constraint firstItem="Hyo-9c-ce0" firstAttribute="top" secondItem="u6a-1N-iEk" secondAttribute="top" constant="30" id="XRM-jl-1P5"/>
                                             <constraint firstAttribute="height" constant="1000" id="XSe-0q-ws0"/>
-                                            <constraint firstAttribute="trailing" secondItem="4F0-pV-rfc" secondAttribute="trailing" constant="20" id="YzZ-aG-sqx"/>
-                                            <constraint firstItem="WLb-pZ-kJP" firstAttribute="leading" secondItem="u6a-1N-iEk" secondAttribute="leading" constant="20" id="Zee-eS-2FK"/>
-                                            <constraint firstItem="bCX-cX-KTK" firstAttribute="leading" secondItem="u6a-1N-iEk" secondAttribute="leading" constant="20" id="aWe-2E-N6U"/>
-                                            <constraint firstItem="xzQ-tb-cv2" firstAttribute="leading" secondItem="u6a-1N-iEk" secondAttribute="leading" constant="20" id="dWW-Tf-CUS"/>
-                                            <constraint firstItem="pqm-oM-dpj" firstAttribute="leading" secondItem="u6a-1N-iEk" secondAttribute="leading" constant="20" id="gv6-SW-aUM"/>
-                                            <constraint firstAttribute="trailing" secondItem="jar-bg-Aty" secondAttribute="trailing" constant="20" id="k2F-gM-2Jg"/>
-                                            <constraint firstAttribute="trailing" secondItem="bCX-cX-KTK" secondAttribute="trailing" constant="20" id="k3a-ZG-9mf"/>
-                                            <constraint firstAttribute="trailing" secondItem="bMO-FF-XxI" secondAttribute="trailing" constant="20" id="kAU-P1-lNz"/>
-                                            <constraint firstItem="4F0-pV-rfc" firstAttribute="top" secondItem="xzQ-tb-cv2" secondAttribute="bottom" constant="15" id="qiL-AJ-8cj"/>
-                                            <constraint firstAttribute="trailing" secondItem="xzQ-tb-cv2" secondAttribute="trailing" constant="20" id="reQ-5m-MdF"/>
-                                            <constraint firstItem="jar-bg-Aty" firstAttribute="top" secondItem="pT1-n1-sSu" secondAttribute="bottom" constant="15" id="sSm-wR-BJc"/>
-                                            <constraint firstItem="WLb-pZ-kJP" firstAttribute="top" secondItem="bMO-FF-XxI" secondAttribute="bottom" constant="15" id="wdQ-hl-Xli"/>
+                                            <constraint firstItem="Hyo-9c-ce0" firstAttribute="leading" secondItem="u6a-1N-iEk" secondAttribute="leading" constant="20" id="YQi-Cu-2Ym"/>
+                                            <constraint firstAttribute="trailing" secondItem="bCX-cX-KTK" secondAttribute="trailing" constant="20" id="YZJ-uQ-4aD"/>
+                                            <constraint firstItem="pqm-oM-dpj" firstAttribute="leading" secondItem="u6a-1N-iEk" secondAttribute="leading" constant="20" id="ZdP-n6-73J"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hyo-9c-ce0" secondAttribute="trailing" constant="20" id="Zvh-Oz-gPo"/>
+                                            <constraint firstItem="bMO-FF-XxI" firstAttribute="leading" secondItem="u6a-1N-iEk" secondAttribute="leading" constant="20" id="cAq-JY-56K"/>
+                                            <constraint firstAttribute="trailing" secondItem="LV5-2b-riz" secondAttribute="trailing" constant="20" id="cuS-bd-gqc"/>
+                                            <constraint firstItem="bCX-cX-KTK" firstAttribute="leading" secondItem="u6a-1N-iEk" secondAttribute="leading" constant="20" id="d4n-QK-u0J"/>
+                                            <constraint firstItem="WLb-pZ-kJP" firstAttribute="leading" secondItem="u6a-1N-iEk" secondAttribute="leading" constant="20" id="eLh-QV-RY3"/>
+                                            <constraint firstItem="LV5-2b-riz" firstAttribute="leading" secondItem="u6a-1N-iEk" secondAttribute="leading" constant="20" id="gT9-Nz-h7k"/>
+                                            <constraint firstItem="pT1-n1-sSu" firstAttribute="top" secondItem="WLb-pZ-kJP" secondAttribute="bottom" constant="23" id="h6r-3z-zeP"/>
+                                            <constraint firstItem="pT1-n1-sSu" firstAttribute="leading" secondItem="u6a-1N-iEk" secondAttribute="leading" constant="20" id="kP5-aR-llY"/>
+                                            <constraint firstItem="LV5-2b-riz" firstAttribute="top" secondItem="pqm-oM-dpj" secondAttribute="bottom" constant="23" id="oiS-XZ-pZT"/>
+                                            <constraint firstAttribute="trailing" secondItem="WLb-pZ-kJP" secondAttribute="trailing" constant="20" id="rjE-0H-wCc"/>
+                                            <constraint firstItem="bMO-FF-XxI" firstAttribute="top" secondItem="bCX-cX-KTK" secondAttribute="bottom" constant="23" id="s32-PW-SBL"/>
+                                            <constraint firstItem="4F0-pV-rfc" firstAttribute="top" secondItem="Hyo-9c-ce0" secondAttribute="bottom" constant="33" id="sUE-PK-NHP"/>
+                                            <constraint firstAttribute="trailing" secondItem="jar-bg-Aty" secondAttribute="trailing" constant="20" id="tCI-go-XXC"/>
+                                            <constraint firstItem="bCX-cX-KTK" firstAttribute="top" secondItem="LV5-2b-riz" secondAttribute="bottom" constant="23" id="zas-6Q-Zop"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -368,7 +376,7 @@ Procure um profissinal e siga suas instruções e recomendações.</string>
                             <constraint firstItem="deg-PU-u7O" firstAttribute="leading" secondItem="kfY-Sp-EII" secondAttribute="leading" id="qAu-YM-xPO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="t6i-dI-hGT"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="t6i-dI-hGT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ug0-TF-sZl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -383,142 +391,132 @@ Procure um profissinal e siga suas instruções e recomendações.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jiO-E1-1lp">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pTf-l4-MkR" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="406" height="1410.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como ter uma coluna saudável?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYI-De-Bpr">
-                                                <rect key="frame" x="20" y="0.0" width="366" height="95.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                                <rect key="frame" x="20" y="30" width="366" height="81.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXW-fi-FR5">
-                                                <rect key="frame" x="20" y="129.5" width="366" height="86"/>
+                                                <rect key="frame" x="20" y="144.5" width="366" height="81.5"/>
                                                 <string key="text">Alguns hábitos podem ser adotados para manter uma coluna saudável, evitar problemas futuros ou até ajudar na recuperação de um já existente.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQ3-Ln-WOx">
-                                                <rect key="frame" x="20" y="279" width="366" height="107.5"/>
+                                                <rect key="frame" x="20" y="297.5" width="366" height="101.5"/>
                                                 <string key="text">A postura inadequada afeta diretamente a saúde da coluna vertebral. É preciso manter uma boa postura durante o dia, sem forçar a coluna ou deixá-la muito curvada.
 </string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abH-zq-YSR">
-                                                <rect key="frame" x="20" y="450" width="366" height="150.5"/>
+                                                <rect key="frame" x="20" y="470.5" width="366" height="142.5"/>
                                                 <string key="text">Alongamentos são essenciais para a coluna e precisam ser rotineiros. Esse hábito ajuda a evitar atrofia e contraturas musculares.
 Essa dica é importante principalmente para pessoas que passam muito tempo sentadas, sempre levante e alongue-se!
 </string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnQ-vq-JX8">
-                                                <rect key="frame" x="20" y="664" width="366" height="129"/>
+                                                <rect key="frame" x="20" y="684.5" width="366" height="122"/>
                                                 <string key="text">Exercícios que trabalhem e fortaleçam a musculatura das costas e do abdomem são essenciais para manter a saúde da coluna, evitar lesões etc.
 Lembre-se que os exercícios devem ser administrados por um profissional.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJY-mb-Rln">
-                                                <rect key="frame" x="20" y="890" width="366" height="86"/>
-                                                <string key="text">Verifique com um médico se você precisa tomar suplemento de cállcio e/ou vitamina D. Esses suplementos podem ajudar a fortalecer os ossos e deixá-los saudáveis.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktN-pQ-bcQ">
-                                                <rect key="frame" x="20" y="1039.5" width="366" height="193.5"/>
+                                                <rect key="frame" x="20" y="1031" width="366" height="183"/>
                                                 <string key="text">O peso extra, particularmente quando concentrado na região abdominal, muda o centro de gravidade do corpo, deslocando-o para frente e realizando uma tensão desnecessária sobre os músculos da coluna lombar. Por outro lado, a magreza excessiva, que também pode ser acompanhada por baixa massa óssea, ocasiona o risco de desenvolver osteoporose.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuide da sua postura" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFh-MV-yxN">
-                                                <rect key="frame" x="20" y="230.5" width="366" height="33.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <rect key="frame" x="20" y="249" width="366" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alongue-se" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qd-Sz-s1i">
-                                                <rect key="frame" x="20" y="401.5" width="366" height="33.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <rect key="frame" x="20" y="422" width="366" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pratique exercícios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WH7-kl-4ZB">
-                                                <rect key="frame" x="20" y="615.5" width="366" height="33.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <rect key="frame" x="20" y="636" width="366" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mantenha seus ossos fortes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQw-3V-CrB">
-                                                <rect key="frame" x="20" y="808" width="366" height="67"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <rect key="frame" x="20" y="829.5" width="366" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mantenha o peso adequado" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QD1-1Q-ISE">
-                                                <rect key="frame" x="20" y="991" width="366" height="33.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <rect key="frame" x="20" y="982.5" width="366" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9y9-8a-Nwu">
-                                                <rect key="frame" x="20" y="110.5" width="366" height="4"/>
-                                                <color key="backgroundColor" red="0.8784313725490196" green="0.87058823529411766" blue="0.84313725490196079" alpha="0.73999999999999999" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="4" id="0VK-aw-Auy"/>
-                                                </constraints>
-                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJY-mb-Rln">
+                                                <rect key="frame" x="20" y="878" width="366" height="81.5"/>
+                                                <string key="text">Verifique com um médico se você precisa tomar suplemento de cállcio e/ou vitamina D. Esses suplementos podem ajudar a fortalecer os ossos e deixá-los saudáveis.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="QJY-mb-Rln" secondAttribute="trailing" constant="20" id="1Xm-cs-FL3"/>
-                                            <constraint firstItem="9y9-8a-Nwu" firstAttribute="top" secondItem="pYI-De-Bpr" secondAttribute="bottom" constant="15" id="28O-wh-KBL"/>
-                                            <constraint firstAttribute="trailing" secondItem="mQw-3V-CrB" secondAttribute="trailing" constant="20" id="65u-li-R32"/>
-                                            <constraint firstItem="WH7-kl-4ZB" firstAttribute="top" secondItem="abH-zq-YSR" secondAttribute="bottom" constant="15" id="69y-kk-xFx"/>
-                                            <constraint firstAttribute="trailing" secondItem="ktN-pQ-bcQ" secondAttribute="trailing" constant="20" id="6kj-el-G8h"/>
-                                            <constraint firstAttribute="trailing" secondItem="WnQ-vq-JX8" secondAttribute="trailing" constant="20" id="8AB-Jw-Tnh"/>
-                                            <constraint firstItem="pYI-De-Bpr" firstAttribute="top" secondItem="pTf-l4-MkR" secondAttribute="top" id="AdI-MG-z4t"/>
-                                            <constraint firstItem="WH7-kl-4ZB" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="Akr-FU-wQB"/>
-                                            <constraint firstItem="ktN-pQ-bcQ" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="BQW-py-0Bp"/>
-                                            <constraint firstItem="QJY-mb-Rln" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="CoF-CF-wv9"/>
-                                            <constraint firstAttribute="trailing" secondItem="7qd-Sz-s1i" secondAttribute="trailing" constant="20" id="LDe-uV-4Kh"/>
-                                            <constraint firstItem="abH-zq-YSR" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="MO9-6Y-ssP"/>
-                                            <constraint firstItem="mQw-3V-CrB" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="MkF-bf-snZ"/>
-                                            <constraint firstItem="mQw-3V-CrB" firstAttribute="top" secondItem="WnQ-vq-JX8" secondAttribute="bottom" constant="15" id="OvE-3v-sry"/>
-                                            <constraint firstItem="QD1-1Q-ISE" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="PLK-ld-Vg2"/>
-                                            <constraint firstAttribute="trailing" secondItem="WH7-kl-4ZB" secondAttribute="trailing" constant="20" id="QGe-Ni-zEW"/>
-                                            <constraint firstAttribute="trailing" secondItem="rFh-MV-yxN" secondAttribute="trailing" constant="20" id="Rbo-jF-PqL"/>
-                                            <constraint firstItem="yXW-fi-FR5" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="UZQ-jG-H4n"/>
-                                            <constraint firstItem="yXW-fi-FR5" firstAttribute="top" secondItem="9y9-8a-Nwu" secondAttribute="bottom" constant="15" id="WFb-IT-fuE"/>
-                                            <constraint firstAttribute="trailing" secondItem="hQ3-Ln-WOx" secondAttribute="trailing" constant="20" id="aZE-rc-1xX"/>
-                                            <constraint firstItem="9y9-8a-Nwu" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="bsD-Kn-PZk"/>
-                                            <constraint firstItem="QJY-mb-Rln" firstAttribute="top" secondItem="mQw-3V-CrB" secondAttribute="bottom" constant="15" id="dSd-et-FY5"/>
-                                            <constraint firstItem="7qd-Sz-s1i" firstAttribute="top" secondItem="hQ3-Ln-WOx" secondAttribute="bottom" constant="15" id="etT-kq-BG5"/>
-                                            <constraint firstAttribute="trailing" secondItem="9y9-8a-Nwu" secondAttribute="trailing" constant="20" id="f6g-fp-Gap"/>
-                                            <constraint firstAttribute="trailing" secondItem="yXW-fi-FR5" secondAttribute="trailing" constant="20" id="gQH-J0-lqp"/>
-                                            <constraint firstItem="QD1-1Q-ISE" firstAttribute="top" secondItem="QJY-mb-Rln" secondAttribute="bottom" constant="15" id="gvo-tJ-DpM"/>
-                                            <constraint firstItem="rFh-MV-yxN" firstAttribute="top" secondItem="yXW-fi-FR5" secondAttribute="bottom" constant="15" id="iMA-jl-i6b"/>
-                                            <constraint firstAttribute="trailing" secondItem="pYI-De-Bpr" secondAttribute="trailing" constant="20" id="jya-1h-iWF"/>
-                                            <constraint firstItem="WnQ-vq-JX8" firstAttribute="top" secondItem="WH7-kl-4ZB" secondAttribute="bottom" constant="15" id="keq-Oh-fHk"/>
-                                            <constraint firstItem="rFh-MV-yxN" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="ltB-5l-sJj"/>
-                                            <constraint firstItem="hQ3-Ln-WOx" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="m6j-Cb-jdo"/>
-                                            <constraint firstItem="abH-zq-YSR" firstAttribute="top" secondItem="7qd-Sz-s1i" secondAttribute="bottom" constant="15" id="nWS-RY-220"/>
-                                            <constraint firstAttribute="trailing" secondItem="QD1-1Q-ISE" secondAttribute="trailing" constant="20" id="o9A-Ud-wGX"/>
-                                            <constraint firstItem="hQ3-Ln-WOx" firstAttribute="top" secondItem="rFh-MV-yxN" secondAttribute="bottom" constant="15" id="oOP-rg-ZTq"/>
-                                            <constraint firstItem="WnQ-vq-JX8" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="pMw-l3-cHO"/>
-                                            <constraint firstAttribute="trailing" secondItem="abH-zq-YSR" secondAttribute="trailing" constant="20" id="rnv-Ba-je0"/>
-                                            <constraint firstItem="pYI-De-Bpr" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="vUs-QL-LZK"/>
-                                            <constraint firstItem="ktN-pQ-bcQ" firstAttribute="top" secondItem="QD1-1Q-ISE" secondAttribute="bottom" constant="15" id="vaG-wq-x0v"/>
-                                            <constraint firstItem="7qd-Sz-s1i" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="yA3-xy-f0F"/>
+                                            <constraint firstItem="mQw-3V-CrB" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="0Ka-ak-e7f"/>
+                                            <constraint firstItem="WnQ-vq-JX8" firstAttribute="top" secondItem="WH7-kl-4ZB" secondAttribute="bottom" constant="23" id="4Xp-NT-X23"/>
+                                            <constraint firstItem="QJY-mb-Rln" firstAttribute="top" secondItem="mQw-3V-CrB" secondAttribute="bottom" constant="23" id="8Rv-VC-bVe"/>
+                                            <constraint firstItem="hQ3-Ln-WOx" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="BCY-XC-sgp"/>
+                                            <constraint firstAttribute="trailing" secondItem="WnQ-vq-JX8" secondAttribute="trailing" constant="20" id="CMl-wc-6II"/>
+                                            <constraint firstItem="ktN-pQ-bcQ" firstAttribute="top" secondItem="QD1-1Q-ISE" secondAttribute="bottom" constant="23" id="CbQ-Gp-CaW"/>
+                                            <constraint firstAttribute="trailing" secondItem="7qd-Sz-s1i" secondAttribute="trailing" constant="20" id="DHW-oL-Ngj"/>
+                                            <constraint firstItem="abH-zq-YSR" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="E3P-XT-RSr"/>
+                                            <constraint firstItem="rFh-MV-yxN" firstAttribute="top" secondItem="yXW-fi-FR5" secondAttribute="bottom" constant="23" id="Et2-qM-qC9"/>
+                                            <constraint firstItem="pYI-De-Bpr" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="Gbh-U8-599"/>
+                                            <constraint firstItem="yXW-fi-FR5" firstAttribute="top" secondItem="pYI-De-Bpr" secondAttribute="bottom" constant="33" id="Grl-8M-zCa"/>
+                                            <constraint firstItem="WH7-kl-4ZB" firstAttribute="top" secondItem="abH-zq-YSR" secondAttribute="bottom" constant="23" id="H9O-n2-7Kw"/>
+                                            <constraint firstAttribute="trailing" secondItem="WH7-kl-4ZB" secondAttribute="trailing" constant="20" id="I7n-Iz-stk"/>
+                                            <constraint firstItem="yXW-fi-FR5" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="JoP-2d-RaK"/>
+                                            <constraint firstAttribute="trailing" secondItem="pYI-De-Bpr" secondAttribute="trailing" constant="20" id="KrC-9G-Y4v"/>
+                                            <constraint firstItem="WnQ-vq-JX8" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="LkT-nd-4Yb"/>
+                                            <constraint firstItem="pYI-De-Bpr" firstAttribute="top" secondItem="pTf-l4-MkR" secondAttribute="top" constant="30" id="NL9-DE-7lS"/>
+                                            <constraint firstItem="QJY-mb-Rln" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="NwX-tJ-NcH"/>
+                                            <constraint firstItem="WH7-kl-4ZB" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="OD0-ed-FVL"/>
+                                            <constraint firstAttribute="trailing" secondItem="mQw-3V-CrB" secondAttribute="trailing" constant="20" id="Oqh-e9-iTb"/>
+                                            <constraint firstAttribute="trailing" secondItem="ktN-pQ-bcQ" secondAttribute="trailing" constant="20" id="PEH-5J-pSl"/>
+                                            <constraint firstItem="7qd-Sz-s1i" firstAttribute="top" secondItem="hQ3-Ln-WOx" secondAttribute="bottom" constant="23" id="Ubx-6b-GxC"/>
+                                            <constraint firstAttribute="trailing" secondItem="QJY-mb-Rln" secondAttribute="trailing" constant="20" id="X9b-Ii-y7P"/>
+                                            <constraint firstItem="hQ3-Ln-WOx" firstAttribute="top" secondItem="rFh-MV-yxN" secondAttribute="bottom" constant="23" id="aiq-j0-7bE"/>
+                                            <constraint firstItem="ktN-pQ-bcQ" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="eEa-lX-fkx"/>
+                                            <constraint firstItem="mQw-3V-CrB" firstAttribute="top" secondItem="WnQ-vq-JX8" secondAttribute="bottom" constant="23" id="efF-sZ-SYm"/>
+                                            <constraint firstItem="abH-zq-YSR" firstAttribute="top" secondItem="7qd-Sz-s1i" secondAttribute="bottom" constant="23" id="gUD-kb-o7M"/>
+                                            <constraint firstAttribute="trailing" secondItem="hQ3-Ln-WOx" secondAttribute="trailing" constant="20" id="gcR-Vd-Qek"/>
+                                            <constraint firstAttribute="trailing" secondItem="QD1-1Q-ISE" secondAttribute="trailing" constant="20" id="lx8-Fd-pZM"/>
+                                            <constraint firstAttribute="trailing" secondItem="abH-zq-YSR" secondAttribute="trailing" constant="20" id="mka-iv-iHJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="yXW-fi-FR5" secondAttribute="trailing" constant="20" id="mn9-g1-qGp"/>
+                                            <constraint firstItem="QD1-1Q-ISE" firstAttribute="top" secondItem="QJY-mb-Rln" secondAttribute="bottom" constant="23" id="nb4-Bc-Xoo"/>
+                                            <constraint firstAttribute="trailing" secondItem="rFh-MV-yxN" secondAttribute="trailing" constant="20" id="oze-xb-SVR"/>
+                                            <constraint firstItem="7qd-Sz-s1i" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="p58-M5-8Xt"/>
+                                            <constraint firstItem="QD1-1Q-ISE" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="pFO-cL-WVm"/>
+                                            <constraint firstItem="rFh-MV-yxN" firstAttribute="leading" secondItem="pTf-l4-MkR" secondAttribute="leading" constant="20" id="sCz-qr-ZxG"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -541,7 +539,7 @@ Lembre-se que os exercícios devem ser administrados por um profissional.</strin
                             <constraint firstItem="jiO-E1-1lp" firstAttribute="leading" secondItem="tKR-ya-S14" secondAttribute="leading" id="usD-6L-1Is"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Rrc-6l-49i"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Rrc-6l-49i"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LtS-e3-7va" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -556,105 +554,105 @@ Lembre-se que os exercícios devem ser administrados por um profissional.</strin
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUM-7w-VYm">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHQ-Ry-C8t" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="-30" width="414" height="1433.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conceito" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4W-fA-uIL">
-                                                <rect key="frame" x="20" y="71" width="118.5" height="33.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzS-62-nU9">
-                                                <rect key="frame" x="20" y="119.5" width="374" height="107.5"/>
-                                                <string key="text">A escoliose infantil é um desvio na coluna vertebral que pode prejudicar a criança em suas atividades cotidianas, causando dor e desconforto. 
-</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <rect key="frame" x="20" y="104" width="88.5" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como identificar?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9z-rY-rgb">
-                                                <rect key="frame" x="20" y="242" width="374" height="33.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Hw-ji-5QP">
-                                                <rect key="frame" x="20" y="52" width="374" height="4"/>
-                                                <color key="backgroundColor" red="0.81568627450980391" green="0.80784313725490198" blue="0.77254901960784317" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="4" id="KEj-vY-wM7"/>
-                                                </constraints>
-                                            </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Causas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Of-L7-fbh">
-                                                <rect key="frame" x="20" y="714" width="374" height="33.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1O-a0-VRA">
-                                                <rect key="frame" x="20" y="762.5" width="374" height="236.5"/>
-                                                <string key="text">A maioria dos casos de escoliose são idiopáticos, ou seja, não há uma causa definida para o desenvolvimento dela.
-O desvio da coluna pode se dar por doenças congênitas (má formação vertebral que leva ao desalinhamento da coluna) ou neuromusculares (descorrente de doenças como paralisia cerebral, distrofia muscular lesões medulares etc).
-A má postura é outro fator que contribui para o desenvolvimento da escoliose.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tratamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10O-ql-TYq">
-                                                <rect key="frame" x="20" y="1014" width="151" height="33.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EwJ-6L-k1i">
-                                                <rect key="frame" x="20" y="1062.5" width="374" height="215"/>
-                                                <string key="text">O tratamento se dá de acordo com o tipo de escoliose e a gravidade das curvas. Dependendo do caso, o tratamento pode consistir em sessões de fisioterapia, uso de colete (curvatura de 20 e 45 graus) e, em casos mais extremos, cirurgia (para curvas acima de 45 a 50 graus).
-É importante concultar um profissinal para saber qual tratamento é adequado e receber as orientações necessárias.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <rect key="frame" x="20" y="277" width="374" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0t-gZ-aaS">
-                                                <rect key="frame" x="20" y="290.5" width="374" height="408.5"/>
+                                                <rect key="frame" x="20" y="325.5" width="374" height="385.5"/>
                                                 <string key="text">Dor e má postura podem ser indicativos de que a criança possui escoliose. Porém, nem sempre a escoliose dá sinais visíveis (principalmente no início), por isso é necessário observar se seu tronco e ombros estão desalinhados (um está mais alto que o outro) ou se ela fica mais "torta” para um lado.
 A hereditariedade é um fator a ser avaliado, pois se algum familiar tem ou teve escoliose, principalmente a infantil, há chances de a criança ter.
-É de extrema importância levar a criança para consultas com ortopedistas e fisioterapeutas, são eles que vão passar exames e alguns testes que mostrarão se ela tem escoliose e identifficarão o tipo de acordo com os resultados obtidos.
+É de extrema importância levar a criança para consultas com ortopedistas e fisioterapeutas, são eles que vão passar exames e alguns testes que mostrarão se ela tem escoliose e identificarão o tipo de acordo com os resultados obtidos.
 Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Causas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Of-L7-fbh">
+                                                <rect key="frame" x="20" y="734" width="374" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1O-a0-VRA">
+                                                <rect key="frame" x="20" y="782.5" width="374" height="223.5"/>
+                                                <string key="text">A maioria dos casos de escoliose são idiopáticos, ou seja, não há uma causa definida para o desenvolvimento dela.
+O desvio da coluna pode se dar por doenças congênitas (má formação vertebral que leva ao desalinhamento da coluna) ou neuromusculares (descorrente de doenças como paralisia cerebral, distrofia muscular lesões medulares etc).
+A má postura é outro fator que contribui para o desenvolvimento da escoliose.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tratamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10O-ql-TYq">
+                                                <rect key="frame" x="20" y="1029" width="374" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EwJ-6L-k1i">
+                                                <rect key="frame" x="20" y="1077.5" width="374" height="183"/>
+                                                <string key="text">O tratamento se dá de acordo com o tipo de escoliose e a gravidade das curvas. Dependendo do caso, o tratamento pode consistir em sessões de fisioterapia, uso de colete (curvatura de 20 e 45 graus) e, em casos mais extremos, cirurgia (para curvas acima de 45 a 50 graus).
+É importante concultar um profissinal para saber qual tratamento é adequado e receber as orientações necessárias.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O que é" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zG-Wr-jgw">
+                                                <rect key="frame" x="20" y="30" width="374" height="41"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzS-62-nU9">
+                                                <rect key="frame" x="20" y="152.5" width="374" height="101.5"/>
+                                                <string key="text">A escoliose infantil é um desvio na coluna vertebral que pode prejudicar a criança em suas atividades cotidianas, causando dor e desconforto. 
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="10O-ql-TYq" firstAttribute="top" secondItem="v1O-a0-VRA" secondAttribute="bottom" constant="15" id="1uY-Oq-kVt"/>
-                                            <constraint firstAttribute="trailing" secondItem="5Hw-ji-5QP" secondAttribute="trailing" constant="20" id="4aS-I4-nbJ"/>
-                                            <constraint firstItem="I4W-fA-uIL" firstAttribute="leading" secondItem="zHQ-Ry-C8t" secondAttribute="leading" constant="20" id="8qA-5z-Krd"/>
-                                            <constraint firstItem="v1O-a0-VRA" firstAttribute="top" secondItem="7Of-L7-fbh" secondAttribute="bottom" constant="15" id="DOn-ul-iPS"/>
-                                            <constraint firstItem="EwJ-6L-k1i" firstAttribute="top" secondItem="10O-ql-TYq" secondAttribute="bottom" constant="15" id="Et5-WS-or5"/>
-                                            <constraint firstItem="I4W-fA-uIL" firstAttribute="top" secondItem="5Hw-ji-5QP" secondAttribute="bottom" constant="15" id="Fsu-bd-RuF"/>
-                                            <constraint firstItem="bzS-62-nU9" firstAttribute="top" secondItem="I4W-fA-uIL" secondAttribute="bottom" constant="15" id="GqM-pa-WNB"/>
-                                            <constraint firstAttribute="trailing" secondItem="R0t-gZ-aaS" secondAttribute="trailing" constant="20" id="I5l-Uz-My9"/>
-                                            <constraint firstItem="5Hw-ji-5QP" firstAttribute="leading" secondItem="zHQ-Ry-C8t" secondAttribute="leading" constant="20" id="IG7-DH-EEJ"/>
-                                            <constraint firstAttribute="trailing" secondItem="m9z-rY-rgb" secondAttribute="trailing" constant="20" id="KTC-ug-tY7"/>
-                                            <constraint firstAttribute="trailing" secondItem="bzS-62-nU9" secondAttribute="trailing" constant="20" id="NOn-yi-bI5"/>
-                                            <constraint firstAttribute="trailing" secondItem="v1O-a0-VRA" secondAttribute="trailing" constant="20" id="Nuw-2k-T0f"/>
-                                            <constraint firstAttribute="trailing" secondItem="7Of-L7-fbh" secondAttribute="trailing" constant="20" id="XzY-TE-adA"/>
-                                            <constraint firstItem="7Of-L7-fbh" firstAttribute="leading" secondItem="zHQ-Ry-C8t" secondAttribute="leading" constant="20" id="Xzz-mx-P29"/>
-                                            <constraint firstItem="R0t-gZ-aaS" firstAttribute="leading" secondItem="zHQ-Ry-C8t" secondAttribute="leading" constant="20" id="bpS-Rl-tqn"/>
-                                            <constraint firstItem="m9z-rY-rgb" firstAttribute="top" secondItem="bzS-62-nU9" secondAttribute="bottom" constant="15" id="bu6-10-JZ4"/>
-                                            <constraint firstItem="5Hw-ji-5QP" firstAttribute="top" secondItem="zHQ-Ry-C8t" secondAttribute="top" constant="52" id="cex-r4-TXS"/>
-                                            <constraint firstItem="10O-ql-TYq" firstAttribute="leading" secondItem="zHQ-Ry-C8t" secondAttribute="leading" constant="20" id="dlt-Dq-ELI"/>
-                                            <constraint firstItem="m9z-rY-rgb" firstAttribute="leading" secondItem="zHQ-Ry-C8t" secondAttribute="leading" constant="20" id="f95-o3-Y7L"/>
-                                            <constraint firstItem="v1O-a0-VRA" firstAttribute="leading" secondItem="zHQ-Ry-C8t" secondAttribute="leading" constant="20" id="h5D-Oo-Wj4"/>
-                                            <constraint firstItem="EwJ-6L-k1i" firstAttribute="leading" secondItem="zHQ-Ry-C8t" secondAttribute="leading" constant="20" id="ldZ-zC-q61"/>
-                                            <constraint firstAttribute="trailing" secondItem="EwJ-6L-k1i" secondAttribute="trailing" constant="20" id="mTo-IU-oae"/>
-                                            <constraint firstItem="R0t-gZ-aaS" firstAttribute="top" secondItem="m9z-rY-rgb" secondAttribute="bottom" constant="15" id="nfe-hM-dSs"/>
-                                            <constraint firstItem="bzS-62-nU9" firstAttribute="leading" secondItem="zHQ-Ry-C8t" secondAttribute="leading" constant="20" id="owN-8g-he1"/>
-                                            <constraint firstItem="7Of-L7-fbh" firstAttribute="top" secondItem="R0t-gZ-aaS" secondAttribute="bottom" constant="15" id="wmh-DZ-Nib"/>
+                                            <constraint firstItem="R0t-gZ-aaS" firstAttribute="leading" secondItem="zHQ-Ry-C8t" secondAttribute="leading" constant="20" id="3da-gA-zpY"/>
+                                            <constraint firstItem="10O-ql-TYq" firstAttribute="leading" secondItem="zHQ-Ry-C8t" secondAttribute="leading" constant="20" id="6rT-ZS-7J9"/>
+                                            <constraint firstAttribute="trailing" secondItem="7Of-L7-fbh" secondAttribute="trailing" constant="20" id="9PZ-aP-jma"/>
+                                            <constraint firstItem="m9z-rY-rgb" firstAttribute="leading" secondItem="zHQ-Ry-C8t" secondAttribute="leading" constant="20" id="B72-8X-GQf"/>
+                                            <constraint firstAttribute="trailing" secondItem="10O-ql-TYq" secondAttribute="trailing" constant="20" id="BvX-33-4B3"/>
+                                            <constraint firstItem="bzS-62-nU9" firstAttribute="top" secondItem="I4W-fA-uIL" secondAttribute="bottom" constant="23" id="Bwf-I7-6dI"/>
+                                            <constraint firstItem="m9z-rY-rgb" firstAttribute="top" secondItem="bzS-62-nU9" secondAttribute="bottom" constant="23" id="EXQ-nl-HQf"/>
+                                            <constraint firstAttribute="trailing" secondItem="8zG-Wr-jgw" secondAttribute="trailing" constant="20" id="I9H-Fo-bVH"/>
+                                            <constraint firstAttribute="trailing" secondItem="m9z-rY-rgb" secondAttribute="trailing" constant="20" id="Kvz-CZ-Bnf"/>
+                                            <constraint firstItem="7Of-L7-fbh" firstAttribute="top" secondItem="R0t-gZ-aaS" secondAttribute="bottom" constant="23" id="LuT-mf-N5a"/>
+                                            <constraint firstItem="bzS-62-nU9" firstAttribute="leading" secondItem="zHQ-Ry-C8t" secondAttribute="leading" constant="20" id="QZ8-gg-qme"/>
+                                            <constraint firstItem="I4W-fA-uIL" firstAttribute="leading" secondItem="zHQ-Ry-C8t" secondAttribute="leading" constant="20" id="R9z-Vx-VIK"/>
+                                            <constraint firstItem="R0t-gZ-aaS" firstAttribute="top" secondItem="m9z-rY-rgb" secondAttribute="bottom" constant="23" id="S1K-Yp-UPU"/>
+                                            <constraint firstItem="8zG-Wr-jgw" firstAttribute="top" secondItem="zHQ-Ry-C8t" secondAttribute="top" constant="30" id="XtU-TX-RvE"/>
+                                            <constraint firstItem="8zG-Wr-jgw" firstAttribute="leading" secondItem="zHQ-Ry-C8t" secondAttribute="leading" constant="20" id="ZLW-JY-qx1"/>
+                                            <constraint firstItem="EwJ-6L-k1i" firstAttribute="leading" secondItem="zHQ-Ry-C8t" secondAttribute="leading" constant="20" id="Zxk-7l-isD"/>
+                                            <constraint firstAttribute="trailing" secondItem="bzS-62-nU9" secondAttribute="trailing" constant="20" id="c2x-Hr-xqu"/>
+                                            <constraint firstItem="EwJ-6L-k1i" firstAttribute="top" secondItem="10O-ql-TYq" secondAttribute="bottom" constant="23" id="dpE-tB-vVw"/>
+                                            <constraint firstItem="10O-ql-TYq" firstAttribute="top" secondItem="v1O-a0-VRA" secondAttribute="bottom" constant="23" id="faW-mJ-TzY"/>
+                                            <constraint firstItem="v1O-a0-VRA" firstAttribute="leading" secondItem="zHQ-Ry-C8t" secondAttribute="leading" constant="20" id="gOc-Ts-COS"/>
+                                            <constraint firstAttribute="trailing" secondItem="v1O-a0-VRA" secondAttribute="trailing" constant="20" id="gQQ-T0-eqH"/>
+                                            <constraint firstItem="I4W-fA-uIL" firstAttribute="top" secondItem="8zG-Wr-jgw" secondAttribute="bottom" constant="33" id="hja-8r-CRo"/>
+                                            <constraint firstItem="v1O-a0-VRA" firstAttribute="top" secondItem="7Of-L7-fbh" secondAttribute="bottom" constant="23" id="occ-2b-mbB"/>
+                                            <constraint firstItem="7Of-L7-fbh" firstAttribute="leading" secondItem="zHQ-Ry-C8t" secondAttribute="leading" constant="20" id="v7j-Vf-HZl"/>
+                                            <constraint firstAttribute="trailing" secondItem="R0t-gZ-aaS" secondAttribute="trailing" constant="20" id="wB1-0r-GFX"/>
+                                            <constraint firstAttribute="trailing" secondItem="EwJ-6L-k1i" secondAttribute="trailing" constant="20" id="x4g-Jt-WG7"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -677,7 +675,7 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                             <constraint firstItem="oUM-7w-VYm" firstAttribute="top" secondItem="E3j-iN-k3g" secondAttribute="top" id="exM-ta-bO2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="kQ8-Fe-UJ7"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="kQ8-Fe-UJ7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5VW-Kr-4mg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -714,7 +712,7 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="botao" translatesAutoresizingMaskIntoConstraints="NO" id="TCX-9J-uY2">
-                                                    <rect key="frame" x="5" y="4" width="404" height="62"/>
+                                                    <rect key="frame" x="15" y="4" width="384" height="62"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBM-yi-fvr">
                                                     <rect key="frame" x="35" y="5" width="339" height="61"/>
@@ -726,10 +724,10 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="TCX-9J-uY2" secondAttribute="trailing" constant="5" id="AZC-jk-Sc1"/>
                                                 <constraint firstAttribute="bottom" secondItem="TCX-9J-uY2" secondAttribute="bottom" constant="4" id="OYt-ZK-fa3"/>
                                                 <constraint firstItem="TCX-9J-uY2" firstAttribute="top" secondItem="utu-wA-3oP" secondAttribute="top" constant="4" id="T0g-2u-zyt"/>
-                                                <constraint firstItem="TCX-9J-uY2" firstAttribute="leading" secondItem="utu-wA-3oP" secondAttribute="leading" constant="5" id="iPH-jC-8HC"/>
+                                                <constraint firstAttribute="trailing" secondItem="TCX-9J-uY2" secondAttribute="trailing" constant="15" id="u3U-EM-hbE"/>
+                                                <constraint firstItem="TCX-9J-uY2" firstAttribute="leading" secondItem="utu-wA-3oP" secondAttribute="leading" constant="15" id="vvz-7R-9gR"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -765,7 +763,7 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
         <!--Detail View Controller-->
         <scene sceneID="saW-uR-npe">
             <objects>
-                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0cK-9v-dxM" customClass="DetailViewController" customModule="ScolioKids" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0cK-9v-dxM" customClass="DetailViewController" customModule="ScolioKids" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="abP-Ht-rF8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -792,7 +790,7 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                                                                 <constraint firstAttribute="height" constant="224" id="o3N-ec-vgt"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9b-9x-PIl">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9b-9x-PIl">
                                                             <rect key="frame" x="32" y="275" width="350" height="120"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="350" id="1f3-e5-EuS"/>
@@ -852,25 +850,25 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
             </objects>
             <point key="canvasLocation" x="221.73913043478262" y="1322.5446428571429"/>
         </scene>
-        <!--View Controller-->
+        <!--Favorites View Controller-->
         <scene sceneID="crU-XI-HIF">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="57m-Am-ud3" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="57m-Am-ud3" customClass="FavoritesViewController" customModule="ScolioKids" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ivf-rE-E0x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LiI-Jh-GWY">
-                                <rect key="frame" x="0.0" y="168" width="414" height="645"/>
+                                <rect key="frame" x="0.0" y="194" width="414" height="619"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="WRE-9B-MYY" kind="embed" id="gzp-7P-5Ne"/>
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favoritos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4y-Wc-YFw">
-                                <rect key="frame" x="20" y="56" width="148" height="63"/>
+                                <rect key="frame" x="20" y="81" width="189" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -932,19 +930,29 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B4E-LG-OFW">
-                                <rect key="frame" x="20" y="468" width="374" height="345"/>
+                                <rect key="frame" x="20" y="523" width="374" height="290"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <connections>
                                     <segue destination="Hvv-v2-Ebf" kind="embed" id="2Xm-zD-INF"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercícios de Hoje" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AN-lB-GLa">
+                                <rect key="frame" x="20" y="430" width="207" height="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bcu-Bj-SO6"/>
                         <color key="backgroundColor" name="backgroundOne"/>
                         <constraints>
                             <constraint firstItem="h0c-6v-muh" firstAttribute="top" secondItem="bcu-Bj-SO6" secondAttribute="top" constant="80" id="9TX-MM-II8"/>
                             <constraint firstItem="h0c-6v-muh" firstAttribute="leading" secondItem="bcu-Bj-SO6" secondAttribute="leading" constant="46" id="BFA-Lv-uPJ"/>
+                            <constraint firstItem="7AN-lB-GLa" firstAttribute="leading" secondItem="bcu-Bj-SO6" secondAttribute="leading" constant="20" id="FQK-4R-daB"/>
                             <constraint firstItem="8SL-Ca-TA3" firstAttribute="leading" secondItem="bcu-Bj-SO6" secondAttribute="leading" id="G7g-iR-IFO"/>
+                            <constraint firstItem="bcu-Bj-SO6" firstAttribute="trailing" secondItem="7AN-lB-GLa" secondAttribute="trailing" constant="187" id="PGU-tP-sVI"/>
+                            <constraint firstItem="7AN-lB-GLa" firstAttribute="top" secondItem="8SL-Ca-TA3" secondAttribute="bottom" constant="15" id="XYt-Gz-z2Z"/>
                             <constraint firstItem="h0n-al-fEw" firstAttribute="top" secondItem="h0c-6v-muh" secondAttribute="bottom" constant="90" id="aT3-Tf-OTj"/>
                             <constraint firstItem="8SL-Ca-TA3" firstAttribute="top" secondItem="zvw-Jw-FUB" secondAttribute="top" id="cdn-eY-DUW"/>
                             <constraint firstItem="bcu-Bj-SO6" firstAttribute="trailing" secondItem="h0c-6v-muh" secondAttribute="trailing" constant="46" id="crw-Rz-fSp"/>
@@ -969,26 +977,40 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
         <scene sceneID="b0r-WZ-k2A">
             <objects>
                 <tableViewController id="WRE-9B-MYY" customClass="FavoritesTableViewController" customModule="ScolioKids" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="7V4-8k-hMu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="645"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="7V4-8k-hMu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="619"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="gUK-QB-yNJ">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" text="" id="gUK-QB-yNJ">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="barTintColor" name="backgroundOne"/>
                             <textInputTraits key="textInputTraits"/>
+                            <scopeButtonTitles>
+                                <string>Title</string>
+                                <string>Title</string>
+                            </scopeButtonTitles>
                             <connections>
                                 <outlet property="delegate" destination="WRE-9B-MYY" id="epe-F0-0EF"/>
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reusebleFavoritesCell" id="Fj1-0Q-PxW" customClass="FavoritesTableViewCell" customModule="ScolioKids" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reusebleFavoritesCell" rowHeight="66" id="Fj1-0Q-PxW" customClass="FavoritesTableViewCell" customModule="ScolioKids" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="95.5" width="414" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fj1-0Q-PxW" id="tqS-ko-jl6">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="botao" translatesAutoresizingMaskIntoConstraints="NO" id="joi-bA-zZt">
+                                            <rect key="frame" x="13" y="5" width="359" height="62"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1004,30 +1026,37 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S3h-Uy-qj3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1286" y="-214"/>
+            <point key="canvasLocation" x="1285.5072463768117" y="-214.62053571428569"/>
         </scene>
         <!--Stopwatch Table View Controller-->
         <scene sceneID="n7C-6m-KEv">
             <objects>
                 <tableViewController id="Hvv-v2-Ebf" customClass="StopwatchTableViewController" customModule="ScolioKids" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="JRU-bC-wR2">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="345"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="JRU-bC-wR2">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="290"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="backgroundOne"/>
+                        <color key="sectionIndexBackgroundColor" systemColor="systemGreenColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reusebleChronometerCell" id="faE-df-X2a" customClass="StopwatchTableViewCell" customModule="ScolioKids" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="reusebleChronometerCell" rowHeight="59" id="faE-df-X2a" customClass="StopwatchTableViewCell" customModule="ScolioKids" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="374" height="59"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="faE-df-X2a" id="5gn-rT-Tdx" customClass="StopwatchTableViewCell" customModule="ScolioKids" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="59"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="botao" translatesAutoresizingMaskIntoConstraints="NO" id="S1X-hn-CeY">
+                                            <rect key="frame" x="0.0" y="1" width="344" height="62"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                         <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q4I-cU-1hg">
-                                            <rect key="frame" x="254" y="-7" width="100" height="58"/>
+                                            <rect key="frame" x="264" y="1" width="100" height="58"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         </pickerView>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="pickerViewNumbers" destination="q4I-cU-1hg" id="IRN-Jn-UEP"/>
                                 </connections>
@@ -1050,7 +1079,7 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
         <scene sceneID="2hP-5T-v6t">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DaE-Hh-tR4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" selectedImage="home 2" id="aUZ-uO-ZrC"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" selectedImage="homeOficial" id="aUZ-uO-ZrC"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="GED-Jt-8hc">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -1086,17 +1115,20 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Group 58" width="350" height="114.66666412353516"/>
-        <image name="Group 59" width="1050" height="344"/>
-        <image name="Group 60" width="1050" height="346"/>
-        <image name="Group 61" width="350" height="114.66666412353516"/>
+        <image name="Group 58" width="136.33332824707031" height="114.66666412353516"/>
+        <image name="Group 59" width="130.66667175292969" height="114.66666412353516"/>
+        <image name="Group 60" width="129" height="115.33333587646484"/>
+        <image name="Group 61" width="173.66667175292969" height="114.66666412353516"/>
         <image name="TexturaCronometro" width="390" height="415"/>
         <image name="backgroundPersonal" width="391" height="844"/>
         <image name="botao" width="116.66666412353516" height="19.666666030883789"/>
+        <image name="coluna" width="1050" height="344"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
-        <image name="home 2" width="128" height="128"/>
+        <image name="homeOficial" width="27.333333969116211" height="24"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="maefilho" width="1050" height="344"/>
+        <image name="pensando" width="1050" height="344"/>
         <image name="stopwatch" catalog="system" width="121" height="128"/>
         <image name="stopwatch.fill" catalog="system" width="121" height="128"/>
         <namedColor name="AccentColor">
@@ -1105,8 +1137,8 @@ Quanto mais cedo identificada e tratada, melhores serão os resultados.</string>
         <namedColor name="backgroundOne">
             <color red="1" green="0.96862745098039216" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
