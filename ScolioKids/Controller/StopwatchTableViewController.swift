@@ -12,22 +12,8 @@ class StopwatchTableViewController: UITableViewController {
     
     
     @IBOutlet var stopwatchUI: UITableView!
-    
-    //let imageView = UIImageView(frame: CGRect(x: 10, y: 10, width: , height: <#T##CGFloat#>))
-    
-    let appDelegate = UIApplication.shared.delegate as? AppDelegate
+    var actionsModel = ActionsModel()
 
-    let context: NSManagedObjectContext = {
-        let container = NSPersistentContainer(name: "coredata")
-        container.loadPersistentStores { (storeDescription, error) in
-            if let error = error {
-                fatalError("erro de load \(error)")
-            }
-        }
-        return container.viewContext
-    }()
-
-    var chronometer: [NSManagedObject] = []
     
     
     override func viewDidLoad() {
@@ -44,7 +30,7 @@ class StopwatchTableViewController: UITableViewController {
         
         //3
         do {
-        chronometer = try context.fetch(fetchRequest)
+            actionsModel.chronometer = try actionsModel.context.fetch(fetchRequest)
         } catch let error as NSError {
           print("Could not fetch. \(error), \(error.userInfo)")
         }
@@ -71,11 +57,11 @@ class StopwatchTableViewController: UITableViewController {
         let deleteAction = UIContextualAction(style: .destructive, title:  "Delete", handler:{[self] (_, _, completionHandler) in
             // delete the item here
 
-            context.delete(self.chronometer[indexPath.row])
-            self.chronometer.remove(at: indexPath.row)
+            actionsModel.context.delete(actionsModel.chronometer[indexPath.row])
+            actionsModel.chronometer.remove(at: indexPath.row)
             // Save Changes
             do {
-                try context.save()
+                try actionsModel.context.save()
             } catch let error as NSError {
                 print("Could not save. \(error), \(error.userInfo)")
             }
@@ -103,13 +89,13 @@ class StopwatchTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        return 5
-        return chronometer.count
+        return actionsModel.chronometer.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let chronometerExercise = chronometer[indexPath.row]
+        let chronometerExercise = actionsModel.chronometer[indexPath.row]
         
             let cell = tableView.dequeueReusableCell(withIdentifier: "reusebleChronometerCell", for: indexPath)
 //        cell.textLabel?.text = "hello world"

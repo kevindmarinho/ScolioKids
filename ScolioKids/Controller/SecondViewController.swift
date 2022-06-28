@@ -25,21 +25,6 @@ class SecondViewController: UIViewController {
     //COREDATA
     var actionsModel = ActionsModel()
     
-    let appDelegate = UIApplication.shared.delegate as? AppDelegate
-
-    let context: NSManagedObjectContext = {
-        let container = NSPersistentContainer(name: "coredata")
-        container.loadPersistentStores { (storeDescription, error) in
-            if let error = error {
-                fatalError("erro de load \(error)")
-            }
-        }
-        return container.viewContext
-    }()
-    
-    var favorites: [NSManagedObject] = []
-    var chronometer: [NSManagedObject] = []
-    
 
     //Search
    // var searchExercicies = [String]()
@@ -73,22 +58,6 @@ class SecondViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        
-        //2
-        let chronometerFetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Chronometer")
-        
-        //3
-        do {
-          chronometer = try context.fetch(chronometerFetchRequest)
-        } catch let error as NSError {
-          print("Could not fetch. \(error), \(error.userInfo)")
-        }
-       
-        ExercicioView.delegate = self
-        ExercicioView.dataSource = self
-        ExercicioView.reloadData()
-    }
 }
 
 // SEARCH
@@ -329,10 +298,6 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
     }
 }
 
-//    func modifyBarButtonTitle() {
-//            isCellSelected = true
-//            SelectionButton.title = "OK"
-//        }
 
 
 

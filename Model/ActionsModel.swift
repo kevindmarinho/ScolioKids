@@ -9,7 +9,9 @@ import Foundation
 import UIKit
 import CoreData
 
-struct ActionsModel {
+class ActionsModel {
+    
+    static let shared = ActionsModel()
     
     var exercisesList: [Exercises] = ["Aviãozinho", "Prancha Lateral"].compactMap({Exercises(exercise: $0, isFavorited: false, isChronometer: false)})
     
@@ -32,7 +34,7 @@ struct ActionsModel {
     
     
     //FAVORITES
-    mutating func savingToFavorites(index: Int) {
+    func savingToFavorites(index: Int) {
         
         let entity = NSEntityDescription.entity(forEntityName: "Favorites", in: context)!
         
@@ -80,7 +82,7 @@ struct ActionsModel {
     }
     
     // CRONOMETERO
-    mutating func savingToChronometer(index: Int) {
+    func savingToChronometer(index: Int) {
 
         let entity = NSEntityDescription.entity(forEntityName: "Chronometer", in: context)!
         

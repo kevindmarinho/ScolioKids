@@ -17,21 +17,7 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
     
     var filterFav: [Favorites] = []
     var searching2 = false
-    
-    var favorites: [NSManagedObject] = []
-    
-    let appDelegate = UIApplication.shared.delegate as? AppDelegate
 
-    let context: NSManagedObjectContext = {
-        let container = NSPersistentContainer(name: "coredata")
-        container.loadPersistentStores { (storeDescription, error) in
-            if let error = error {
-                fatalError("erro de load \(error)")
-            }
-        }
-        return container.viewContext
-    }()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +33,7 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Favorites")
 
         do {
-          favorites = try context.fetch(fetchRequest)
+            actionsModel.favorites = try actionsModel.context.fetch(fetchRequest)
         } catch let error as NSError {
           print("Could not fetch. \(error), \(error.userInfo)")
         }
@@ -80,11 +66,11 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
         let deleteAction = UIContextualAction(style: .destructive, title:  "Delete", handler:{[self] (_, _, completionHandler) in
             // delete the item here
             
-            context.delete(self.favorites[indexPath.row])
-            self.favorites.remove(at: indexPath.row)
+            actionsModel.context.delete(actionsModel.favorites[indexPath.row])
+            actionsModel.favorites.remove(at: indexPath.row)
             // Save Changes
             do {
-                try context.save()
+                try actionsModel.context.save()
             } catch let error as NSError {
                 print("Could not save. \(error), \(error.userInfo)")
             }
@@ -118,14 +104,14 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
 //                tableView.backgroundColor = .init(patternImage: .init(named: "heart")!)
 //
 //            }
-            return favorites.count
+            return actionsModel.favorites.count
             
         }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
 
-        let favoritesExercise = favorites[indexPath.row]
+        let favoritesExercise = actionsModel.favorites[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "reusebleFavoritesCell", for: indexPath)
         
@@ -172,7 +158,7 @@ class FavoritesTableViewController: UITableViewController, UISearchBarDelegate {
     // Search Bar
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        let favoritos = favorites as! [Favorites]
+        let favoritos = actionsModel.favorites as! [Favorites]
 
         if searchText.isEmpty{
             self.filterFav = favoritos
