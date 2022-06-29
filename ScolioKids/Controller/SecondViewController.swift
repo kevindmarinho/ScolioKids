@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-import CoreData
+//import CoreData
 
 class SecondViewController: UIViewController {
     
@@ -22,7 +22,7 @@ class SecondViewController: UIViewController {
             return imageView
         }()
     
-    //COREDATA
+    //COREDATA - SINGLETON
     var actionsModel = ActionsModel()
 
     //Search
@@ -111,31 +111,8 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         //CRONOMETRO
-        var chronometerActionTitle = "Chronos" // 7
-        let chronometerRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Chronometer")
-              
-        chronometerRequest.predicate = NSPredicate(format: "chronometerName = %@", "\(actionsModel.exercisesList[indexPath.row].exercise)")
-              chronometerRequest.returnsObjectsAsFaults = false
-              do {
-                  let chronometer = try actionsModel.context.fetch(chronometerRequest)
-                  //5
-                  for data in chronometer as! [NSManagedObject]{
-                      let boolean = data.value(forKey: "isFavorited") as! Bool
-                      
-                      if boolean == true {
-                          // 7
-                        chronometerActionTitle = "UnChronos"
-                      }
-                      do {
-                        try actionsModel.context.save()
-                      }
-                      catch {
-                          // Handle Error
-                      }
-                  }
-              } catch {
-                  print("Failed")
-        }
+        let chronometerActionTitle = actionsModel.changeChronometerTitleName(index: indexPath.row)
+
         
         let chronometerAction = UIContextualAction(style: .normal, title: chronometerActionTitle, handler:{[self] (_, _, completionHandler) in
             // delete the item here
@@ -154,31 +131,9 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
         })
         
         //FAVORITOS
-        var favoriteActionTitle = "Favorite"
         
-        let favoritesRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Favorites")
-        //3
-        favoritesRequest.predicate = NSPredicate(format: "favoritesName = %@", "\(actionsModel.exercisesList[indexPath.row].exercise)")
-        favoritesRequest.returnsObjectsAsFaults = false
-            do {
-                let favorites = try actionsModel.context.fetch(favoritesRequest)
-                 
-            for data in favorites as! [NSManagedObject]{
-                let boolean = data.value(forKey: "isFavorited") as! Bool
-                      
-                if boolean == true {
-                          favoriteActionTitle = "Unfavorite"
-                      }
-                      do {
-                          try actionsModel.context.save()
-                      }
-                      catch {
-                          // Handle Error
-                      }
-            }
-            } catch {
-                print("Failed")
-              }
+        let favoriteActionTitle = actionsModel.changeFavoritesTitleName(index: indexPath.row)
+    
         
         let favoriteAction = UIContextualAction(style: .normal, title:  favoriteActionTitle, handler:{ [self] (_, _, completionHandler) in
             // delete the item here

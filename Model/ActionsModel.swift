@@ -17,7 +17,7 @@ class ActionsModel {
     
     
     let appDelegate = UIApplication.shared.delegate as? AppDelegate
-
+    
     let context: NSManagedObjectContext = {
         let container = NSPersistentContainer(name: "coredata")
         container.loadPersistentStores { (storeDescription, error) in
@@ -40,7 +40,6 @@ class ActionsModel {
         
         let favoriteExercise = NSManagedObject(entity: entity, insertInto: context)
         
-        // 3
         favoriteExercise.setValue(exercisesList[index].exercise, forKey: "favoritesName")
         favoriteExercise.setValue(true, forKey: "isFavorited")
         
@@ -55,7 +54,7 @@ class ActionsModel {
     }
     
     func deleteFromFavorites(index: Int){
-     
+        
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Favorites")
         
         //3
@@ -63,11 +62,11 @@ class ActionsModel {
         request.returnsObjectsAsFaults = false
         do {
             let result = try context.fetch(request)
-
+            
             for data in result as! [NSManagedObject]
             {
                 context.delete(data)
-
+                
                 do {
                     try context.save()
                 }
@@ -81,13 +80,45 @@ class ActionsModel {
         }
     }
     
+    func changeFavoritesTitleName(index: Int) -> String {
+        
+       var favoriteActionTitle = "Favorite"
+        
+        let favoritesRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Favorites")
+        
+        favoritesRequest.predicate = NSPredicate(format: "favoritesName = %@", "\(exercisesList[index].exercise)")
+
+        favoritesRequest.returnsObjectsAsFaults = false
+        do {
+            let favorites = try context.fetch(favoritesRequest)
+            
+            for data in favorites as! [NSManagedObject]{
+                let boolean = data.value(forKey: "isFavorited") as! Bool
+                
+                if boolean == true {
+                    favoriteActionTitle = "Unfavorite"
+                }
+                do {
+                    try context.save()
+                }
+                catch {
+                    // Handle Error
+                }
+            }
+        } catch {
+            print("Failed")
+        }
+        
+        return favoriteActionTitle
+    }
+    
     func favoritesFetchRequest() {
         
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Favorites")
         do {
             favorites = try context.fetch(fetchRequest)
         } catch let error as NSError {
-          print("Could not fetch. \(error), \(error.userInfo)")
+            print("Could not fetch. \(error), \(error.userInfo)")
         }
     }
     
@@ -96,11 +127,11 @@ class ActionsModel {
     
     // CRONOMETERO
     func savingToChronometer(index: Int) {
-
+        
         let entity = NSEntityDescription.entity(forEntityName: "Chronometer", in: context)!
         
         let chronometerExercise = NSManagedObject(entity: entity, insertInto: context)
-        // 3
+        
         chronometerExercise.setValue(exercisesList[index].exercise, forKey: "chronometerName")
         chronometerExercise.setValue(true, forKey: "isFavorited")
         
@@ -114,7 +145,7 @@ class ActionsModel {
     }
     
     func deleteFromChronometer(index: Int){
-     
+        
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Chronometer")
         //3
         request.predicate = NSPredicate(format: "chronometerName = %@", "\(exercisesList[index].exercise)")
@@ -122,7 +153,7 @@ class ActionsModel {
         do {
             //4
             let result = try context.fetch(request)
-           
+            
             //5
             for data in result as! [NSManagedObject]
             {
@@ -142,13 +173,45 @@ class ActionsModel {
         }
     }
     
+    func changeChronometerTitleName(index: Int) -> String {
+        
+        var chronometerActionTitle = "Chronos"
+        
+        let chronometerRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Chronometer")
+        
+        chronometerRequest.predicate = NSPredicate(format: "chronometerName = %@", "\(exercisesList[index].exercise)")
+     
+        chronometerRequest.returnsObjectsAsFaults = false
+        do {
+            let chronometer = try context.fetch(chronometerRequest)
+            for data in chronometer as! [NSManagedObject]{
+                let boolean = data.value(forKey: "isFavorited") as! Bool
+    
+                if boolean == true {
+                    
+                    chronometerActionTitle = "UnChronos"
+                }
+                do {
+                    try context.save()
+                }
+                catch {
+                    // Handle Error
+                }
+            }
+        } catch {
+            print("Failed")
+        }
+        
+        return chronometerActionTitle
+    }
+    
     func chronometerFetchRequest() {
         
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Chronometer")
         do {
             chronometer = try context.fetch(fetchRequest)
         } catch let error as NSError {
-          print("Could not fetch. \(error), \(error.userInfo)")
+            print("Could not fetch. \(error), \(error.userInfo)")
         }
     }
 }
