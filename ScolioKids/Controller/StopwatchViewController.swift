@@ -17,41 +17,23 @@ class StopwatchViewController: UIViewController {
     var timer:Timer = Timer()
     var count: Int = 0
     var timerCount: Bool = false
-    
-//    var imageView: UIImageView = {
-//        let imageView = UIImageView(frame: .zero)
-//        imageView.image = UIImage(named: "backgroundOficial")
-//        imageView.contentMode = .scaleAspectFill
-//        imageView.translatesAutoresizingMaskIntoConstraints = false
-//        return imageView
-//    }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        view.insertSubview(imageView, at: 0)
-//                    NSLayoutConstraint.activate([
-//                    imageView.topAnchor.constraint(equalTo: view.topAnchor),
-//                    imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-//                    imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-//                    imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-//        ])
-        
-        
         startButton.setTitle("Iniciar", for: .normal)
         self.startButton.backgroundColor = UIColor.init(red: 27/255, green: 188/255, blue: 130/255, alpha: 1)
-        ///Rounding start button
+        //Rounding start button
 //        startButton.frame = CGRect(x: 270, y: 307, width: 80, height: 80)
         startButton.layer.cornerRadius = 0.5 * startButton.bounds.size.width
         startButton.clipsToBounds = true
         startButton.titleLabel?.adjustsFontSizeToFitWidth = true
-//        startButton.titleLabel?.minimumScaleFactor = 0.8
         
         //RESET BUTTON
         resetButton.setTitle("Zerar", for: .normal)
         
         self.resetButton.backgroundColor = UIColor.white
-        ///Rounding reset button
+        //Rounding reset button
 //        resetButton.frame = CGRect(x: 40, y: 307, width: 80, height: 80)
         resetButton.layer.cornerRadius = 0.5 * resetButton.bounds.size.width
         resetButton.clipsToBounds = true

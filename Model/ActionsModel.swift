@@ -35,8 +35,8 @@ class ActionsModel {
     
     //FAVORITES
     func savingToFavorites(index: Int) {
-        
-        let entity = NSEntityDescription.entity(forEntityName: "Favorites", in: context)!
+
+        guard let entity = NSEntityDescription.entity(forEntityName: "Favorites", in: context) else { return }
         
         let favoriteExercise = NSManagedObject(entity: entity, insertInto: context)
         
@@ -53,13 +53,14 @@ class ActionsModel {
         }
     }
     
-    func deleteFromFavorites(index: Int){
+    func deleteFromFavorites(index: Int) {
         
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Favorites")
         
         //3
         request.predicate = NSPredicate(format: "favoritesName = %@", "\(exercisesList[index].exercise)")
         request.returnsObjectsAsFaults = false
+
         do {
             let result = try context.fetch(request)
             
@@ -82,13 +83,14 @@ class ActionsModel {
     
     func changeFavoritesTitleName(index: Int) -> String {
         
-       var favoriteActionTitle = "Favorite"
+        var favoriteActionTitle = "Favorite"
         
         let favoritesRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Favorites")
         
         favoritesRequest.predicate = NSPredicate(format: "favoritesName = %@", "\(exercisesList[index].exercise)")
-
+        
         favoritesRequest.returnsObjectsAsFaults = false
+        
         do {
             let favorites = try context.fetch(favoritesRequest)
             
@@ -128,19 +130,21 @@ class ActionsModel {
     // CRONOMETERO
     func savingToChronometer(index: Int) {
         
-        let entity = NSEntityDescription.entity(forEntityName: "Chronometer", in: context)!
-        
-        let chronometerExercise = NSManagedObject(entity: entity, insertInto: context)
-        
-        chronometerExercise.setValue(exercisesList[index].exercise, forKey: "chronometerName")
-        chronometerExercise.setValue(true, forKey: "isFavorited")
-        
-        do {
-            try context.save()
-            chronometer.append(chronometerExercise)
+//   let entity = NSEntityDescription.entity(forEntityName: "Chronometer", in: context)!
+        if let entity = NSEntityDescription.entity(forEntityName: "Chronometer", in: context) {
+
+            let chronometerExercise = NSManagedObject(entity: entity, insertInto: context)
+
+            chronometerExercise.setValue(exercisesList[index].exercise, forKey: "chronometerName")
+            chronometerExercise.setValue(true, forKey: "isFavorited")
             
-        } catch let error as NSError {
-            print("Could not save. \(error), \(error.userInfo)")
+            do {
+                try context.save()
+                chronometer.append(chronometerExercise)
+                
+            } catch let error as NSError {
+                print("Could not save. \(error), \(error.userInfo)")
+            }
         }
     }
     
@@ -182,6 +186,7 @@ class ActionsModel {
         chronometerRequest.predicate = NSPredicate(format: "chronometerName = %@", "\(exercisesList[index].exercise)")
      
         chronometerRequest.returnsObjectsAsFaults = false
+
         do {
             let chronometer = try context.fetch(chronometerRequest)
             for data in chronometer as! [NSManagedObject]{
@@ -208,6 +213,7 @@ class ActionsModel {
     func chronometerFetchRequest() {
         
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Chronometer")
+
         do {
             chronometer = try context.fetch(fetchRequest)
         } catch let error as NSError {

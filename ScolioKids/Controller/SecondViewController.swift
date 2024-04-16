@@ -60,7 +60,7 @@ class SecondViewController: UIViewController {
 }
 
 // SEARCH
-extension SecondViewController: UISearchBarDelegate{
+extension SecondViewController: UISearchBarDelegate {
     
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
         searchBar.setValue("Cancelar", forKey: "cancelButtonText")
@@ -71,7 +71,7 @@ extension SecondViewController: UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
        // searchExercicies = exercises.filter({$0.lowercased().prefix(searchText.count) == searchText.lowercased()})
         self.filterUser = []
-        if searchText.isEmpty{
+        if searchText.isEmpty {
             self.filterUser = actionsModel.exercisesList
         }else{
             for value in actionsModel.exercisesList{
@@ -98,7 +98,7 @@ extension SecondViewController: UISearchBarDelegate{
 }
 
 // Table View -> Exercícios
-extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
+extension SecondViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
